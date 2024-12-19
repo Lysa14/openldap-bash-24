@@ -1,0 +1,19 @@
+Package: libldap-dev
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1547
+Depends: libldap2 (= 2.6.7+dfsg-1~exp1ubuntu8.1)
+Breaks: libldap2-dev (<< 2.5.4+dfsg-1~)
+Replaces: libldap2-dev (<< 2.5.4+dfsg-1~)
+Provides: libldap2-dev
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.openldap.org/
+Description: OpenLDAP development libraries
+ This package allows development of LDAP applications using the OpenLDAP
+ libraries. It includes headers, libraries and links to allow static and
+ dynamic linking.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

@@ -1,0 +1,14 @@
+Package: libldap2-dev
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 81
+Depends: libldap-dev
+Section: oldlibs
+Priority: optional
+Homepage: https://www.openldap.org/
+Description: transitional package for libldap-dev
+ This is a transitional package from libldap2-dev to libldap-dev. It can be
+ safely removed.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

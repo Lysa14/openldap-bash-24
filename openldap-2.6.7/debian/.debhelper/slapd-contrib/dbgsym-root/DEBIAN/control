@@ -1,0 +1,14 @@
+Package: slapd-contrib-dbgsym
+Package-Type: ddeb
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 91
+Depends: slapd-contrib (= 2.6.7+dfsg-1~exp1ubuntu8.1)
+Section: debug
+Priority: optional
+Description: debug symbols for slapd-contrib
+Build-Ids: 60c867205aef8d157ff40c74724b114d8d85cc18 696621a69681f2ddac3dc56cd05558c1c65bed8a 84c46762333f5021b7136b8bff18b8328a899b14 d2b7f2f296b0e21fc4c8ab6cf6bfd42e71b49ac9
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

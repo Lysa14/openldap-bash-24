@@ -1,0 +1,28 @@
+adding new entry "dc=remote,dc=example,dc=com"
+
+adding new entry "ou=users,dc=remote,dc=example,dc=com"
+
+adding new entry "dc=example,dc=com"
+
+adding new entry "ou=users,dc=example,dc=com"
+
+adding new entry "ou=local,ou=users,dc=example,dc=com"
+
+adding new entry "dc=example,dc=com"
+
+adding new entry "ou=users,dc=example,dc=com"
+
+adding new entry "ou=local,ou=users,dc=example,dc=com"
+
+adding new entry "cn=local_user,ou=local,ou=users,dc=example,dc=com"
+
+modifying entry "cn=local_user,ou=local,ou=users,dc=example,dc=com"
+
+adding new entry "cn=local_user,ou=local,ou=users,dc=example,dc=com"
+
+modifying entry "cn=local_user,ou=local,ou=users,dc=example,dc=com"
+
+adding new entry "cn=remote_user,ou=remote,ou=users,dc=example,dc=com"
+
+modifying entry "cn=remote_user,ou=remote,ou=users,dc=example,dc=com"
+

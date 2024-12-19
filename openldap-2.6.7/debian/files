@@ -1,0 +1,14 @@
+ldap-utils-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb debug optional automatic=yes
+ldap-utils_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb net optional
+libldap-common_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb libs optional
+libldap-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb libdevel optional
+libldap2-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb debug optional automatic=yes
+libldap2-dev_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb oldlibs optional
+libldap2_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb libs optional
+openldap_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.buildinfo net optional
+slapd-contrib-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb debug optional automatic=yes
+slapd-contrib_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb net optional
+slapd-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb debug optional automatic=yes
+slapd-smbk5pwd_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb oldlibs optional
+slapd_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb net optional
+slapi-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb libdevel optional

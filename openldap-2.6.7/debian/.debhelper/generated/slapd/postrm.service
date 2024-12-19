@@ -1,0 +1,8 @@
+# Automatically added by dh_installinit/13.14.1ubuntu5
+if [ "$1" = "remove" ] && [ -x "/etc/init.d/slapd" ] ; then
+	chmod -x "/etc/init.d/slapd" >/dev/null || true
+fi
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = "purge" ] ; then
+	update-rc.d slapd remove >/dev/null
+fi
+# End automatically added section

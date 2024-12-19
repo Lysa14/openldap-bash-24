@@ -1,0 +1,40 @@
+#!/bin/sh
+set -e
+
+# Import the Samba and Heimdal schemas
+ldapadd -H ldapi:// -Y EXTERNAL -f /usr/share/doc/samba/examples/LDAP/samba.ldif
+schema2ldif /etc/ldap/schema/hdb.schema | ldapadd -H ldapi:// -Y EXTERNAL
+
+# Grant slapd access to the Heimdal master key
+chgrp openldap /var/lib/heimdal-kdc /var/lib/heimdal-kdc/*key
+chmod g+rX /var/lib/heimdal-kdc /var/lib/heimdal-kdc/*key
+
+apparmor_profile="/etc/apparmor.d/usr.sbin.slapd"
+if [ -f "${apparmor_profile}" ]; then
+    if aa-status --enabled 2>/dev/null; then
+        # Adjust apparmor so slapd can read the heimdal master key
+        cat >> /etc/apparmor.d/local/usr.sbin.slapd <<EOF
+  /var/lib/heimdal-kdc/m-key rk,
+EOF
+        apparmor_parser -r -W -T "${apparmor_profile}" || {
+            # this failure may happen on armhf in Canonical infrastructure, see #1991141
+            echo "Failed to reload the ${apparmor_profile} apparmor profile, continuing anyway."
+        }
+    fi
+fi
+
+# Instantiate the smbk5pwd overlay
+ldapmodify -H ldapi:// -Y EXTERNAL << eof
+dn: cn=module{0},cn=config
+changetype: modify
+add: olcModuleLoad
+olcModuleLoad: smbk5pwd
+
+dn: olcOverlay=smbk5pwd,olcDatabase={1}mdb,cn=config
+changetype: add
+objectClass: olcSmbK5PwdConfig
+olcSmbK5PwdEnable: krb5
+olcSmbK5PwdEnable: samba
+olcSmbK5PwdEnable: shadow
+
+eof

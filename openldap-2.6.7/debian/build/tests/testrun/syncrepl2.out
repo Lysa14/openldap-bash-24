@@ -1,0 +1,190 @@
+# extended LDIF
+#
+# LDAPv3
+# base <dc=example,dc=com> with scope subtree
+# filter: (objectclass=*)
+# requesting: * + 
+# with manageDSAit critical control
+#
+
+# example.com
+dn: dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MBUKAQEEEOEU9NZScBA/krmDAvs6EiQ=
+# SyncState control, UUID e114f4d6-5270-103f-92b9-8302fb3a1224 added
+objectClass: dcObject
+objectClass: organization
+dc: example
+o: Example, Inc
+structuralObjectClass: organization
+entryUUID: e114f4d6-5270-103f-92b9-8302fb3a1224
+creatorsName: cn=Manager,dc=example,dc=com
+createTimestamp: 20241219162017Z
+entryCSN: 20241219162017.383252Z#000000#000#000000
+modifiersName: cn=Manager,dc=example,dc=com
+modifyTimestamp: 20241219162017Z
+entryDN: dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: TRUE
+
+# users, example.com
+dn: ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MBUKAQEEEOEVeVZScBA/krqDAvs6EiQ=
+# SyncState control, UUID e1157956-5270-103f-92ba-8302fb3a1224 added
+objectClass: organizationalUnit
+ou: users
+structuralObjectClass: organizationalUnit
+entryUUID: e1157956-5270-103f-92ba-8302fb3a1224
+creatorsName: cn=Manager,dc=example,dc=com
+createTimestamp: 20241219162017Z
+entryCSN: 20241219162017.386693Z#000000#000#000000
+modifiersName: cn=Manager,dc=example,dc=com
+modifyTimestamp: 20241219162017Z
+entryDN: ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: TRUE
+
+# local, users, example.com
+dn: ou=local,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MBUKAQEEEOEWBEhScBA/kruDAvs6EiQ=
+# SyncState control, UUID e1160448-5270-103f-92bb-8302fb3a1224 added
+objectClass: organizationalUnit
+ou: local
+structuralObjectClass: organizationalUnit
+entryUUID: e1160448-5270-103f-92bb-8302fb3a1224
+creatorsName: cn=Manager,dc=example,dc=com
+createTimestamp: 20241219162017Z
+entryCSN: 20241219162017.390251Z#000000#000#000000
+modifiersName: cn=Manager,dc=example,dc=com
+modifyTimestamp: 20241219162017Z
+entryDN: ou=local,ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: FALSE
+
+# remote, users, example.com
+dn: ou=remote,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MBUKAQEEEOELzfxScBA/htzhriyTTIY=
+# SyncState control, UUID e10bcdfc-5270-103f-86dc-e1ae2c934c86 added
+objectClass: organizationalUnit
+ou: users
+structuralObjectClass: organizationalUnit
+entryUUID: e10bcdfc-5270-103f-86dc-e1ae2c934c86
+creatorsName: cn=Manager,dc=remote,dc=example,dc=com
+createTimestamp: 20241219162017Z
+entryCSN: 20241219162017.323322Z#000000#000#000000
+modifiersName: cn=Manager,dc=remote,dc=example,dc=com
+modifyTimestamp: 20241219162017Z
+hasSubordinates: FALSE
+entryDN: ou=users,dc=remote,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+
+# SyncInfo Received: refresh delete
+# cookie: rid=000,csn=20241219162017.390251Z#000000#000#000000
+# refresh done, switching to persist stage
+
+# local_user, local, users, example.com
+dn: cn=local_user,ou=local,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MEsKAQEEEOQlDlRScBA/kryDAvs6EiQENHJpZD
+ 0wMDAsY3NuPTIwMjQxMjE5MTYyMDIyLjUyMTk3NFojMDAwMDAwIzAwMCMwMDAwMDA=
+# SyncState control, UUID e4250e54-5270-103f-92bc-8302fb3a1224 added
+# cookie: rid=000,csn=20241219162022.521974Z#000000#000#000000
+objectClass: person
+cn: local_user
+sn: local_user
+userPassword:: c2VjcmV0
+description: add local_user
+structuralObjectClass: person
+entryUUID: e4250e54-5270-103f-92bc-8302fb3a1224
+creatorsName: cn=Manager,dc=example,dc=com
+createTimestamp: 20241219162022Z
+entryCSN: 20241219162022.521974Z#000000#000#000000
+modifiersName: cn=Manager,dc=example,dc=com
+modifyTimestamp: 20241219162022Z
+entryDN: cn=local_user,ou=local,ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: FALSE
+
+# local_user, local, users, example.com
+dn: cn=local_user,ou=local,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MEsKAQIEEOQlDlRScBA/kryDAvs6EiQENHJpZD
+ 0wMDAsY3NuPTIwMjQxMjE5MTYyMDIzLjU0MzA5N1ojMDAwMDAwIzAwMCMwMDAwMDA=
+# SyncState control, UUID e4250e54-5270-103f-92bc-8302fb3a1224 modified
+# cookie: rid=000,csn=20241219162023.543097Z#000000#000#000000
+objectClass: person
+cn: local_user
+sn: local_user
+userPassword:: c2VjcmV0
+structuralObjectClass: person
+entryUUID: e4250e54-5270-103f-92bc-8302fb3a1224
+creatorsName: cn=Manager,dc=example,dc=com
+createTimestamp: 20241219162022Z
+description: modify local_user
+entryCSN: 20241219162023.543097Z#000000#000#000000
+modifiersName: cn=Manager,dc=example,dc=com
+modifyTimestamp: 20241219162023Z
+entryDN: cn=local_user,ou=local,ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: FALSE
+
+# local_user1, local, users, example.com
+dn: cn=local_user1,ou=local,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MEsKAQIEEOQlDlRScBA/kryDAvs6EiQENHJpZD
+ 0wMDAsY3NuPTIwMjQxMjE5MTYyMDI0LjU4MTE1MFojMDAwMDAwIzAwMCMwMDAwMDA=
+# SyncState control, UUID e4250e54-5270-103f-92bc-8302fb3a1224 modified
+# cookie: rid=000,csn=20241219162024.581150Z#000000#000#000000
+objectClass: person
+sn: local_user
+userPassword:: c2VjcmV0
+structuralObjectClass: person
+entryUUID: e4250e54-5270-103f-92bc-8302fb3a1224
+creatorsName: cn=Manager,dc=example,dc=com
+createTimestamp: 20241219162022Z
+description: modify local_user
+cn: local_user1
+entryCSN: 20241219162024.581150Z#000000#000#000000
+modifiersName: cn=Manager,dc=example,dc=com
+modifyTimestamp: 20241219162024Z
+entryDN: cn=local_user1,ou=local,ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: FALSE
+
+# remote_user, remote, users, example.com
+dn: cn=remote_user,ou=remote,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MA4KAQEEAAQHcmlkPTAwMA==
+# SyncState control, UUID (UUID malformed) added
+# cookie: rid=000
+objectClass: person
+cn: remote_user
+sn: remote_user
+userPassword:: c2VjcmV0
+description: add remote_user
+entryDN: cn=remote_user,ou=remote,ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: TRUE
+
+# remote_user, remote, users, example.com
+dn: cn=remote_user,ou=remote,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MA4KAQIEAAQHcmlkPTAwMA==
+# SyncState control, UUID (UUID malformed) modified
+# cookie: rid=000
+objectClass: person
+cn: remote_user
+sn: remote_user
+userPassword:: c2VjcmV0
+description: modify remote_user
+entryDN: cn=remote_user,ou=remote,ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: TRUE
+
+# remote_user1, remote, users, example.com
+dn: cn=remote_user1,ou=remote,ou=users,dc=example,dc=com
+control: 1.3.6.1.4.1.4203.1.9.1.2 false MA4KAQIEAAQHcmlkPTAwMA==
+# SyncState control, UUID (UUID malformed) modified
+# cookie: rid=000
+objectClass: person
+sn: remote_user
+userPassword:: c2VjcmV0
+description: modify remote_user
+cn: remote_user1
+entryDN: cn=remote_user1,ou=remote,ou=users,dc=example,dc=com
+subschemaSubentry: cn=Subschema
+hasSubordinates: TRUE

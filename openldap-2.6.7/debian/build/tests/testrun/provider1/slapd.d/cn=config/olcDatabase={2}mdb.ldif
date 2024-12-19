@@ -1,0 +1,18 @@
+# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 983f62f9
+dn: olcDatabase={2}mdb
+objectClass: olcDatabaseConfig
+objectClass: olcmdbConfig
+olcDatabase: {2}mdb
+olcDbDirectory: /home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/
+ testrun/provider1/db
+olcSuffix: dc=example,dc=com
+olcRootDN: cn=Manager,dc=example,dc=com
+olcRootPW:: c2VjcmV0
+structuralObjectClass: olcMdbConfig
+entryUUID: df2ceb7e-5270-103f-8ff5-ed2fdc0f958f
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.184914Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z

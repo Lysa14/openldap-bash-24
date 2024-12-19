@@ -1,0 +1,46 @@
+dn: cn=config
+objectClass: olcGlobal
+cn: config
+
+dn: olcDatabase={0}config,cn=config
+objectClass: olcDatabaseConfig
+olcDatabase: {0}config
+olcRootPW:< file:///home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/testrun/configpw
+
+dn: cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: schema
+
+include: file:///home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/./schema/core.ldif
+include: file:///home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/./schema/cosine.ldif
+include: file:///home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/./schema/nis.ldif
+include: file:///home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/./schema/inetorgperson.ldif
+
+dn: cn=module,cn=config
+objectClass: olcModuleList
+cn: module
+olcModulePath: /home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/../servers/slapd/overlays
+olcModuleLoad: /home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/../servers/slapd/back-mdb/back_mdb.la
+olcModuleLoad: /home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/../servers/slapd/back-ldap/back_ldap.la
+olcModuleLoad: rwm.la
+olcModuleLoad: syncprov.la
+
+dn: olcDatabase={1}ldap,cn=config
+objectClass: olcDatabaseConfig
+objectClass: olcLDAPConfig
+olcDatabase: {1}ldap
+olcSuffix: ou=remote,ou=users,dc=example,dc=com
+olcSubordinate: TRUE
+olcDbURI: ldap://localhost:9011/
+olcDbIDAssertBind: bindmethod=simple
+  binddn="cn=Manager,dc=remote,dc=example,dc=com"
+  credentials=secret
+  mode=none
+olcDbIDAssertAuthzFrom: dn.exact:cn=Manager,dc=example,dc=com
+olcRootDN: cn=Manager,dc=example,dc=com
+
+dn: olcOverlay={0}rwm,olcDatabase={1}ldap,cn=config
+objectClass: olcOverlayConfig
+objectClass: olcRwmConfig
+olcOverlay: {0}rwm
+olcRwmRewrite: rwm-suffixmassage "ou=users,dc=remote,dc=example,dc=com"

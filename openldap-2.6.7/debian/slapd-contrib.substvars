@@ -1,0 +1,3 @@
+shlibs:Depends=libc6 (>= 2.38), libkadm5srv8t64-heimdal (>= 1.4.0+git20110226), libkrb5-26t64-heimdal (>= 1.4.0+git20110226), libldap2 (>= 2.6.2), libnettle8t64
+misc:Depends=
+misc:Pre-Depends=

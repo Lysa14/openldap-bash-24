@@ -1,0 +1,1383 @@
+676447be.0d72b41d 0x7f78dfb92940 @(#) $OpenLDAP: slapd 2.6.7+dfsg-1~exp1ubuntu8.1 (Oct  2 2024 12:40:51) $
+	Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+676447be.0d7375a4 0x7f78dfb92940 daemon_init: ldap://localhost:9011/
+676447be.0d74254d 0x7f78dfb92940 daemon_init: listen on ldap://localhost:9011/
+676447be.0d743f42 0x7f78dfb92940 daemon_init: 1 listeners to open...
+676447be.0d744b24 0x7f78dfb92940 ldap_url_parse_ext(ldap://localhost:9011/)
+676447be.0d74dc0b 0x7f78dfb92940 daemon: listener initialized ldap://localhost:9011/
+676447be.0d74e640 0x7f78dfb92940 daemon_init: 1 listeners opened
+676447be.0d7dfa6b 0x7f78dfb92940 slapd init: initiated server.
+676447be.0d804b5c 0x7f78dfb92940 slap_sasl_init: initialized!
+676447be.0d8b40a8 0x7f78dfb92940 backend_startup_one: starting "cn=config"
+676447be.0d8bb2ca 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config.ldif"
+676447be.0d8bbc48 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 cfc50b29
+dn: cn=config
+objectClass: olcGlobal
+cn: config
+structuralObjectClass: olcGlobal
+entryUUID: df28ff5a-5270-103f-9300-13e01c3e1f34
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.159175Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z
+"
+676447be.0d8c537d 0x7f78dfb92940 >>> dnPrettyNormal: <cn=config>
+676447be.0d8c5e36 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d8c6ce9 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d8c7a1d 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d8c8519 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d8c8f18 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d8c9568 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d8c9d64 0x7f78dfb92940 <<< dnPrettyNormal: <cn=config>, <cn=config>
+676447be.0d8cf739 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d8cfe32 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d8d0500 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d8d0c69 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d8d1262 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d8d1845 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d8d3902 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d8d3eec 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d8d4542 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d8d4ba1 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d8d512d 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d8d5681 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d8d61ad 0x7f78dfb92940 <= str2entry(cn=config) -> 0x55f7cb347e38
+676447be.0d931bcf 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/cn=module{0}.ldif"
+676447be.0d9336ec 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 597b98c8
+dn: cn=module{0}
+objectClass: olcModuleList
+cn: module{0}
+olcModulePath: /home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/.
+ ./servers/slapd/overlays
+olcModuleLoad: {0}/home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/test
+ s/../servers/slapd/back-mdb/back_mdb.la
+structuralObjectClass: olcModuleList
+entryUUID: df296d46-5270-103f-9308-13e01c3e1f34
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.162023Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z
+"
+676447be.0d93467c 0x7f78dfb92940 >>> dnPrettyNormal: <cn=module{0}>
+676447be.0d934fba 0x7f78dfb92940 => ldap_bv2dn(cn=module{0},0)
+676447be.0d935c4a 0x7f78dfb92940 <= ldap_bv2dn(cn=module{0})=0 
+676447be.0d936a00 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d93734d 0x7f78dfb92940 <= ldap_dn2bv(cn=module{0})=0 
+676447be.0d937c37 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9382c0 0x7f78dfb92940 <= ldap_dn2bv(cn=module{0})=0 
+676447be.0d93998e 0x7f78dfb92940 <<< dnPrettyNormal: <cn=module{0}>, <cn=module{0}>
+676447be.0d93bd45 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d93c426 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d93cbd5 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d93d3dd 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d93fcd6 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d9403ff 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d941736 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d941d06 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d94245e 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d942b7b 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9431be 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d9437a1 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d9442f1 0x7f78dfb92940 <= str2entry(cn=module{0}) -> 0x55f7cb347e38
+676447be.0d99a3aa 0x7f78dfb92940 mdb_back_initialize: initialize MDB backend
+676447be.0d99c9be 0x7f78dfb92940 mdb_back_initialize: LMDB 0.9.32: (January 29, 2024)
+676447be.0d9bb228 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/cn=schema.ldif"
+676447be.0d9bba65 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 e948894b
+dn: cn=schema
+objectClass: olcSchemaConfig
+cn: schema
+structuralObjectClass: olcSchemaConfig
+entryUUID: df29145e-5270-103f-9303-13e01c3e1f34
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.159744Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z
+"
+676447be.0d9bc5e6 0x7f78dfb92940 >>> dnPrettyNormal: <cn=schema>
+676447be.0d9bce10 0x7f78dfb92940 => ldap_bv2dn(cn=schema,0)
+676447be.0d9bd916 0x7f78dfb92940 <= ldap_bv2dn(cn=schema)=0 
+676447be.0d9be2fd 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9beb28 0x7f78dfb92940 <= ldap_dn2bv(cn=schema)=0 
+676447be.0d9bf348 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9bf983 0x7f78dfb92940 <= ldap_dn2bv(cn=schema)=0 
+676447be.0d9c0121 0x7f78dfb92940 <<< dnPrettyNormal: <cn=schema>, <cn=schema>
+676447be.0d9c1513 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d9c1b4d 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d9c2263 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d9c2987 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9c2f59 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d9c3565 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d9c44f1 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d9c4af8 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d9c5107 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d9c57a3 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9c5d81 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d9c62f8 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d9c6dbc 0x7f78dfb92940 <= str2entry(cn=schema) -> 0x55f7cb347e38
+676447be.0d9dbb0e 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/cn=schema/cn={0}core.ldif"
+676447be.0d9dc72f 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 a042c51b
+dn: cn={0}core
+objectClass: olcSchemaConfig
+cn: {0}core
+olcAttributeTypes: {0}( 2.5.4.2 NAME 'knowledgeInformation' DESC 'RFC2256: kno
+ wledge information' EQUALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.
+ 1.15{32768} )
+olcAttributeTypes: {1}( 2.5.4.4 NAME ( 'sn' 'surname' ) DESC 'RFC2256: last (f
+ amily) name(s) for which the entity is known by' SUP name )
+olcAttributeTypes: {2}( 2.5.4.5 NAME 'serialNumber' DESC 'RFC2256: serial numb
+ er of the entity' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch S
+ YNTAX 1.3.6.1.4.1.1466.115.121.1.44{64} )
+olcAttributeTypes: {3}( 2.5.4.6 NAME ( 'c' 'countryName' ) DESC 'RFC4519: two-
+ letter ISO-3166 country code' SUP name SYNTAX 1.3.6.1.4.1.1466.115.121.1.11 S
+ INGLE-VALUE )
+olcAttributeTypes: {4}( 2.5.4.7 NAME ( 'l' 'localityName' ) DESC 'RFC2256: loc
+ ality which this object resides in' SUP name )
+olcAttributeTypes: {5}( 2.5.4.8 NAME ( 'st' 'stateOrProvinceName' ) DESC 'RFC2
+ 256: state or province which this object resides in' SUP name )
+olcAttributeTypes: {6}( 2.5.4.9 NAME ( 'street' 'streetAddress' ) DESC 'RFC225
+ 6: street address of this object' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreS
+ ubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128} )
+olcAttributeTypes: {7}( 2.5.4.10 NAME ( 'o' 'organizationName' ) DESC 'RFC2256
+ : organization this object belongs to' SUP name )
+olcAttributeTypes: {8}( 2.5.4.11 NAME ( 'ou' 'organizationalUnitName' ) DESC '
+ RFC2256: organizational unit this object belongs to' SUP name )
+olcAttributeTypes: {9}( 2.5.4.12 NAME 'title' DESC 'RFC2256: title associated 
+ with the entity' SUP name )
+olcAttributeTypes: {10}( 2.5.4.14 NAME 'searchGuide' DESC 'RFC2256: search gui
+ de, deprecated by enhancedSearchGuide' SYNTAX 1.3.6.1.4.1.1466.115.121.1.25 )
+olcAttributeTypes: {11}( 2.5.4.15 NAME 'businessCategory' DESC 'RFC2256: busin
+ ess category' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTA
+ X 1.3.6.1.4.1.1466.115.121.1.15{128} )
+olcAttributeTypes: {12}( 2.5.4.16 NAME 'postalAddress' DESC 'RFC2256: postal a
+ ddress' EQUALITY caseIgnoreListMatch SUBSTR caseIgnoreListSubstringsMatch SYN
+ TAX 1.3.6.1.4.1.1466.115.121.1.41 )
+olcAttributeTypes: {13}( 2.5.4.17 NAME 'postalCode' DESC 'RFC2256: postal code
+ ' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.
+ 1.1466.115.121.1.15{40} )
+olcAttributeTypes: {14}( 2.5.4.18 NAME 'postOfficeBox' DESC 'RFC2256: Post Off
+ ice Box' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3
+ .6.1.4.1.1466.115.121.1.15{40} )
+olcAttributeTypes: {15}( 2.5.4.19 NAME 'physicalDeliveryOfficeName' DESC 'RFC2
+ 256: Physical Delivery Office Name' EQUALITY caseIgnoreMatch SUBSTR caseIgnor
+ eSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128} )
+olcAttributeTypes: {16}( 2.5.4.20 NAME 'telephoneNumber' DESC 'RFC2256: Teleph
+ one Number' EQUALITY telephoneNumberMatch SUBSTR telephoneNumberSubstringsMat
+ ch SYNTAX 1.3.6.1.4.1.1466.115.121.1.50{32} )
+olcAttributeTypes: {17}( 2.5.4.21 NAME 'telexNumber' DESC 'RFC2256: Telex Numb
+ er' SYNTAX 1.3.6.1.4.1.1466.115.121.1.52 )
+olcAttributeTypes: {18}( 2.5.4.22 NAME 'teletexTerminalIdentifier' DESC 'RFC22
+ 56: Teletex Terminal Identifier' SYNTAX 1.3.6.1.4.1.1466.115.121.1.51 )
+olcAttributeTypes: {19}( 2.5.4.23 NAME ( 'facsimileTelephoneNumber' 'fax' ) DE
+ SC 'RFC2256: Facsimile (Fax) Telephone Number' SYNTAX 1.3.6.1.4.1.1466.115.12
+ 1.1.22 )
+olcAttributeTypes: {20}( 2.5.4.24 NAME 'x121Address' DESC 'RFC2256: X.121 Addr
+ ess' EQUALITY numericStringMatch SUBSTR numericStringSubstringsMatch SYNTAX 1
+ .3.6.1.4.1.1466.115.121.1.36{15} )
+olcAttributeTypes: {21}( 2.5.4.25 NAME 'internationaliSDNNumber' DESC 'RFC2256
+ : international ISDN number' EQUALITY numericStringMatch SUBSTR numericString
+ SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.36{16} )
+olcAttributeTypes: {22}( 2.5.4.26 NAME 'registeredAddress' DESC 'RFC2256: regi
+ stered postal address' SUP postalAddress SYNTAX 1.3.6.1.4.1.1466.115.121.1.41
+  )
+olcAttributeTypes: {23}(
+676447be.0d9dfc6c 0x7f78dfb92940 >>> dnPrettyNormal: <cn={0}core>
+676447be.0d9e0347 0x7f78dfb92940 => ldap_bv2dn(cn={0}core,0)
+676447be.0d9e0af7 0x7f78dfb92940 <= ldap_bv2dn(cn={0}core)=0 
+676447be.0d9e11e7 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9e186b 0x7f78dfb92940 <= ldap_dn2bv(cn={0}core)=0 
+676447be.0d9e1ef0 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9e24dd 0x7f78dfb92940 <= ldap_dn2bv(cn={0}core)=0 
+676447be.0d9e2adc 0x7f78dfb92940 <<< dnPrettyNormal: <cn={0}core>, <cn={0}core>
+676447be.0d9f8a1b 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d9f9126 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d9f98a8 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d9f9f90 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9fa5b6 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d9fab6c 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d9fb7ab 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0d9fbd49 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0d9fc446 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0d9fcad5 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0d9fd0a8 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0d9fd63b 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0d9fe062 0x7f78dfb92940 <= str2entry(cn={0}core) -> 0x55f7cb347e38
+676447be.0da77e58 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/cn=schema/cn={1}cosine.ldif"
+676447be.0da788bb 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 472b4e46
+dn: cn={1}cosine
+objectClass: olcSchemaConfig
+cn: {1}cosine
+olcAttributeTypes: {0}( 0.9.2342.19200300.100.1.2 NAME 'textEncodedORAddress' 
+ EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.
+ 1466.115.121.1.15{256} )
+olcAttributeTypes: {1}( 0.9.2342.19200300.100.1.4 NAME 'info' DESC 'RFC1274: g
+ eneral information' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{2048} )
+olcAttributeTypes: {2}( 0.9.2342.19200300.100.1.5 NAME ( 'drink' 'favouriteDri
+ nk' ) DESC 'RFC1274: favorite drink' EQUALITY caseIgnoreMatch SUBSTR caseIgno
+ reSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {3}( 0.9.2342.19200300.100.1.6 NAME 'roomNumber' DESC 'RFC1
+ 274: room number' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch S
+ YNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {4}( 0.9.2342.19200300.100.1.7 NAME 'photo' DESC 'RFC1274: 
+ photo (G3 fax)' SYNTAX 1.3.6.1.4.1.1466.115.121.1.23{25000} )
+olcAttributeTypes: {5}( 0.9.2342.19200300.100.1.8 NAME 'userClass' DESC 'RFC12
+ 74: category of user' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMat
+ ch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {6}( 0.9.2342.19200300.100.1.9 NAME 'host' DESC 'RFC1274: h
+ ost computer' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTA
+ X 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {7}( 0.9.2342.19200300.100.1.10 NAME 'manager' DESC 'RFC127
+ 4: DN of manager' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115
+ .121.1.12 )
+olcAttributeTypes: {8}( 0.9.2342.19200300.100.1.11 NAME 'documentIdentifier' D
+ ESC 'RFC1274: unique identifier of document' EQUALITY caseIgnoreMatch SUBSTR 
+ caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {9}( 0.9.2342.19200300.100.1.12 NAME 'documentTitle' DESC '
+ RFC1274: title of document' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstri
+ ngsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {10}( 0.9.2342.19200300.100.1.13 NAME 'documentVersion' DES
+ C 'RFC1274: version of document' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSu
+ bstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {11}( 0.9.2342.19200300.100.1.14 NAME 'documentAuthor' DESC
+  'RFC1274: DN of author of document' EQUALITY distinguishedNameMatch SYNTAX 1
+ .3.6.1.4.1.1466.115.121.1.12 )
+olcAttributeTypes: {12}( 0.9.2342.19200300.100.1.15 NAME 'documentLocation' DE
+ SC 'RFC1274: location of document original' EQUALITY caseIgnoreMatch SUBSTR c
+ aseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{256} )
+olcAttributeTypes: {13}( 0.9.2342.19200300.100.1.20 NAME ( 'homePhone' 'homeTe
+ lephoneNumber' ) DESC 'RFC1274: home telephone number' EQUALITY telephoneNumb
+ erMatch SUBSTR telephoneNumberSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121
+ .1.50 )
+olcAttributeTypes: {14}( 0.9.2342.19200300.100.1.21 NAME 'secretary' DESC 'RFC
+ 1274: DN of secretary' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.146
+ 6.115.121.1.12 )
+olcAttributeTypes: {15}( 0.9.2342.19200300.100.1.22 NAME 'otherMailbox' SYNTAX
+  1.3.6.1.4.1.1466.115.121.1.39 )
+olcAttributeTypes: {16}( 0.9.2342.19200300.100.1.26 NAME 'aRecord' EQUALITY ca
+ seIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {17}( 0.9.2342.19200300.100.1.27 NAME 'mDRecord' EQUALITY c
+ aseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {18}( 0.9.2342.19200300.100.1.28 NAME 'mXRecord' EQUALITY c
+ aseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {19}( 0.9.2342.19200300.100.1.29 NAME 'nSRecord' EQUALITY c
+ aseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {20}( 0.9.2342.19200300.100.1.30 NAME 'sOARecord' EQUALITY 
+ caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {21}( 0.9.2342.19200300.100.1.31 NAME 'cNAMERecord' EQUALIT
+ Y caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.146
+676447be.0da7b223 0x7f78dfb92940 >>> dnPrettyNormal: <cn={1}cosine>
+676447be.0da7b901 0x7f78dfb92940 => ldap_bv2dn(cn={1}cosine,0)
+676447be.0da7c0dd 0x7f78dfb92940 <= ldap_bv2dn(cn={1}cosine)=0 
+676447be.0da7c830 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0da7cf04 0x7f78dfb92940 <= ldap_dn2bv(cn={1}cosine)=0 
+676447be.0da7d5c6 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0da7dbd3 0x7f78dfb92940 <= ldap_dn2bv(cn={1}cosine)=0 
+676447be.0da7e200 0x7f78dfb92940 <<< dnPrettyNormal: <cn={1}cosine>, <cn={1}cosine>
+676447be.0da8c495 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0da8cb63 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0da8d258 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0da8d920 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0da8df56 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0da8e502 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0da8f19a 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0da8f735 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0da8fe36 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0da904ec 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0da90acc 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0da91093 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0da91b25 0x7f78dfb92940 <= str2entry(cn={1}cosine) -> 0x55f7cb347e38
+676447be.0daf98f6 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/cn=schema/cn={2}nis.ldif"
+676447be.0dafa953 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 aaca8664
+dn: cn={2}nis
+objectClass: olcSchemaConfig
+cn: {2}nis
+olcAttributeTypes: {0}( 1.3.6.1.1.1.1.2 NAME 'gecos' DESC 'The GECOS field; th
+ e common name' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatc
+ h SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
+olcAttributeTypes: {1}( 1.3.6.1.1.1.1.3 NAME 'homeDirectory' DESC 'The absolut
+ e path to the home directory' EQUALITY caseExactIA5Match SYNTAX 1.3.6.1.4.1.1
+ 466.115.121.1.26 SINGLE-VALUE )
+olcAttributeTypes: {2}( 1.3.6.1.1.1.1.4 NAME 'loginShell' DESC 'The path to th
+ e login shell' EQUALITY caseExactIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.2
+ 6 SINGLE-VALUE )
+olcAttributeTypes: {3}( 1.3.6.1.1.1.1.5 NAME 'shadowLastChange' EQUALITY integ
+ erMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {4}( 1.3.6.1.1.1.1.6 NAME 'shadowMin' EQUALITY integerMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {5}( 1.3.6.1.1.1.1.7 NAME 'shadowMax' EQUALITY integerMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {6}( 1.3.6.1.1.1.1.8 NAME 'shadowWarning' EQUALITY integerM
+ atch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {7}( 1.3.6.1.1.1.1.9 NAME 'shadowInactive' EQUALITY integer
+ Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {8}( 1.3.6.1.1.1.1.10 NAME 'shadowExpire' EQUALITY integerM
+ atch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {9}( 1.3.6.1.1.1.1.11 NAME 'shadowFlag' EQUALITY integerMat
+ ch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {10}( 1.3.6.1.1.1.1.12 NAME 'memberUid' EQUALITY caseExactI
+ A5Match SUBSTR caseExactIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.
+ 26 )
+olcAttributeTypes: {11}( 1.3.6.1.1.1.1.13 NAME 'memberNisNetgroup' EQUALITY ca
+ seExactIA5Match SUBSTR caseExactIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.11
+ 5.121.1.26 )
+olcAttributeTypes: {12}( 1.3.6.1.1.1.1.14 NAME 'nisNetgroupTriple' DESC 'Netgr
+ oup triple' SYNTAX 1.3.6.1.1.1.0.0 )
+olcAttributeTypes: {13}( 1.3.6.1.1.1.1.15 NAME 'ipServicePort' EQUALITY intege
+ rMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {14}( 1.3.6.1.1.1.1.16 NAME 'ipServiceProtocol' SUP name )
+olcAttributeTypes: {15}( 1.3.6.1.1.1.1.17 NAME 'ipProtocolNumber' EQUALITY int
+ egerMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {16}( 1.3.6.1.1.1.1.18 NAME 'oncRpcNumber' EQUALITY integer
+ Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 SINGLE-VALUE )
+olcAttributeTypes: {17}( 1.3.6.1.1.1.1.19 NAME 'ipHostNumber' DESC 'IP address
+ ' EQUALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{128} )
+olcAttributeTypes: {18}( 1.3.6.1.1.1.1.20 NAME 'ipNetworkNumber' DESC 'IP netw
+ ork' EQUALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{128} SI
+ NGLE-VALUE )
+olcAttributeTypes: {19}( 1.3.6.1.1.1.1.21 NAME 'ipNetmaskNumber' DESC 'IP netm
+ ask' EQUALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{128} SI
+ NGLE-VALUE )
+olcAttributeTypes: {20}( 1.3.6.1.1.1.1.22 NAME 'macAddress' DESC 'MAC address'
+  EQUALITY caseIgnoreIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{128} )
+olcAttributeTypes: {21}( 1.3.6.1.1.1.1.23 NAME 'bootParameter' DESC 'rpc.bootp
+ aramd parameter' SYNTAX 1.3.6.1.1.1.0.1 )
+olcAttributeTypes: {22}( 1.3.6.1.1.1.1.24 NAME 'bootFile' DESC 'Boot image nam
+ e' EQUALITY caseExactIA5Match SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
+olcAttributeTypes: {23}( 1.3.6.1.1.1.1.26 NAME 'nisMapName' SUP name )
+olcAttributeTypes: {24}( 1.3.6.1.1.1.1.27 NAME 'nisMapEntry' EQUALITY caseExac
+ tIA5Match SUBSTR caseExactIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.
+ 1.26{1024} SINGLE-VALUE )
+olcObjectClasses: {0}( 1.3.6.1.1.1.2.0 NAME 'posixAccount' DESC 'Abstraction o
+ f an account with POSIX attributes' SUP top AUXILIARY MUST ( cn $ uid $ uidNu
+ mber $ gidNumber $ homeDirectory ) MAY ( userPassword $ loginShell $ gecos $ 
+ description ) )
+olcObjectClasses: {1}( 1.3.6.1.1.1.2.1 
+676447be.0dafceaa 0x7f78dfb92940 >>> dnPrettyNormal: <cn={2}nis>
+676447be.0dafd81d 0x7f78dfb92940 => ldap_bv2dn(cn={2}nis,0)
+676447be.0dafe376 0x7f78dfb92940 <= ldap_bv2dn(cn={2}nis)=0 
+676447be.0dafee9b 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0daff900 0x7f78dfb92940 <= ldap_dn2bv(cn={2}nis)=0 
+676447be.0db00331 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0db00c92 0x7f78dfb92940 <= ldap_dn2bv(cn={2}nis)=0 
+676447be.0db015c2 0x7f78dfb92940 <<< dnPrettyNormal: <cn={2}nis>, <cn={2}nis>
+676447be.0db15669 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0db163ed 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0db1706f 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0db17bdb 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0db18691 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0db19042 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0db1a432 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0db1ad1f 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0db1b73d 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0db1c11e 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0db1ca5a 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0db1d313 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0db1e457 0x7f78dfb92940 <= str2entry(cn={2}nis) -> 0x55f7cb347e38
+676447be.0db6c770 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/cn=schema/cn={3}inetorgperson.ldif"
+676447be.0db6d38a 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 b1c857dd
+dn: cn={3}inetorgperson
+objectClass: olcSchemaConfig
+cn: {3}inetorgperson
+olcAttributeTypes: {0}( 2.16.840.1.113730.3.1.1 NAME 'carLicense' DESC 'RFC279
+ 8: vehicle license or registration plate' EQUALITY caseIgnoreMatch SUBSTR cas
+ eIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+olcAttributeTypes: {1}( 2.16.840.1.113730.3.1.2 NAME 'departmentNumber' DESC '
+ RFC2798: identifies a department within an organization' EQUALITY caseIgnoreM
+ atch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+olcAttributeTypes: {2}( 2.16.840.1.113730.3.1.241 NAME 'displayName' DESC 'RFC
+ 2798: preferred name to be used when displaying entries' EQUALITY caseIgnoreM
+ atch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SI
+ NGLE-VALUE )
+olcAttributeTypes: {3}( 2.16.840.1.113730.3.1.3 NAME 'employeeNumber' DESC 'RF
+ C2798: numerically identifies an employee within an organization' EQUALITY ca
+ seIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.12
+ 1.1.15 SINGLE-VALUE )
+olcAttributeTypes: {4}( 2.16.840.1.113730.3.1.4 NAME 'employeeType' DESC 'RFC2
+ 798: type of employment for a person' EQUALITY caseIgnoreMatch SUBSTR caseIgn
+ oreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+olcAttributeTypes: {5}( 0.9.2342.19200300.100.1.60 NAME 'jpegPhoto' DESC 'RFC2
+ 798: a JPEG image' SYNTAX 1.3.6.1.4.1.1466.115.121.1.28 )
+olcAttributeTypes: {6}( 2.16.840.1.113730.3.1.39 NAME 'preferredLanguage' DESC
+  'RFC2798: preferred written or spoken language for a person' EQUALITY caseIg
+ noreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.
+ 15 SINGLE-VALUE )
+olcAttributeTypes: {7}( 2.16.840.1.113730.3.1.40 NAME 'userSMIMECertificate' D
+ ESC 'RFC2798: PKCS#7 SignedData used to support S/MIME' SYNTAX 1.3.6.1.4.1.14
+ 66.115.121.1.5 )
+olcAttributeTypes: {8}( 2.16.840.1.113730.3.1.216 NAME 'userPKCS12' DESC 'RFC2
+ 798: personal identity information, a PKCS #12 PFX' SYNTAX 1.3.6.1.4.1.1466.1
+ 15.121.1.5 )
+olcObjectClasses: {0}( 2.16.840.1.113730.3.2.2 NAME 'inetOrgPerson' DESC 'RFC2
+ 798: Internet Organizational Person' SUP organizationalPerson STRUCTURAL MAY 
+ ( audio $ businessCategory $ carLicense $ departmentNumber $ displayName $ em
+ ployeeNumber $ employeeType $ givenName $ homePhone $ homePostalAddress $ ini
+ tials $ jpegPhoto $ labeledURI $ mail $ manager $ mobile $ o $ pager $ photo 
+ $ roomNumber $ secretary $ uid $ userCertificate $ x500uniqueIdentifier $ pre
+ ferredLanguage $ userSMIMECertificate $ userPKCS12 ) )
+structuralObjectClass: olcSchemaConfig
+entryUUID: df2967d8-5270-103f-9307-13e01c3e1f34
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.161882Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z
+"
+676447be.0db6f766 0x7f78dfb92940 >>> dnPrettyNormal: <cn={3}inetorgperson>
+676447be.0db70119 0x7f78dfb92940 => ldap_bv2dn(cn={3}inetorgperson,0)
+676447be.0db70c90 0x7f78dfb92940 <= ldap_bv2dn(cn={3}inetorgperson)=0 
+676447be.0db71809 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0db72329 0x7f78dfb92940 <= ldap_dn2bv(cn={3}inetorgperson)=0 
+676447be.0db72d99 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0db737e3 0x7f78dfb92940 <= ldap_dn2bv(cn={3}inetorgperson)=0 
+676447be.0db741ea 0x7f78dfb92940 <<< dnPrettyNormal: <cn={3}inetorgperson>, <cn={3}inetorgperson>
+676447be.0db7ad13 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0db7b66f 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0db7c0a3 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0db7cb55 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0db7d4e0 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0db7dd23 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0db7ef45 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0db7f7a8 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0db80278 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0db80ce2 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0db8163a 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0db81f13 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0db830a4 0x7f78dfb92940 <= str2entry(cn={3}inetorgperson) -> 0x55f7cb347e38
+676447be.0dba476c 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/olcDatabase={-1}frontend.ldif"
+676447be.0dba5288 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 48d73adf
+dn: olcDatabase={-1}frontend
+objectClass: olcDatabaseConfig
+objectClass: olcFrontendConfig
+olcDatabase: {-1}frontend
+olcAddContentAcl: FALSE
+olcLastMod: TRUE
+olcLastBind: FALSE
+olcLastBindPrecision: 0
+olcMaxDerefDepth: 0
+olcReadOnly: FALSE
+olcSchemaDN: cn=Subschema
+olcSyncUseSubentry: FALSE
+olcMonitoring: FALSE
+structuralObjectClass: olcDatabaseConfig
+entryUUID: df2906da-5270-103f-9302-13e01c3e1f34
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.159400Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z
+"
+676447be.0dba65b4 0x7f78dfb92940 >>> dnPrettyNormal: <olcDatabase={-1}frontend>
+676447be.0dba6f24 0x7f78dfb92940 => ldap_bv2dn(olcDatabase={-1}frontend,0)
+676447be.0dba7b02 0x7f78dfb92940 <= ldap_bv2dn(olcDatabase={-1}frontend)=0 
+676447be.0dba8768 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbaa067 0x7f78dfb92940 <= ldap_dn2bv(olcDatabase={-1}frontend)=0 
+676447be.0dbaab53 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbab519 0x7f78dfb92940 <= ldap_dn2bv(olcDatabase={-1}frontend)=0 
+676447be.0dbabe5e 0x7f78dfb92940 <<< dnPrettyNormal: <olcDatabase={-1}frontend>, <olcDatabase={-1}frontend>
+676447be.0dbaebee 0x7f78dfb92940 >>> dnNormalize: <cn=Subschema>
+676447be.0dbaf4df 0x7f78dfb92940 => ldap_bv2dn(cn=Subschema,0)
+676447be.0dbaff1c 0x7f78dfb92940 <= ldap_bv2dn(cn=Subschema)=0 
+676447be.0dbb09bc 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbb13c0 0x7f78dfb92940 <= ldap_dn2bv(cn=subschema)=0 
+676447be.0dbb1ccd 0x7f78dfb92940 <<< dnNormalize: <cn=subschema>
+676447be.0dbb3121 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0dbb3a1c 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0dbb444b 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0dbb4ea1 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbb58a6 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0dbb6203 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0dbb7597 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0dbb7e97 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0dbb894a 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0dbb939f 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbb9d0f 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0dbba5af 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0dbbb5bc 0x7f78dfb92940 <= str2entry(olcDatabase={-1}frontend) -> 0x55f7cb347e38
+676447be.0dbbd93f 0x7f78dfb92940 >>> dnNormalize: <olcDatabase={-1}frontend>
+676447be.0dbbeaa8 0x7f78dfb92940 <<< dnNormalize: <olcDatabase={-1}frontend>
+676447be.0dbc2193 0x7f78dfb92940 >>> dnPrettyNormal: <cn=Subschema>
+676447be.0dbc2b8b 0x7f78dfb92940 => ldap_bv2dn(cn=Subschema,0)
+676447be.0dbc3660 0x7f78dfb92940 <= ldap_bv2dn(cn=Subschema)=0 
+676447be.0dbc40de 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbc4bfa 0x7f78dfb92940 <= ldap_dn2bv(cn=Subschema)=0 
+676447be.0dbc5595 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbc5fa7 0x7f78dfb92940 <= ldap_dn2bv(cn=subschema)=0 
+676447be.0dbc6909 0x7f78dfb92940 <<< dnPrettyNormal: <cn=Subschema>, <cn=subschema>
+676447be.0dbc91cd 0x7f78dfb92940 >>> dnPrettyNormal: <cn=Subschema>
+676447be.0dbc9afa 0x7f78dfb92940 => ldap_bv2dn(cn=Subschema,0)
+676447be.0dbca4d6 0x7f78dfb92940 <= ldap_bv2dn(cn=Subschema)=0 
+676447be.0dbcae1f 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbcb7ff 0x7f78dfb92940 <= ldap_dn2bv(cn=Subschema)=0 
+676447be.0dbcc119 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbcca91 0x7f78dfb92940 <= ldap_dn2bv(cn=subschema)=0 
+676447be.0dbcd345 0x7f78dfb92940 <<< dnPrettyNormal: <cn=Subschema>, <cn=subschema>
+676447be.0dbd2c43 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/olcDatabase={0}config.ldif"
+676447be.0dbd35b8 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 7cdf3e4e
+dn: olcDatabase={0}config
+objectClass: olcDatabaseConfig
+olcDatabase: {0}config
+olcRootPW:: dG1ZU0Y1ak4=
+structuralObjectClass: olcDatabaseConfig
+entryUUID: df29050e-5270-103f-9301-13e01c3e1f34
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.159352Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z
+"
+676447be.0dbd4146 0x7f78dfb92940 >>> dnPrettyNormal: <olcDatabase={0}config>
+676447be.0dbd4a48 0x7f78dfb92940 => ldap_bv2dn(olcDatabase={0}config,0)
+676447be.0dbd54fc 0x7f78dfb92940 <= ldap_bv2dn(olcDatabase={0}config)=0 
+676447be.0dbd5f05 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbd68f5 0x7f78dfb92940 <= ldap_dn2bv(olcDatabase={0}config)=0 
+676447be.0dbd71e1 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbd7b77 0x7f78dfb92940 <= ldap_dn2bv(olcDatabase={0}config)=0 
+676447be.0dbd84b8 0x7f78dfb92940 <<< dnPrettyNormal: <olcDatabase={0}config>, <olcDatabase={0}config>
+676447be.0dbda0af 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0dbdaa0b 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0dbdb437 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0dbdbe4c 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbdd5d6 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0dbddf01 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0dbdf08b 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0dbdf97a 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0dbe0366 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0dbe0c9b 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbe153e 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0dbe1d7a 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0dbe2cd6 0x7f78dfb92940 <= str2entry(olcDatabase={0}config) -> 0x55f7cb347e38
+676447be.0dbe9a94 0x7f78dfb92940 ldif_read_file: read entry file: "slapd.d/cn=config/olcDatabase={1}mdb.ldif"
+676447be.0dbea420 0x7f78dfb92940 => str2entry: "# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 689cad84
+dn: olcDatabase={1}mdb
+objectClass: olcDatabaseConfig
+objectClass: olcmdbConfig
+olcDatabase: {1}mdb
+olcDbDirectory: /home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/
+ testrun/remote/db
+olcSuffix: dc=remote,dc=example,dc=com
+olcRootDN: cn=Manager,dc=remote,dc=example,dc=com
+olcRootPW:: c2VjcmV0
+structuralObjectClass: olcMdbConfig
+entryUUID: df297c1e-5270-103f-9309-13e01c3e1f34
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.162401Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z
+"
+676447be.0dbeb11e 0x7f78dfb92940 >>> dnPrettyNormal: <olcDatabase={1}mdb>
+676447be.0dbeba62 0x7f78dfb92940 => ldap_bv2dn(olcDatabase={1}mdb,0)
+676447be.0dbec47a 0x7f78dfb92940 <= ldap_bv2dn(olcDatabase={1}mdb)=0 
+676447be.0dbecede 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbed895 0x7f78dfb92940 <= ldap_dn2bv(olcDatabase={1}mdb)=0 
+676447be.0dbee296 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbeebef 0x7f78dfb92940 <= ldap_dn2bv(olcDatabase={1}mdb)=0 
+676447be.0dbef507 0x7f78dfb92940 <<< dnPrettyNormal: <olcDatabase={1}mdb>, <olcDatabase={1}mdb>
+676447be.0dbf1442 0x7f78dfb92940 >>> dnNormalize: <dc=remote,dc=example,dc=com>
+676447be.0dbf1d87 0x7f78dfb92940 => ldap_bv2dn(dc=remote,dc=example,dc=com,0)
+676447be.0dbf2a1b 0x7f78dfb92940 <= ldap_bv2dn(dc=remote,dc=example,dc=com)=0 
+676447be.0dbf3c76 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbf46e5 0x7f78dfb92940 <= ldap_dn2bv(dc=remote,dc=example,dc=com)=0 
+676447be.0dbf50c2 0x7f78dfb92940 <<< dnNormalize: <dc=remote,dc=example,dc=com>
+676447be.0dbf5c4b 0x7f78dfb92940 >>> dnNormalize: <cn=Manager,dc=remote,dc=example,dc=com>
+676447be.0dbf656f 0x7f78dfb92940 => ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com,0)
+676447be.0dbf739e 0x7f78dfb92940 <= ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dbf820f 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbf8d8c 0x7f78dfb92940 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dbf976f 0x7f78dfb92940 <<< dnNormalize: <cn=manager,dc=remote,dc=example,dc=com>
+676447be.0dbfa7a9 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0dbfb08d 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0dbfba8b 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0dbfc4ea 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dbfce4f 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0dbfd6fa 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0dbfe93e 0x7f78dfb92940 >>> dnNormalize: <cn=config>
+676447be.0dbff257 0x7f78dfb92940 => ldap_bv2dn(cn=config,0)
+676447be.0dbffcf9 0x7f78dfb92940 <= ldap_bv2dn(cn=config)=0 
+676447be.0dc00695 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc01013 0x7f78dfb92940 <= ldap_dn2bv(cn=config)=0 
+676447be.0dc018ed 0x7f78dfb92940 <<< dnNormalize: <cn=config>
+676447be.0dc0280d 0x7f78dfb92940 <= str2entry(olcDatabase={1}mdb) -> 0x55f7cb347e38
+676447be.0dc05ab2 0x7f78dfb92940 >>> dnPrettyNormal: <dc=remote,dc=example,dc=com>
+676447be.0dc0642c 0x7f78dfb92940 => ldap_bv2dn(dc=remote,dc=example,dc=com,0)
+676447be.0dc0702d 0x7f78dfb92940 <= ldap_bv2dn(dc=remote,dc=example,dc=com)=0 
+676447be.0dc07c87 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc08673 0x7f78dfb92940 <= ldap_dn2bv(dc=remote,dc=example,dc=com)=0 
+676447be.0dc09209 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc09bff 0x7f78dfb92940 <= ldap_dn2bv(dc=remote,dc=example,dc=com)=0 
+676447be.0dc0b240 0x7f78dfb92940 <<< dnPrettyNormal: <dc=remote,dc=example,dc=com>, <dc=remote,dc=example,dc=com>
+676447be.0dc0bdb8 0x7f78dfb92940 >>> dnPrettyNormal: <cn=Manager,dc=remote,dc=example,dc=com>
+676447be.0dc0c699 0x7f78dfb92940 => ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com,0)
+676447be.0dc0dedb 0x7f78dfb92940 <= ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dc0ebb3 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc0f756 0x7f78dfb92940 <= ldap_dn2bv(cn=Manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dc10313 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc10dd8 0x7f78dfb92940 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dc117f3 0x7f78dfb92940 <<< dnPrettyNormal: <cn=Manager,dc=remote,dc=example,dc=com>, <cn=manager,dc=remote,dc=example,dc=com>
+676447be.0dc131e5 0x7f78dfb92940 mdb_db_init: Initializing mdb database
+676447be.0dc35976 0x7f78dfb92940 >>> dnPrettyNormal: <dc=remote,dc=example,dc=com>
+676447be.0dc3652a 0x7f78dfb92940 => ldap_bv2dn(dc=remote,dc=example,dc=com,0)
+676447be.0dc3725b 0x7f78dfb92940 <= ldap_bv2dn(dc=remote,dc=example,dc=com)=0 
+676447be.0dc37e8a 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc38950 0x7f78dfb92940 <= ldap_dn2bv(dc=remote,dc=example,dc=com)=0 
+676447be.0dc394f4 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc39f4d 0x7f78dfb92940 <= ldap_dn2bv(dc=remote,dc=example,dc=com)=0 
+676447be.0dc3a8e4 0x7f78dfb92940 <<< dnPrettyNormal: <dc=remote,dc=example,dc=com>, <dc=remote,dc=example,dc=com>
+676447be.0dc3b674 0x7f78dfb92940 >>> dnPrettyNormal: <cn=Manager,dc=remote,dc=example,dc=com>
+676447be.0dc3bf4a 0x7f78dfb92940 => ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com,0)
+676447be.0dc3cbf8 0x7f78dfb92940 <= ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dc3d7fd 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc3e1eb 0x7f78dfb92940 <= ldap_dn2bv(cn=Manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dc3ecb5 0x7f78dfb92940 => ldap_dn2bv(272)
+676447be.0dc3f62f 0x7f78dfb92940 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447be.0dc3fedb 0x7f78dfb92940 <<< dnPrettyNormal: <cn=Manager,dc=remote,dc=example,dc=com>, <cn=manager,dc=remote,dc=example,dc=com>
+676447be.0dc442f0 0x7f78dfb92940 send_ldap_result: conn=-1 op=0 p=0
+676447be.0dc44ec6 0x7f78dfb92940 send_ldap_result: err=0 matched="" text=""
+676447be.0dc49358 0x7f78dfb92940 matching_rule_use_init
+676447be.0dc4a377 0x7f78dfb92940     1.2.840.113556.1.4.804 (integerBitOrMatch):
+676447be.0dc527d6 0x7f78dfb92940        matchingRuleUse: ( 1.2.840.113556.1.4.804 NAME 'integerBitOrMatch' APPLIES ( supportedLDAPVersion $ entryTtl $ uidNumber $ gidNumber $ olcConcurrency $ olcConnMaxPending $ olcConnMaxPendingAuth $ olcIdleTimeout $ olcIndexSubstrIfMinLen $ olcIndexSubstrIfMaxLen $ olcIndexSubstrAnyLen $ olcIndexSubstrAnyStep $ olcIndexIntLen $ olcLastBindPrecision $ olcListenerThreads $ olcLocalSSF $ olcMaxDerefDepth $ olcMaxFilterDepth $ olcReplicationInterval $ olcSockbufMaxIncoming $ olcSockbufMaxIncomingAuth $ olcThreads $ olcThreadQueues $ olcToolThreads $ olcWriteTimeout $ olcBkMdbIdlExp $ olcDbMaxEntrySize $ olcDbMaxReaders $ olcDbMaxSize $ olcDbRtxnSize $ olcDbSearchStack $ mailPreferenceOption $ shadowLastChange $ shadowMin $ shadowMax $ shadowWarning $ shadowInactive $ shadowExpire $ shadowFlag $ ipServicePort $ ipProtocolNumber $ oncRpcNumber ) )
+676447be.0dc5335e 0x7f78dfb92940     1.2.840.113556.1.4.803 (integerBitAndMatch):
+676447be.0dc581d0 0x7f78dfb92940        matchingRuleUse: ( 1.2.840.113556.1.4.803 NAME 'integerBitAndMatch' APPLIES ( supportedLDAPVersion $ entryTtl $ uidNumber $ gidNumber $ olcConcurrency $ olcConnMaxPending $ olcConnMaxPendingAuth $ olcIdleTimeout $ olcIndexSubstrIfMinLen $ olcIndexSubstrIfMaxLen $ olcIndexSubstrAnyLen $ olcIndexSubstrAnyStep $ olcIndexIntLen $ olcLastBindPrecision $ olcListenerThreads $ olcLocalSSF $ olcMaxDerefDepth $ olcMaxFilterDepth $ olcReplicationInterval $ olcSockbufMaxIncoming $ olcSockbufMaxIncomingAuth $ olcThreads $ olcThreadQueues $ olcToolThreads $ olcWriteTimeout $ olcBkMdbIdlExp $ olcDbMaxEntrySize $ olcDbMaxReaders $ olcDbMaxSize $ olcDbRtxnSize $ olcDbSearchStack $ mailPreferenceOption $ shadowLastChange $ shadowMin $ shadowMax $ shadowWarning $ shadowInactive $ shadowExpire $ shadowFlag $ ipServicePort $ ipProtocolNumber $ oncRpcNumber ) )
+676447be.0dc59bf6 0x7f78dfb92940     1.3.6.1.4.1.1466.109.114.2 (caseIgnoreIA5Match):
+676447be.0dc5cfc0 0x7f78dfb92940        matchingRuleUse: ( 1.3.6.1.4.1.1466.109.114.2 NAME 'caseIgnoreIA5Match' APPLIES ( altServer $ c $ mail $ dc $ associatedDomain $ email $ aRecord $ mDRecord $ mXRecord $ nSRecord $ sOARecord $ cNAMERecord $ janetMailbox $ gecos $ homeDirectory $ loginShell $ memberUid $ memberNisNetgroup $ ipHostNumber $ ipNetworkNumber $ ipNetmaskNumber $ macAddress $ bootFile $ nisMapEntry ) )
+676447be.0dc5d947 0x7f78dfb92940     1.3.6.1.4.1.1466.109.114.1 (caseExactIA5Match):
+676447be.0dc60c70 0x7f78dfb92940        matchingRuleUse: ( 1.3.6.1.4.1.1466.109.114.1 NAME 'caseExactIA5Match' APPLIES ( altServer $ c $ mail $ dc $ associatedDomain $ email $ aRecord $ mDRecord $ mXRecord $ nSRecord $ sOARecord $ cNAMERecord $ janetMailbox $ gecos $ homeDirectory $ loginShell $ memberUid $ memberNisNetgroup $ ipHostNumber $ ipNetworkNumber $ ipNetmaskNumber $ macAddress $ bootFile $ nisMapEntry ) )
+676447be.0dc6178a 0x7f78dfb92940     2.5.13.39 (certificateListMatch):
+676447be.0dc62d25 0x7f78dfb92940     2.5.13.38 (certificateListExactMatch):
+676447be.0dc64c53 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.38 NAME 'certificateListExactMatch' APPLIES ( authorityRevocationList $ certificateRevocationList $ deltaRevocationList ) )
+676447be.0dc6563a 0x7f78dfb92940     2.5.13.35 (certificateMatch):
+676447be.0dc66b24 0x7f78dfb92940     2.5.13.34 (certificateExactMatch):
+676447be.0dc688dd 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.34 NAME 'certificateExactMatch' APPLIES ( olcTLSCACertificate $ olcTLSCertificate $ userCertificate $ cACertificate ) )
+676447be.0dc69218 0x7f78dfb92940     2.5.13.30 (objectIdentifierFirstComponentMatch):
+676447be.0dc6b95e 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.30 NAME 'objectIdentifierFirstComponentMatch' APPLIES ( supportedControl $ supportedExtension $ supportedFeatures $ ldapSyntaxes $ supportedApplicationContext ) )
+676447be.0dc6c3b6 0x7f78dfb92940     2.5.13.29 (integerFirstComponentMatch):
+676447be.0dc70a5f 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.29 NAME 'integerFirstComponentMatch' APPLIES ( supportedLDAPVersion $ entryTtl $ uidNumber $ gidNumber $ olcConcurrency $ olcConnMaxPending $ olcConnMaxPendingAuth $ olcIdleTimeout $ olcIndexSubstrIfMinLen $ olcIndexSubstrIfMaxLen $ olcIndexSubstrAnyLen $ olcIndexSubstrAnyStep $ olcIndexIntLen $ olcLastBindPrecision $ olcListenerThreads $ olcLocalSSF $ olcMaxDerefDepth $ olcMaxFilterDepth $ olcReplicationInterval $ olcSockbufMaxIncoming $ olcSockbufMaxIncomingAuth $ olcThreads $ olcThreadQueues $ olcToolThreads $ olcWriteTimeout $ olcBkMdbIdlExp $ olcDbMaxEntrySize $ olcDbMaxReaders $ olcDbMaxSize $ olcDbRtxnSize $ olcDbSearchStack $ mailPreferenceOption $ shadowLastChange $ shadowMin $ shadowMax $ shadowWarning $ shadowInactive $ shadowExpire $ shadowFlag $ ipServicePort $ ipProtocolNumber $ oncRpcNumber ) )
+676447be.0dc714af 0x7f78dfb92940     2.5.13.28 (generalizedTimeOrderingMatch):
+676447be.0dc72f92 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.28 NAME 'generalizedTimeOrderingMatch' APPLIES ( createTimestamp $ modifyTimestamp $ pwdLastSuccess ) )
+676447be.0dc739a1 0x7f78dfb92940     2.5.13.27 (generalizedTimeMatch):
+676447be.0dc7532b 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.27 NAME 'generalizedTimeMatch' APPLIES ( createTimestamp $ modifyTimestamp $ pwdLastSuccess ) )
+676447be.0dc75ce6 0x7f78dfb92940     2.5.13.24 (protocolInformationMatch):
+676447be.0dc77493 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.24 NAME 'protocolInformationMatch' APPLIES protocolInformation )
+676447be.0dc77db9 0x7f78dfb92940     2.5.13.23 (uniqueMemberMatch):
+676447be.0dc79601 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.23 NAME 'uniqueMemberMatch' APPLIES uniqueMember )
+676447be.0dc7abc2 0x7f78dfb92940     2.5.13.22 (presentationAddressMatch):
+676447be.0dc7c487 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.22 NAME 'presentationAddressMatch' APPLIES presentationAddress )
+676447be.0dc7ce3e 0x7f78dfb92940     2.5.13.20 (telephoneNumberMatch):
+676447be.0dc7e8e3 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.20 NAME 'telephoneNumberMatch' APPLIES ( telephoneNumber $ homePhone $ mobile $ pager ) )
+676447be.0dc7f321 0x7f78dfb92940     2.5.13.18 (octetStringOrderingMatch):
+676447be.0dc80bf9 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.18 NAME 'octetStringOrderingMatch' APPLIES ( userPassword $ olcRootPW ) )
+676447be.0dc81578 0x7f78dfb92940     2.5.13.17 (octetStringMatch):
+676447be.0dc83460 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.17 NAME 'octetStringMatch' APPLIES ( userPassword $ olcRootPW ) )
+676447be.0dc83e97 0x7f78dfb92940     2.5.13.16 (bitStringMatch):
+676447be.0dc85630 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.16 NAME 'bitStringMatch' APPLIES x500UniqueIdentifier )
+676447be.0dc85fcc 0x7f78dfb92940     2.5.13.15 (integerOrderingMatch):
+676447be.0dc8a1d5 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.15 NAME 'integerOrderingMatch' APPLIES ( supportedLDAPVersion $ entryTtl $ uidNumber $ gidNumber $ olcConcurrency $ olcConnMaxPending $ olcConnMaxPendingAuth $ olcIdleTimeout $ olcIndexSubstrIfMinLen $ olcIndexSubstrIfMaxLen $ olcIndexSubstrAnyLen $ olcIndexSubstrAnyStep $ olcIndexIntLen $ olcLastBindPrecision $ olcListenerThreads $ olcLocalSSF $ olcMaxDerefDepth $ olcMaxFilterDepth $ olcReplicationInterval $ olcSockbufMaxIncoming $ olcSockbufMaxIncomingAuth $ olcThreads $ olcThreadQueues $ olcToolThreads $ olcWriteTimeout $ olcBkMdbIdlExp $ olcDbMaxEntrySize $ olcDbMaxReaders $ olcDbMaxSize $ olcDbRtxnSize $ olcDbSearchStack $ mailPreferenceOption $ shadowLastChange $ shadowMin $ shadowMax $ shadowWarning $ shadowInactive $ shadowExpire $ shadowFlag $ ipServicePort $ ipProtocolNumber $ oncRpcNumber ) )
+676447be.0dc8ab54 0x7f78dfb92940     2.5.13.14 (integerMatch):
+676447be.0dc8e932 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.14 NAME 'integerMatch' APPLIES ( supportedLDAPVersion $ entryTtl $ uidNumber $ gidNumber $ olcConcurrency $ olcConnMaxPending $ olcConnMaxPendingAuth $ olcIdleTimeout $ olcIndexSubstrIfMinLen $ olcIndexSubstrIfMaxLen $ olcIndexSubstrAnyLen $ olcIndexSubstrAnyStep $ olcIndexIntLen $ olcLastBindPrecision $ olcListenerThreads $ olcLocalSSF $ olcMaxDerefDepth $ olcMaxFilterDepth $ olcReplicationInterval $ olcSockbufMaxIncoming $ olcSockbufMaxIncomingAuth $ olcThreads $ olcThreadQueues $ olcToolThreads $ olcWriteTimeout $ olcBkMdbIdlExp $ olcDbMaxEntrySize $ olcDbMaxReaders $ olcDbMaxSize $ olcDbRtxnSize $ olcDbSearchStack $ mailPreferenceOption $ shadowLastChange $ shadowMin $ shadowMax $ shadowWarning $ shadowInactive $ shadowExpire $ shadowFlag $ ipServicePort $ ipProtocolNumber $ oncRpcNumber ) )
+676447be.0dc8f351 0x7f78dfb92940     2.5.13.13 (booleanMatch):
+676447be.0dc91af8 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.13 NAME 'booleanMatch' APPLIES ( hasSubordinates $ olcAddContentAcl $ olcDisabled $ olcGentleHUP $ olcHidden $ olcIndexHash64 $ olcLastMod $ olcLastBind $ olcLogFileOnly $ olcMultiProvider $ olcMonitoring $ olcReadOnly $ olcReverseLookup $ olcSaslAuxpropsDontUseCopyIgnore $ olcSyncUseSubentry $ olcDbNoSync ) )
+676447be.0dc92529 0x7f78dfb92940     2.5.13.11 (caseIgnoreListMatch):
+676447be.0dc93ec5 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.11 NAME 'caseIgnoreListMatch' APPLIES ( postalAddress $ registeredAddress $ homePostalAddress ) )
+676447be.0dc94909 0x7f78dfb92940     2.5.13.9 (numericStringOrderingMatch):
+676447be.0dc961c4 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.9 NAME 'numericStringOrderingMatch' APPLIES ( x121Address $ internationaliSDNNumber ) )
+676447be.0dc96bb1 0x7f78dfb92940     2.5.13.8 (numericStringMatch):
+676447be.0dc982eb 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.8 NAME 'numericStringMatch' APPLIES ( x121Address $ internationaliSDNNumber ) )
+676447be.0dc9940c 0x7f78dfb92940     2.5.13.7 (caseExactSubstringsMatch):
+676447be.0dc9bfea 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.7 NAME 'caseExactSubstringsMatch' APPLIES ( serialNumber $ c $ telephoneNumber $ destinationIndicator $ dnQualifier $ homePhone $ mobile $ pager ) )
+676447be.0dc9c944 0x7f78dfb92940     2.5.13.6 (caseExactOrderingMatch):
+676447be.0dcab7f6 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.6 NAME 'caseExactOrderingMatch' APPLIES ( supportedSASLMechanisms $ vendorName $ vendorVersion $ ref $ name $ cn $ uid $ labeledURI $ description $ olcConfigFile $ olcConfigDir $ olcAccess $ olcAllows $ olcArgsFile $ olcAttributeOptions $ olcAttributeTypes $ olcAuthIDRewrite $ olcAuthzPolicy $ olcAuthzRegexp $ olcBackend $ olcDatabase $ olcDisallows $ olcDitContentRules $ olcExtraAttrs $ olcInclude $ olcLdapSyntaxes $ olcLimits $ olcLogFile $ olcLogFileFormat $ olcLogFileRotate $ olcLogLevel $ olcModuleLoad $ olcModulePath $ olcObjectClasses $ olcObjectIdentifier $ olcOverlay $ olcPasswordCryptSaltFormat $ olcPasswordHash $ olcPidFile $ olcPlugin $ olcPluginLogFile $ olcReferral $ olcReplica $ olcReplicaArgsFile $ olcReplicaPidFile $ olcReplogFile $ olcRequires $ olcRestrict $ olcRootDSE $ olcSaslAuxprops $ olcSaslAuxpropsDontUseCopy $ olcSaslCBinding $ olcSaslHost $ olcSaslRealm $ olcSaslSecProps $ olcSecurity $ olcServerID $ olcSizeLimit $ olcSortVals $ olcSubordinate $ olcSyncrepl $ olcTCPBuffer $ olcTimeLimit $ olcTLSCACertificateFile $ olcTLSCACertificatePath $ olcTLSCertificateFile $ olcTLSCertificateKeyFile $ olcTLSCipherSuite $ olcTLSCRLCheck $ olcTLSCRLFile $ olcTLSRandFile $ olcTLSVerifyClient $ olcTLSDHParamFile $ olcTLSECName $ olcTLSProtocolMin $ olcUpdateRef $ olcDbDirectory $ olcDbCheckpoint $ olcDbEnvFlags $ olcDbIndex $ olcDbMode $ olcDbMultival $ knowledgeInformation $ sn $ serialNumber $ c $ l $ st $ street $ o $ ou $ title $ businessCategory $ postalCode $ postOfficeBox $ physicalDeliveryOfficeName $ telephoneNumber $ destinationIndicator $ givenName $ initials $ generationQualifier $ dnQualifier $ houseIdentifier $ dmdName $ pseudonym $ textEncodedORAddress $ info $ drink $ roomNumber $ userClass $ host $ documentIdentifier $ documentTitle $ documentVersion $ documentLocation $ homePhone $ personalTitle $ mobile $ pager $ co $ uniqueIdentifier $ organizationalStatus $ buildingName $ documentPublisher $ ipServiceProtocol $ nisMapName $ carLicense $ departmentNumber $ displayName $ employeeNumber $ employeeType $ preferredLanguage ) )
+676447be.0dcac47e 0x7f78dfb92940     2.5.13.5 (caseExactMatch):
+676447be.0dcba92c 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.5 NAME 'caseExactMatch' APPLIES ( supportedSASLMechanisms $ vendorName $ vendorVersion $ ref $ name $ cn $ uid $ labeledURI $ description $ olcConfigFile $ olcConfigDir $ olcAccess $ olcAllows $ olcArgsFile $ olcAttributeOptions $ olcAttributeTypes $ olcAuthIDRewrite $ olcAuthzPolicy $ olcAuthzRegexp $ olcBackend $ olcDatabase $ olcDisallows $ olcDitContentRules $ olcExtraAttrs $ olcInclude $ olcLdapSyntaxes $ olcLimits $ olcLogFile $ olcLogFileFormat $ olcLogFileRotate $ olcLogLevel $ olcModuleLoad $ olcModulePath $ olcObjectClasses $ olcObjectIdentifier $ olcOverlay $ olcPasswordCryptSaltFormat $ olcPasswordHash $ olcPidFile $ olcPlugin $ olcPluginLogFile $ olcReferral $ olcReplica $ olcReplicaArgsFile $ olcReplicaPidFile $ olcReplogFile $ olcRequires $ olcRestrict $ olcRootDSE $ olcSaslAuxprops $ olcSaslAuxpropsDontUseCopy $ olcSaslCBinding $ olcSaslHost $ olcSaslRealm $ olcSaslSecProps $ olcSecurity $ olcServerID $ olcSizeLimit $ olcSortVals $ olcSubordinate $ olcSyncrepl $ olcTCPBuffer $ olcTimeLimit $ olcTLSCACertificateFile $ olcTLSCACertificatePath $ olcTLSCertificateFile $ olcTLSCertificateKeyFile $ olcTLSCipherSuite $ olcTLSCRLCheck $ olcTLSCRLFile $ olcTLSRandFile $ olcTLSVerifyClient $ olcTLSDHParamFile $ olcTLSECName $ olcTLSProtocolMin $ olcUpdateRef $ olcDbDirectory $ olcDbCheckpoint $ olcDbEnvFlags $ olcDbIndex $ olcDbMode $ olcDbMultival $ knowledgeInformation $ sn $ serialNumber $ c $ l $ st $ street $ o $ ou $ title $ businessCategory $ postalCode $ postOfficeBox $ physicalDeliveryOfficeName $ telephoneNumber $ destinationIndicator $ givenName $ initials $ generationQualifier $ dnQualifier $ houseIdentifier $ dmdName $ pseudonym $ textEncodedORAddress $ info $ drink $ roomNumber $ userClass $ host $ documentIdentifier $ documentTitle $ documentVersion $ documentLocation $ homePhone $ personalTitle $ mobile $ pager $ co $ uniqueIdentifier $ organizationalStatus $ buildingName $ documentPublisher $ ipServiceProtocol $ nisMapName $ carLicense $ departmentNumber $ displayName $ employeeNumber $ employeeType $ preferredLanguage ) )
+676447be.0dcbc1b1 0x7f78dfb92940     2.5.13.4 (caseIgnoreSubstringsMatch):
+676447be.0dcbe470 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.4 NAME 'caseIgnoreSubstringsMatch' APPLIES ( serialNumber $ c $ telephoneNumber $ destinationIndicator $ dnQualifier $ homePhone $ mobile $ pager ) )
+676447be.0dcbee11 0x7f78dfb92940     2.5.13.3 (caseIgnoreOrderingMatch):
+676447be.0dccceb3 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.3 NAME 'caseIgnoreOrderingMatch' APPLIES ( supportedSASLMechanisms $ vendorName $ vendorVersion $ ref $ name $ cn $ uid $ labeledURI $ description $ olcConfigFile $ olcConfigDir $ olcAccess $ olcAllows $ olcArgsFile $ olcAttributeOptions $ olcAttributeTypes $ olcAuthIDRewrite $ olcAuthzPolicy $ olcAuthzRegexp $ olcBackend $ olcDatabase $ olcDisallows $ olcDitContentRules $ olcExtraAttrs $ olcInclude $ olcLdapSyntaxes $ olcLimits $ olcLogFile $ olcLogFileFormat $ olcLogFileRotate $ olcLogLevel $ olcModuleLoad $ olcModulePath $ olcObjectClasses $ olcObjectIdentifier $ olcOverlay $ olcPasswordCryptSaltFormat $ olcPasswordHash $ olcPidFile $ olcPlugin $ olcPluginLogFile $ olcReferral $ olcReplica $ olcReplicaArgsFile $ olcReplicaPidFile $ olcReplogFile $ olcRequires $ olcRestrict $ olcRootDSE $ olcSaslAuxprops $ olcSaslAuxpropsDontUseCopy $ olcSaslCBinding $ olcSaslHost $ olcSaslRealm $ olcSaslSecProps $ olcSecurity $ olcServerID $ olcSizeLimit $ olcSortVals $ olcSubordinate $ olcSyncrepl $ olcTCPBuffer $ olcTimeLimit $ olcTLSCACertificateFile $ olcTLSCACertificatePath $ olcTLSCertificateFile $ olcTLSCertificateKeyFile $ olcTLSCipherSuite $ olcTLSCRLCheck $ olcTLSCRLFile $ olcTLSRandFile $ olcTLSVerifyClient $ olcTLSDHParamFile $ olcTLSECName $ olcTLSProtocolMin $ olcUpdateRef $ olcDbDirectory $ olcDbCheckpoint $ olcDbEnvFlags $ olcDbIndex $ olcDbMode $ olcDbMultival $ knowledgeInformation $ sn $ serialNumber $ c $ l $ st $ street $ o $ ou $ title $ businessCategory $ postalCode $ postOfficeBox $ physicalDeliveryOfficeName $ telephoneNumber $ destinationIndicator $ givenName $ initials $ generationQualifier $ dnQualifier $ houseIdentifier $ dmdName $ pseudonym $ textEncodedORAddress $ info $ drink $ roomNumber $ userClass $ host $ documentIdentifier $ documentTitle $ documentVersion $ documentLocation $ homePhone $ personalTitle $ mobile $ pager $ co $ uniqueIdentifier $ organizationalStatus $ buildingName $ documentPublisher $ ipServiceProtocol $ nisMapName $ carLicense $ departmentNumber $ displayName $ employeeNumber $ employeeType $ preferredLanguage ) )
+676447be.0dccd997 0x7f78dfb92940     2.5.13.2 (caseIgnoreMatch):
+676447be.0dcd966d 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.2 NAME 'caseIgnoreMatch' APPLIES ( supportedSASLMechanisms $ vendorName $ vendorVersion $ ref $ name $ cn $ uid $ labeledURI $ description $ olcConfigFile $ olcConfigDir $ olcAccess $ olcAllows $ olcArgsFile $ olcAttributeOptions $ olcAttributeTypes $ olcAuthIDRewrite $ olcAuthzPolicy $ olcAuthzRegexp $ olcBackend $ olcDatabase $ olcDisallows $ olcDitContentRules $ olcExtraAttrs $ olcInclude $ olcLdapSyntaxes $ olcLimits $ olcLogFile $ olcLogFileFormat $ olcLogFileRotate $ olcLogLevel $ olcModuleLoad $ olcModulePath $ olcObjectClasses $ olcObjectIdentifier $ olcOverlay $ olcPasswordCryptSaltFormat $ olcPasswordHash $ olcPidFile $ olcPlugin $ olcPluginLogFile $ olcReferral $ olcReplica $ olcReplicaArgsFile $ olcReplicaPidFile $ olcReplogFile $ olcRequires $ olcRestrict $ olcRootDSE $ olcSaslAuxprops $ olcSaslAuxpropsDontUseCopy $ olcSaslCBinding $ olcSaslHost $ olcSaslRealm $ olcSaslSecProps $ olcSecurity $ olcServerID $ olcSizeLimit $ olcSortVals $ olcSubordinate $ olcSyncrepl $ olcTCPBuffer $ olcTimeLimit $ olcTLSCACertificateFile $ olcTLSCACertificatePath $ olcTLSCertificateFile $ olcTLSCertificateKeyFile $ olcTLSCipherSuite $ olcTLSCRLCheck $ olcTLSCRLFile $ olcTLSRandFile $ olcTLSVerifyClient $ olcTLSDHParamFile $ olcTLSECName $ olcTLSProtocolMin $ olcUpdateRef $ olcDbDirectory $ olcDbCheckpoint $ olcDbEnvFlags $ olcDbIndex $ olcDbMode $ olcDbMultival $ knowledgeInformation $ sn $ serialNumber $ c $ l $ st $ street $ o $ ou $ title $ businessCategory $ postalCode $ postOfficeBox $ physicalDeliveryOfficeName $ telephoneNumber $ destinationIndicator $ givenName $ initials $ generationQualifier $ dnQualifier $ houseIdentifier $ dmdName $ pseudonym $ textEncodedORAddress $ info $ drink $ roomNumber $ userClass $ host $ documentIdentifier $ documentTitle $ documentVersion $ documentLocation $ homePhone $ personalTitle $ mobile $ pager $ co $ uniqueIdentifier $ organizationalStatus $ buildingName $ documentPublisher $ ipServiceProtocol $ nisMapName $ carLicense $ departmentNumber $ displayName $ employeeNumber $ employeeType $ preferredLanguage ) )
+676447be.0dcdae42 0x7f78dfb92940     1.2.36.79672281.1.13.3 (rdnMatch):
+676447be.0dcdc521 0x7f78dfb92940     2.5.13.1 (distinguishedNameMatch):
+676447be.0dcdf489 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.1 NAME 'distinguishedNameMatch' APPLIES ( creatorsName $ modifiersName $ subschemaSubentry $ entryDN $ namingContexts $ aliasedObjectName $ dynamicSubtrees $ distinguishedName $ seeAlso $ olcDefaultSearchBase $ olcRootDN $ olcSchemaDN $ olcSuffix $ olcUpdateDN $ member $ owner $ roleOccupant $ manager $ documentAuthor $ secretary $ associatedName $ dITRedirect ) )
+676447be.0dcdfe81 0x7f78dfb92940     2.5.13.0 (objectIdentifierMatch):
+676447be.0dce1b3d 0x7f78dfb92940        matchingRuleUse: ( 2.5.13.0 NAME 'objectIdentifierMatch' APPLIES ( supportedControl $ supportedExtension $ supportedFeatures $ supportedApplicationContext ) )
+676447be.0dd36962 0x7f78dfb92940 slapd startup: initiated.
+676447be.0dd38749 0x7f78dfb92940 backend_startup_one: starting "cn=config"
+676447be.0dd39458 0x7f78dfb92940 config_back_db_open
+676447be.0dddf9fd 0x7f78dfb92940 backend_startup_one: starting "dc=remote,dc=example,dc=com"
+676447be.0dde0f99 0x7f78dfb92940 mdb_db_open: "dc=remote,dc=example,dc=com"
+676447be.0dde3afe 0x7f78dfb92940 mdb_db_open: database "dc=remote,dc=example,dc=com": dbenv_open(/home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/testrun/remote/db).
+676447be.0ea6d2b1 0x7f78dfb92940 slapd starting
+676447bf.0d8f62b2 0x7f78de9f26c0 slap_listener_activate(7): 
+676447bf.0d92f8e1 0x7f78de1f16c0 >>> slap_listener(ldap://localhost:9011/)
+676447bf.0d962915 0x7f78de1f16c0 conn=1000 fd=11 ACCEPT from IP=127.0.0.1:33136 (IP=127.0.0.1:9011)
+676447bf.0d97569a 0x7f78de1f16c0 connection_get(11)
+676447bf.0d97716b 0x7f78de1f16c0 connection_get(11): got connid=1000
+676447bf.0d977e0a 0x7f78de1f16c0 connection_read(11): checking for input on id=1000
+676447bf.0d978d3e 0x7f78de1f16c0 ber_get_next
+676447bf.0d97e885 0x7f78de1f16c0 ber_get_next: tag 0x30 len 12 contents:
+676447bf.0d9835a8 0x7f78de1f16c0 op tag 0x60, time 1734625215
+676447bf.0d984419 0x7f78de1f16c0 ber_get_next
+676447bf.0d98e3e8 0x7f78de1f16c0 conn=1000 op=0 do_bind
+676447bf.0d98f407 0x7f78de1f16c0 ber_scanf fmt ({imt) ber:
+676447bf.0d99010e 0x7f78de1f16c0 ber_scanf fmt (m}) ber:
+676447bf.0d990d33 0x7f78de1f16c0 >>> dnPrettyNormal: <>
+676447bf.0d991a7d 0x7f78de1f16c0 <<< dnPrettyNormal: <>, <>
+676447bf.0d992581 0x7f78de1f16c0 conn=1000 op=0 BIND dn="" method=128
+676447bf.0d993077 0x7f78de1f16c0 do_bind: version=3 dn="" method=128
+676447bf.0d9944f9 0x7f78de1f16c0 send_ldap_result: conn=1000 op=0 p=3
+676447bf.0d995014 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447bf.0d9961bb 0x7f78de1f16c0 send_ldap_response: msgid=1 tag=97 err=0
+676447bf.0d997656 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447bf.0d9a6492 0x7f78de1f16c0 conn=1000 op=0 RESULT tag=97 err=0 qtime=0.000031 etime=0.000142 text=
+676447bf.0d9a9e6f 0x7f78de1f16c0 do_bind: v3 anonymous bind
+676447bf.0d9bf922 0x7f78de1f16c0 connection_get(11)
+676447bf.0d9c2a09 0x7f78de1f16c0 connection_get(11): got connid=1000
+676447bf.0d9c3372 0x7f78de1f16c0 connection_read(11): checking for input on id=1000
+676447bf.0d9c3bf7 0x7f78de1f16c0 ber_get_next
+676447bf.0d9c51cd 0x7f78de1f16c0 ber_get_next: tag 0x30 len 37 contents:
+676447bf.0d9c5db8 0x7f78de1f16c0 op tag 0x63, time 1734625215
+676447bf.0d9c69ae 0x7f78de1f16c0 ber_get_next
+676447bf.0d9ce542 0x7f78de1f16c0 conn=1000 op=1 do_search
+676447bf.0d9cefb3 0x7f78de1f16c0 ber_scanf fmt ({miiiib) ber:
+676447bf.0d9cf99e 0x7f78de1f16c0 >>> dnPrettyNormal: <>
+676447bf.0d9d0294 0x7f78de1f16c0 <<< dnPrettyNormal: <>, <>
+676447bf.0d9d0ae1 0x7f78de1f16c0 SRCH "" 0 0    0 0 0
+676447bf.0d9d141a 0x7f78de1f16c0 ber_scanf fmt (m) ber:
+676447bf.0d9d27ee 0x7f78de1f16c0     filter: (objectClass=*)
+676447bf.0d9d2e09 0x7f78de1f16c0 ber_scanf fmt ({M}}) ber:
+676447bf.0d9d3644 0x7f78de1f16c0     attrs: 
+676447bf.0d9d3ea0 0x7f78de1f16c0 conn=1000 op=1 SRCH base="" scope=0 deref=0 filter="(objectClass=*)"
+676447bf.0d9dd65d 0x7f78de1f16c0 => send_search_entry: conn 1000 dn=""
+676447bf.0d9dee4c 0x7f78de1f16c0 ber_flush2: 50 bytes to sd 11
+676447bf.0d9e9b29 0x7f78de1f16c0 <= send_search_entry: conn 1000 exit.
+676447bf.0d9eb02a 0x7f78de1f16c0 send_ldap_result: conn=1000 op=1 p=3
+676447bf.0d9eb892 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447bf.0d9ec13a 0x7f78de1f16c0 send_ldap_response: msgid=2 tag=101 err=0
+676447bf.0d9ecc48 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447bf.0d9eed75 0x7f78de1f16c0 conn=1000 op=1 SEARCH RESULT tag=101 err=0 qtime=0.000033 etime=0.000167 nentries=1 text=
+676447bf.0da4d886 0x7f78de1f16c0 connection_get(11)
+676447bf.0da4f74e 0x7f78de1f16c0 connection_get(11): got connid=1000
+676447bf.0da5025d 0x7f78de1f16c0 connection_read(11): checking for input on id=1000
+676447bf.0da50c84 0x7f78de1f16c0 ber_get_next
+676447bf.0da52146 0x7f78de1f16c0 ber_get_next: tag 0x30 len 5 contents:
+676447bf.0da53041 0x7f78de1f16c0 op tag 0x42, time 1734625215
+676447bf.0da5b7ad 0x7f78de1f16c0 ber_get_next
+676447bf.0da5d158 0x7f78de1f16c0 ber_get_next on fd 11 failed errno=0 (Success)
+676447bf.0da63757 0x7f78de1f16c0 conn=1000 op=2 do_unbind
+676447bf.0da6429d 0x7f78de1f16c0 conn=1000 op=2 UNBIND
+676447bf.0da69b2c 0x7f78de1f16c0 connection_close: conn=1000 sd=11
+676447bf.0da797da 0x7f78de1f16c0 conn=1000 fd=11 closed
+676447c1.12218341 0x7f78de9f26c0 slap_listener_activate(7): 
+676447c1.12239aaf 0x7f78de1f16c0 >>> slap_listener(ldap://localhost:9011/)
+676447c1.122510d7 0x7f78de1f16c0 conn=1001 fd=11 ACCEPT from IP=127.0.0.1:60554 (IP=127.0.0.1:9011)
+676447c1.122602db 0x7f78de1f16c0 connection_get(11)
+676447c1.1226126f 0x7f78de1f16c0 connection_get(11): got connid=1001
+676447c1.12261d0f 0x7f78de1f16c0 connection_read(11): checking for input on id=1001
+676447c1.12262b2c 0x7f78de1f16c0 ber_get_next
+676447c1.12264703 0x7f78de1f16c0 ber_get_next: tag 0x30 len 56 contents:
+676447c1.12265959 0x7f78de1f16c0 op tag 0x60, time 1734625217
+676447c1.12266756 0x7f78de1f16c0 ber_get_next
+676447c1.1226ba1b 0x7f78de1f16c0 conn=1001 op=0 do_bind
+676447c1.1226c961 0x7f78de1f16c0 ber_scanf fmt ({imt) ber:
+676447c1.1226d50d 0x7f78de1f16c0 ber_scanf fmt (m}) ber:
+676447c1.1226e1a1 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=Manager,dc=remote,dc=example,dc=com>
+676447c1.1226f21b 0x7f78de1f16c0 => ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com,0)
+676447c1.12270b3a 0x7f78de1f16c0 <= ldap_bv2dn(cn=Manager,dc=remote,dc=example,dc=com)=0 
+676447c1.1227343c 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c1.12274556 0x7f78de1f16c0 <= ldap_dn2bv(cn=Manager,dc=remote,dc=example,dc=com)=0 
+676447c1.12275aa1 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c1.12276578 0x7f78de1f16c0 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447c1.12277134 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=Manager,dc=remote,dc=example,dc=com>, <cn=manager,dc=remote,dc=example,dc=com>
+676447c1.12277ca5 0x7f78de1f16c0 conn=1001 op=0 BIND dn="cn=Manager,dc=remote,dc=example,dc=com" method=128
+676447c1.1227bb56 0x7f78de1f16c0 do_bind: version=3 dn="cn=Manager,dc=remote,dc=example,dc=com" method=128
+676447c1.1227d3ce 0x7f78de1f16c0 ==> mdb_bind: dn: cn=Manager,dc=remote,dc=example,dc=com
+676447c1.1227ec38 0x7f78de1f16c0 conn=1001 op=0 BIND dn="cn=Manager,dc=remote,dc=example,dc=com" mech=SIMPLE bind_ssf=0 ssf=0
+676447c1.1227f5ca 0x7f78de1f16c0 do_bind: v3 bind: "cn=Manager,dc=remote,dc=example,dc=com" to "cn=Manager,dc=remote,dc=example,dc=com"
+676447c1.12280024 0x7f78de1f16c0 send_ldap_result: conn=1001 op=0 p=3
+676447c1.12280ada 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447c1.12281c0a 0x7f78de1f16c0 send_ldap_response: msgid=1 tag=97 err=0
+676447c1.12282ed1 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447c1.1229087a 0x7f78de1f16c0 conn=1001 op=0 RESULT tag=97 err=0 qtime=0.000023 etime=0.000174 text=
+676447c1.124af25e 0x7f78de1f16c0 connection_get(11)
+676447c1.124b28fa 0x7f78de1f16c0 connection_get(11): got connid=1001
+676447c1.124b360d 0x7f78de1f16c0 connection_read(11): checking for input on id=1001
+676447c1.124b4312 0x7f78de1f16c0 ber_get_next
+676447c1.124b5cd0 0x7f78de1f16c0 ber_get_next: tag 0x30 len 114 contents:
+676447c1.124b6c5d 0x7f78de1f16c0 op tag 0x68, time 1734625217
+676447c1.124b7acd 0x7f78de1f16c0 ber_get_next
+676447c1.124b9c9c 0x7f78de1f16c0 conn=1001 op=1 do_add
+676447c1.124ba6f6 0x7f78de1f16c0 ber_scanf fmt ({m) ber:
+676447c1.124bb10b 0x7f78de1f16c0 conn=1001 op=1 do_add: dn (dc=remote,dc=example,dc=com)
+676447c1.124bba33 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c1.124bc597 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c1.124bcf3e 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c1.124bdad8 0x7f78de1f16c0 ber_scanf fmt (}) ber:
+676447c1.124be622 0x7f78de1f16c0 >>> dnPrettyNormal: <dc=remote,dc=example,dc=com>
+676447c1.124bf430 0x7f78de1f16c0 => ldap_bv2dn(dc=remote,dc=example,dc=com,0)
+676447c1.124c0a14 0x7f78de1f16c0 <= ldap_bv2dn(dc=remote,dc=example,dc=com)=0 
+676447c1.124c26e2 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c1.124c3475 0x7f78de1f16c0 <= ldap_dn2bv(dc=remote,dc=example,dc=com)=0 
+676447c1.124c42ff 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c1.124c4ce5 0x7f78de1f16c0 <= ldap_dn2bv(dc=remote,dc=example,dc=com)=0 
+676447c1.124c5809 0x7f78de1f16c0 <<< dnPrettyNormal: <dc=remote,dc=example,dc=com>, <dc=remote,dc=example,dc=com>
+676447c1.124c64ce 0x7f78de1f16c0 conn=1001 op=1 ADD dn="dc=remote,dc=example,dc=com"
+676447c1.124caf6b 0x7f78de1f16c0 ==> mdb_add: dc=remote,dc=example,dc=com
+676447c1.124cd4de 0x7f78de1f16c0 oc_check_required entry (dc=remote,dc=example,dc=com), objectClass "dcObject"
+676447c1.124cde7c 0x7f78de1f16c0 oc_check_required entry (dc=remote,dc=example,dc=com), objectClass "organization"
+676447c1.124ce94e 0x7f78de1f16c0 oc_check_allowed type "objectClass"
+676447c1.124cf503 0x7f78de1f16c0 oc_check_allowed type "dc"
+676447c1.124cfebf 0x7f78de1f16c0 oc_check_allowed type "o"
+676447c1.124d0730 0x7f78de1f16c0 oc_check_allowed type "structuralObjectClass"
+676447c1.1250dcd4 0x7f78de1f16c0 slap_get_csn: conn=1001 op=1 generated new csn=20241219162017.307044Z#000000#000#000000 manage=1
+676447c1.1250f6e7 0x7f78de1f16c0 slap_queue_csn: queueing 0x7f78d0000da0 20241219162017.307044Z#000000#000#000000
+676447c1.12517673 0x7f78de1f16c0 mdb_dn2entry("dc=remote,dc=example,dc=com")
+676447c1.12518c1c 0x7f78de1f16c0 => mdb_dn2id("dc=remote,dc=example,dc=com")
+676447c1.12519e80 0x7f78de1f16c0 <= mdb_dn2id: get failed: MDB_NOTFOUND: No matching key/data pair found (-30798)
+676447c1.1251bc78 0x7f78de1f16c0 => mdb_dn2id_add 0x1: "dc=remote,dc=example,dc=com"
+676447c1.1251df7f 0x7f78de1f16c0 <= mdb_dn2id_add 0x1: 0
+676447c1.1251ec30 0x7f78de1f16c0 => index_entry_add( 1, "dc=remote,dc=example,dc=com" )
+676447c1.1251fc77 0x7f78de1f16c0 <= index_entry_add( 1, "dc=remote,dc=example,dc=com" ) success
+676447c1.1252a541 0x7f78de1f16c0 => mdb_entry_encode(0x00000001): dc=remote,dc=example,dc=com
+676447c1.1252b5bb 0x7f78de1f16c0 <= mdb_entry_encode(0x00000001): dc=remote,dc=example,dc=com
+676447c1.13263c08 0x7f78de1f16c0 mdb_add: added id=00000001 dn="dc=remote,dc=example,dc=com"
+676447c1.13268c40 0x7f78de1f16c0 send_ldap_result: conn=1001 op=1 p=3
+676447c1.13269954 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447c1.1326aac9 0x7f78de1f16c0 send_ldap_response: msgid=2 tag=105 err=0
+676447c1.1326d014 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447c1.132b3816 0x7f78de1f16c0 conn=1001 op=1 RESULT tag=105 err=0 qtime=0.000011 etime=0.014663 text=
+676447c1.132b663a 0x7f78de1f16c0 slap_graduate_commit_csn: removing 0x7f78d0000da0 20241219162017.307044Z#000000#000#000000
+676447c1.1342f56b 0x7f78de1f16c0 connection_get(11)
+676447c1.13431e18 0x7f78de1f16c0 connection_get(11): got connid=1001
+676447c1.13432c9a 0x7f78de1f16c0 connection_read(11): checking for input on id=1001
+676447c1.13433b10 0x7f78de1f16c0 ber_get_next
+676447c1.134356c0 0x7f78de1f16c0 ber_get_next: tag 0x30 len 97 contents:
+676447c1.13436754 0x7f78de1f16c0 op tag 0x68, time 1734625217
+676447c1.13437c7b 0x7f78de1f16c0 ber_get_next
+676447c1.1343fb8f 0x7f78de1f16c0 conn=1001 op=2 do_add
+676447c1.134409dd 0x7f78de1f16c0 ber_scanf fmt ({m) ber:
+676447c1.134416a8 0x7f78de1f16c0 conn=1001 op=2 do_add: dn (ou=users,dc=remote,dc=example,dc=com)
+676447c1.13442120 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c1.13442e7d 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c1.13443b1f 0x7f78de1f16c0 ber_scanf fmt (}) ber:
+676447c1.13444643 0x7f78de1f16c0 >>> dnPrettyNormal: <ou=users,dc=remote,dc=example,dc=com>
+676447c1.134456f3 0x7f78de1f16c0 => ldap_bv2dn(ou=users,dc=remote,dc=example,dc=com,0)
+676447c1.1344765a 0x7f78de1f16c0 <= ldap_bv2dn(ou=users,dc=remote,dc=example,dc=com)=0 
+676447c1.1344a31c 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c1.1344b53f 0x7f78de1f16c0 <= ldap_dn2bv(ou=users,dc=remote,dc=example,dc=com)=0 
+676447c1.1344ccf6 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c1.1344d975 0x7f78de1f16c0 <= ldap_dn2bv(ou=users,dc=remote,dc=example,dc=com)=0 
+676447c1.1344e772 0x7f78de1f16c0 <<< dnPrettyNormal: <ou=users,dc=remote,dc=example,dc=com>, <ou=users,dc=remote,dc=example,dc=com>
+676447c1.1344f4a5 0x7f78de1f16c0 conn=1001 op=2 ADD dn="ou=users,dc=remote,dc=example,dc=com"
+676447c1.134526e6 0x7f78de1f16c0 ==> mdb_add: ou=users,dc=remote,dc=example,dc=com
+676447c1.13454a64 0x7f78de1f16c0 oc_check_required entry (ou=users,dc=remote,dc=example,dc=com), objectClass "organizationalUnit"
+676447c1.13455611 0x7f78de1f16c0 oc_check_allowed type "objectClass"
+676447c1.134562ff 0x7f78de1f16c0 oc_check_allowed type "ou"
+676447c1.13456d51 0x7f78de1f16c0 oc_check_allowed type "structuralObjectClass"
+676447c1.13459542 0x7f78de1f16c0 slap_get_csn: conn=1001 op=2 generated new csn=20241219162017.323322Z#000000#000#000000 manage=1
+676447c1.1345a256 0x7f78de1f16c0 slap_queue_csn: queueing 0x7f78d01033f0 20241219162017.323322Z#000000#000#000000
+676447c1.13460180 0x7f78de1f16c0 mdb_dn2entry("ou=users,dc=remote,dc=example,dc=com")
+676447c1.13460d78 0x7f78de1f16c0 => mdb_dn2id("ou=users,dc=remote,dc=example,dc=com")
+676447c1.13462940 0x7f78de1f16c0 <= mdb_dn2id: get failed: MDB_NOTFOUND: No matching key/data pair found (-30798)
+676447c1.134638c9 0x7f78de1f16c0 => mdb_entry_decode:
+676447c1.134645da 0x7f78de1f16c0 <= mdb_entry_decode
+676447c1.1346607b 0x7f78de1f16c0 => mdb_dn2id_add 0x2: "ou=users,dc=remote,dc=example,dc=com"
+676447c1.13469010 0x7f78de1f16c0 <= mdb_dn2id_add 0x2: 0
+676447c1.13469cb8 0x7f78de1f16c0 => index_entry_add( 2, "ou=users,dc=remote,dc=example,dc=com" )
+676447c1.1346ad5a 0x7f78de1f16c0 <= index_entry_add( 2, "ou=users,dc=remote,dc=example,dc=com" ) success
+676447c1.1346cbc0 0x7f78de1f16c0 => mdb_entry_encode(0x00000002): ou=users,dc=remote,dc=example,dc=com
+676447c1.1346d84c 0x7f78de1f16c0 <= mdb_entry_encode(0x00000002): ou=users,dc=remote,dc=example,dc=com
+676447c1.1417eab1 0x7f78de1f16c0 mdb_add: added id=00000002 dn="ou=users,dc=remote,dc=example,dc=com"
+676447c1.14184f37 0x7f78de1f16c0 send_ldap_result: conn=1001 op=2 p=3
+676447c1.1418636d 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447c1.141879d8 0x7f78de1f16c0 send_ldap_response: msgid=3 tag=105 err=0
+676447c1.1418e319 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447c1.141aaaee 0x7f78de1f16c0 conn=1001 op=2 RESULT tag=105 err=0 qtime=0.000036 etime=0.014105 text=
+676447c1.141ac98c 0x7f78de1f16c0 slap_graduate_commit_csn: removing 0x7f78d01033f0 20241219162017.323322Z#000000#000#000000
+676447c1.141f2898 0x7f78de1f16c0 connection_get(11)
+676447c1.141f5b27 0x7f78de1f16c0 connection_get(11): got connid=1001
+676447c1.141f681f 0x7f78de1f16c0 connection_read(11): checking for input on id=1001
+676447c1.141f735e 0x7f78de1f16c0 ber_get_next
+676447c1.141f8ae5 0x7f78de1f16c0 ber_get_next: tag 0x30 len 5 contents:
+676447c1.141f9b58 0x7f78de1f16c0 op tag 0x42, time 1734625217
+676447c1.141fac3a 0x7f78de1f16c0 ber_get_next
+676447c1.141fc559 0x7f78de1f16c0 ber_get_next on fd 11 failed errno=0 (Success)
+676447c1.14204ea9 0x7f78de1f16c0 conn=1001 op=3 do_unbind
+676447c1.14205995 0x7f78de1f16c0 conn=1001 op=3 UNBIND
+676447c1.14206653 0x7f78de1f16c0 connection_close: conn=1001 sd=11
+676447c1.14218c73 0x7f78de1f16c0 conn=1001 fd=11 closed
+676447c5.1edb61af 0x7f78de9f26c0 slap_listener_activate(7): 
+676447c5.1edc470b 0x7f78de1f16c0 >>> slap_listener(ldap://localhost:9011/)
+676447c5.1ede5a01 0x7f78de1f16c0 conn=1002 fd=11 ACCEPT from IP=127.0.0.1:60558 (IP=127.0.0.1:9011)
+676447c5.1edf723e 0x7f78de1f16c0 connection_get(11)
+676447c5.1edf8493 0x7f78de1f16c0 connection_get(11): got connid=1002
+676447c5.1edf8e17 0x7f78de1f16c0 connection_read(11): checking for input on id=1002
+676447c5.1edf9b53 0x7f78de1f16c0 ber_get_next
+676447c5.1edfb5c5 0x7f78de1f16c0 ber_get_next: tag 0x30 len 56 contents:
+676447c5.1ee010a5 0x7f78de1f16c0 op tag 0x60, time 1734625221
+676447c5.1ee03f18 0x7f78de1f16c0 ber_get_next
+676447c5.1ee0aa0b 0x7f78de1f16c0 conn=1002 op=0 do_bind
+676447c5.1ee0b787 0x7f78de1f16c0 ber_scanf fmt ({imt) ber:
+676447c5.1ee0c46e 0x7f78de1f16c0 ber_scanf fmt (m}) ber:
+676447c5.1ee0cfc7 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=manager,dc=remote,dc=example,dc=com>
+676447c5.1ee0de2b 0x7f78de1f16c0 => ldap_bv2dn(cn=manager,dc=remote,dc=example,dc=com,0)
+676447c5.1ee0f271 0x7f78de1f16c0 <= ldap_bv2dn(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447c5.1ee11208 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c5.1ee12000 0x7f78de1f16c0 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447c5.1ee130a8 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c5.1ee13a5b 0x7f78de1f16c0 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447c5.1ee14440 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=manager,dc=remote,dc=example,dc=com>, <cn=manager,dc=remote,dc=example,dc=com>
+676447c5.1ee14e42 0x7f78de1f16c0 conn=1002 op=0 BIND dn="cn=manager,dc=remote,dc=example,dc=com" method=128
+676447c5.1ee158a7 0x7f78de1f16c0 do_bind: version=3 dn="cn=manager,dc=remote,dc=example,dc=com" method=128
+676447c5.1ee16f86 0x7f78de1f16c0 ==> mdb_bind: dn: cn=manager,dc=remote,dc=example,dc=com
+676447c5.1ee182ef 0x7f78de1f16c0 conn=1002 op=0 BIND dn="cn=manager,dc=remote,dc=example,dc=com" mech=SIMPLE bind_ssf=0 ssf=0
+676447c5.1ee18cc4 0x7f78de1f16c0 do_bind: v3 bind: "cn=manager,dc=remote,dc=example,dc=com" to "cn=manager,dc=remote,dc=example,dc=com"
+676447c5.1ee19603 0x7f78de1f16c0 send_ldap_result: conn=1002 op=0 p=3
+676447c5.1ee19fdb 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447c5.1ee1adc7 0x7f78de1f16c0 send_ldap_response: msgid=1 tag=97 err=0
+676447c5.1ee1befd 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447c5.1ee31294 0x7f78de1f16c0 conn=1002 op=0 RESULT tag=97 err=0 qtime=0.000043 etime=0.000201 text=
+676447c5.1ee5704f 0x7f78de1f16c0 connection_get(11)
+676447c5.1ee5807f 0x7f78de1f16c0 connection_get(11): got connid=1002
+676447c5.1ee58b5f 0x7f78de1f16c0 connection_read(11): checking for input on id=1002
+676447c5.1ee59722 0x7f78de1f16c0 ber_get_next
+676447c5.1ee5acb2 0x7f78de1f16c0 ber_get_next: tag 0x30 len 146 contents:
+676447c5.1ee5ba26 0x7f78de1f16c0 op tag 0x63, time 1734625221
+676447c5.1ee5c8ad 0x7f78de1f16c0 ber_get_next
+676447c5.1ee61b9b 0x7f78de1f16c0 conn=1002 op=1 do_search
+676447c5.1ee6275b 0x7f78de1f16c0 ber_scanf fmt ({miiiib) ber:
+676447c5.1ee6564a 0x7f78de1f16c0 >>> dnPrettyNormal: <ou=users,dc=remote,dc=example,dc=com>
+676447c5.1ee662d3 0x7f78de1f16c0 => ldap_bv2dn(ou=users,dc=remote,dc=example,dc=com,0)
+676447c5.1ee67572 0x7f78de1f16c0 <= ldap_bv2dn(ou=users,dc=remote,dc=example,dc=com)=0 
+676447c5.1ee6906b 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c5.1ee6995d 0x7f78de1f16c0 <= ldap_dn2bv(ou=users,dc=remote,dc=example,dc=com)=0 
+676447c5.1ee6a5e5 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c5.1ee6acd6 0x7f78de1f16c0 <= ldap_dn2bv(ou=users,dc=remote,dc=example,dc=com)=0 
+676447c5.1ee6b4ca 0x7f78de1f16c0 <<< dnPrettyNormal: <ou=users,dc=remote,dc=example,dc=com>, <ou=users,dc=remote,dc=example,dc=com>
+676447c5.1ee6bd77 0x7f78de1f16c0 SRCH "ou=users,dc=remote,dc=example,dc=com" 2 0    0 0 0
+676447c5.1ee6c4b5 0x7f78de1f16c0 ber_scanf fmt (m) ber:
+676447c5.1ee6d019 0x7f78de1f16c0     filter: (objectClass=*)
+676447c5.1ee6d662 0x7f78de1f16c0 ber_scanf fmt ({M}}) ber:
+676447c5.1ee6dfce 0x7f78de1f16c0 => get_ctrls
+676447c5.1ee6e759 0x7f78de1f16c0 ber_scanf fmt ({m) ber:
+676447c5.1ee6ed90 0x7f78de1f16c0 ber_scanf fmt (b) ber:
+676447c5.1ee6f4ed 0x7f78de1f16c0 => get_ctrls: oid="2.16.840.1.113730.3.4.2" (critical)
+676447c5.1ee6ff34 0x7f78de1f16c0 ber_scanf fmt ({m) ber:
+676447c5.1ee70540 0x7f78de1f16c0 ber_scanf fmt (m) ber:
+676447c5.1ee70bbc 0x7f78de1f16c0 => get_ctrls: oid="1.3.6.1.4.1.4203.1.9.1.1" (noncritical)
+676447c5.1ee715ab 0x7f78de1f16c0 <= get_ctrls: n=2 rc=0 err=""
+676447c5.1ee71c46 0x7f78de1f16c0     attrs: * +
+676447c5.1ee724b1 0x7f78de1f16c0 conn=1002 op=1 SRCH base="ou=users,dc=remote,dc=example,dc=com" scope=2 deref=0 filter="(objectClass=*)"
+676447c5.1ee72b43 0x7f78de1f16c0 conn=1002 op=1 SRCH attr=* +
+676447c5.1ee73a09 0x7f78de1f16c0 slap_global_control: unrecognized control: 1.3.6.1.4.1.4203.1.9.1.1
+676447c5.1ee740ff 0x7f78de1f16c0 backend_check_controls: unrecognized non-critical control: 1.3.6.1.4.1.4203.1.9.1.1
+676447c5.1ee7aff2 0x7f78de1f16c0 => mdb_search
+676447c5.1ee82e74 0x7f78de1f16c0 mdb_dn2entry("ou=users,dc=remote,dc=example,dc=com")
+676447c5.1ee84200 0x7f78de1f16c0 => mdb_dn2id("ou=users,dc=remote,dc=example,dc=com")
+676447c5.1ee852a5 0x7f78de1f16c0 <= mdb_dn2id: got id=0x2
+676447c5.1ee85b77 0x7f78de1f16c0 => mdb_entry_decode:
+676447c5.1ee86500 0x7f78de1f16c0 <= mdb_entry_decode
+676447c5.1ee871ec 0x7f78de1f16c0 search_candidates: base="ou=users,dc=remote,dc=example,dc=com" (0x00000002) scope=2
+676447c5.1ee8797e 0x7f78de1f16c0 => mdb_presence_candidates (objectClass)
+676447c5.1ee88133 0x7f78de1f16c0 mdb_search_candidates: id=-1 first=1 last=2
+676447c5.1ee8a2e5 0x7f78de1f16c0 => send_search_entry: conn 1002 dn="ou=users,dc=remote,dc=example,dc=com"
+676447c5.1ee8c4b4 0x7f78de1f16c0 ber_flush2: 570 bytes to sd 11
+676447c5.1ee943c2 0x7f78de1f16c0 <= send_search_entry: conn 1002 exit.
+676447c5.1ee953fb 0x7f78de1f16c0 send_ldap_result: conn=1002 op=1 p=3
+676447c5.1ee95e8c 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447c5.1ee96a34 0x7f78de1f16c0 send_ldap_response: msgid=2 tag=101 err=0
+676447c5.1ee9782a 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447c5.1ee9a34b 0x7f78de1f16c0 conn=1002 op=1 SEARCH RESULT tag=101 err=0 qtime=0.000024 etime=0.000255 nentries=1 text=
+676447c9.247718a5 0x7f78de1f16c0 connection_get(11)
+676447c9.24773f90 0x7f78de1f16c0 connection_get(11): got connid=1002
+676447c9.24774a65 0x7f78de1f16c0 connection_read(11): checking for input on id=1002
+676447c9.247755b3 0x7f78de1f16c0 ber_get_next
+676447c9.24776a94 0x7f78de1f16c0 ber_get_next: tag 0x30 len 188 contents:
+676447c9.2477772f 0x7f78de1f16c0 op tag 0x68, time 1734625225
+676447c9.247784f0 0x7f78de1f16c0 ber_get_next
+676447c9.2477eb86 0x7f78de1f16c0 conn=1002 op=2 do_add
+676447c9.2477fa5d 0x7f78de1f16c0 ber_scanf fmt ({m) ber:
+676447c9.24780709 0x7f78de1f16c0 conn=1002 op=2 do_add: dn (cn=remote_user,ou=users,dc=remote,dc=example,dc=com)
+676447c9.2478124f 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c9.24782009 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c9.24782d27 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c9.247838dd 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c9.2478662b 0x7f78de1f16c0 ber_scanf fmt ({m{W}}) ber:
+676447c9.24786f06 0x7f78de1f16c0 ber_scanf fmt (}) ber:
+676447c9.24787791 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447c9.24788337 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com,0)
+676447c9.247895f3 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447c9.2478b938 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c9.2478c5c5 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447c9.2478d61d 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447c9.2478ded6 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447c9.2478e8e0 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>, <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447c9.2478f2fa 0x7f78de1f16c0 conn=1002 op=2 ADD dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447c9.24793057 0x7f78de1f16c0 ==> mdb_add: cn=remote_user,ou=users,dc=remote,dc=example,dc=com
+676447c9.24794bda 0x7f78de1f16c0 oc_check_required entry (cn=remote_user,ou=users,dc=remote,dc=example,dc=com), objectClass "person"
+676447c9.24795609 0x7f78de1f16c0 oc_check_allowed type "objectClass"
+676447c9.24795ecf 0x7f78de1f16c0 oc_check_allowed type "cn"
+676447c9.24796646 0x7f78de1f16c0 oc_check_allowed type "sn"
+676447c9.24796d21 0x7f78de1f16c0 oc_check_allowed type "userPassword"
+676447c9.247974e0 0x7f78de1f16c0 oc_check_allowed type "description"
+676447c9.24797cff 0x7f78de1f16c0 oc_check_allowed type "structuralObjectClass"
+676447c9.2479c102 0x7f78de1f16c0 slap_get_csn: conn=1002 op=2 generated new csn=20241219162025.611955Z#000000#000#000000 manage=1
+676447c9.2479cb96 0x7f78de1f16c0 slap_queue_csn: queueing 0x7f78d0105590 20241219162025.611955Z#000000#000#000000
+676447c9.2479fec5 0x7f78de1f16c0 mdb_dn2entry("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447c9.247a083b 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447c9.247a22ae 0x7f78de1f16c0 <= mdb_dn2id: get failed: MDB_NOTFOUND: No matching key/data pair found (-30798)
+676447c9.247a2fd3 0x7f78de1f16c0 => mdb_entry_decode:
+676447c9.247a392b 0x7f78de1f16c0 <= mdb_entry_decode
+676447c9.247a4d45 0x7f78de1f16c0 => mdb_dn2id_add 0x3: "cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447c9.247a7326 0x7f78de1f16c0 <= mdb_dn2id_add 0x3: 0
+676447c9.247a7dc6 0x7f78de1f16c0 => index_entry_add( 3, "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" )
+676447c9.247a8b2a 0x7f78de1f16c0 <= index_entry_add( 3, "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" ) success
+676447c9.247aa82e 0x7f78de1f16c0 => mdb_entry_encode(0x00000003): cn=remote_user,ou=users,dc=remote,dc=example,dc=com
+676447c9.247ab19e 0x7f78de1f16c0 <= mdb_entry_encode(0x00000003): cn=remote_user,ou=users,dc=remote,dc=example,dc=com
+676447c9.25733b38 0x7f78de1f16c0 mdb_add: added id=00000003 dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447c9.2573cc2a 0x7f78de1f16c0 send_ldap_result: conn=1002 op=2 p=3
+676447c9.2573dfe0 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447c9.2573f78b 0x7f78de1f16c0 send_ldap_response: msgid=3 tag=105 err=0
+676447c9.2574262b 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447c9.2575a9c6 0x7f78de1f16c0 conn=1002 op=2 RESULT tag=105 err=0 qtime=0.000028 etime=0.016656 text=
+676447c9.2575cb11 0x7f78de1f16c0 slap_graduate_commit_csn: removing 0x7f78d0105590 20241219162025.611955Z#000000#000#000000
+676447ca.26fc43b8 0x7f78de1f16c0 connection_get(11)
+676447ca.26fc6d45 0x7f78de1f16c0 connection_get(11): got connid=1002
+676447ca.26fc781e 0x7f78de1f16c0 connection_read(11): checking for input on id=1002
+676447ca.26fc8422 0x7f78de1f16c0 ber_get_next
+676447ca.26fc9a53 0x7f78de1f16c0 ber_get_next: tag 0x30 len 88 contents:
+676447ca.26fca6b8 0x7f78de1f16c0 op tag 0x63, time 1734625226
+676447ca.26fcb3e2 0x7f78de1f16c0 ber_get_next
+676447ca.26fd1a22 0x7f78de1f16c0 conn=1002 op=3 do_search
+676447ca.26fda2d3 0x7f78de1f16c0 ber_scanf fmt ({miiiib) ber:
+676447ca.26fdb33e 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447ca.26fdc1d4 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com,0)
+676447ca.26fddac7 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.26fe014f 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.26fe13d6 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.26fe29ca 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.26fe3357 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.26fe3d7f 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>, <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447ca.26fe47d6 0x7f78de1f16c0 SRCH "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" 0 0    0 0 0
+676447ca.26fe50ca 0x7f78de1f16c0 ber_scanf fmt (m) ber:
+676447ca.26fe5e76 0x7f78de1f16c0     filter: (objectClass=*)
+676447ca.26fe65d2 0x7f78de1f16c0 ber_scanf fmt ({M}}) ber:
+676447ca.26fe6e61 0x7f78de1f16c0     attrs: 
+676447ca.26fe77f7 0x7f78de1f16c0 conn=1002 op=3 SRCH base="cn=remote_user,ou=users,dc=remote,dc=example,dc=com" scope=0 deref=0 filter="(objectClass=*)"
+676447ca.26fe9007 0x7f78de1f16c0 => mdb_search
+676447ca.26feac19 0x7f78de1f16c0 mdb_dn2entry("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447ca.26feb562 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447ca.26fee680 0x7f78de1f16c0 <= mdb_dn2id: got id=0x3
+676447ca.26fef25c 0x7f78de1f16c0 => mdb_entry_decode:
+676447ca.26fefdd6 0x7f78de1f16c0 <= mdb_entry_decode
+676447ca.26ff107b 0x7f78de1f16c0 base_candidates: base: "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" (0x00000003)
+676447ca.26ff2605 0x7f78de1f16c0 => send_search_entry: conn 1002 dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447ca.26ff40c2 0x7f78de1f16c0 ber_flush2: 191 bytes to sd 11
+676447ca.26fff3a1 0x7f78de1f16c0 <= send_search_entry: conn 1002 exit.
+676447ca.27000491 0x7f78de1f16c0 send_ldap_result: conn=1002 op=3 p=3
+676447ca.2700113d 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447ca.27001f2d 0x7f78de1f16c0 send_ldap_response: msgid=4 tag=101 err=0
+676447ca.270031f3 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447ca.270076ad 0x7f78de1f16c0 conn=1002 op=3 SEARCH RESULT tag=101 err=0 qtime=0.000027 etime=0.000248 nentries=1 text=
+676447ca.2706074a 0x7f78de1f16c0 connection_get(11)
+676447ca.27061ac6 0x7f78de1f16c0 connection_get(11): got connid=1002
+676447ca.27062660 0x7f78de1f16c0 connection_read(11): checking for input on id=1002
+676447ca.270630ff 0x7f78de1f16c0 ber_get_next
+676447ca.2706468a 0x7f78de1f16c0 ber_get_next: tag 0x30 len 102 contents:
+676447ca.27065196 0x7f78de1f16c0 op tag 0x66, time 1734625226
+676447ca.27065d93 0x7f78de1f16c0 ber_get_next
+676447ca.2706b78f 0x7f78de1f16c0 conn=1002 op=4 do_modify
+676447ca.2706c468 0x7f78de1f16c0 ber_scanf fmt ({m) ber:
+676447ca.2706d01c 0x7f78de1f16c0 conn=1002 op=4 do_modify: dn (cn=remote_user,ou=users,dc=remote,dc=example,dc=com)
+676447ca.2706db02 0x7f78de1f16c0 ber_scanf fmt ({e{m[W]}}) ber:
+676447ca.2706eaf0 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447ca.2706f88d 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com,0)
+676447ca.27070c2f 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.27071fa3 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.27072958 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.27073644 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.27073e39 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.2707475e 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>, <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447ca.27074eda 0x7f78de1f16c0 conn=1002 op=4 modifications:
+676447ca.2707665c 0x7f78de1f16c0 	replace: description
+676447ca.27076e54 0x7f78de1f16c0 		one value, length 18
+676447ca.270775aa 0x7f78de1f16c0 conn=1002 op=4 MOD dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447ca.27077d00 0x7f78de1f16c0 conn=1002 op=4 MOD attr=description
+676447ca.270792a3 0x7f78de1f16c0 mdb_modify: cn=remote_user,ou=users,dc=remote,dc=example,dc=com
+676447ca.2707ac29 0x7f78de1f16c0 slap_get_csn: conn=1002 op=4 generated new csn=20241219162026.654811Z#000000#000#000000 manage=1
+676447ca.2707b72d 0x7f78de1f16c0 slap_queue_csn: queueing 0x7f78d01031f0 20241219162026.654811Z#000000#000#000000
+676447ca.2707c676 0x7f78de1f16c0 mdb_dn2entry("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447ca.2707cdcb 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447ca.2707e185 0x7f78de1f16c0 <= mdb_dn2id: got id=0x3
+676447ca.2707eb03 0x7f78de1f16c0 => mdb_entry_decode:
+676447ca.2707f2e7 0x7f78de1f16c0 <= mdb_entry_decode
+676447ca.2707fdb2 0x7f78de1f16c0 mdb_modify_internal: 0x00000003: cn=remote_user,ou=users,dc=remote,dc=example,dc=com
+676447ca.27081afd 0x7f78de1f16c0 mdb_modify_internal: replace description
+676447ca.27082cd3 0x7f78de1f16c0 mdb_modify_internal: replace entryCSN
+676447ca.2708365b 0x7f78de1f16c0 mdb_modify_internal: replace modifiersName
+676447ca.27083e80 0x7f78de1f16c0 mdb_modify_internal: replace modifyTimestamp
+676447ca.2708593b 0x7f78de1f16c0 oc_check_required entry (cn=remote_user,ou=users,dc=remote,dc=example,dc=com), objectClass "person"
+676447ca.270862e8 0x7f78de1f16c0 oc_check_allowed type "objectClass"
+676447ca.27086ad7 0x7f78de1f16c0 oc_check_allowed type "cn"
+676447ca.270871e4 0x7f78de1f16c0 oc_check_allowed type "sn"
+676447ca.2708789e 0x7f78de1f16c0 oc_check_allowed type "userPassword"
+676447ca.27088081 0x7f78de1f16c0 oc_check_allowed type "structuralObjectClass"
+676447ca.27088736 0x7f78de1f16c0 oc_check_allowed type "entryUUID"
+676447ca.27088e35 0x7f78de1f16c0 oc_check_allowed type "creatorsName"
+676447ca.270894b7 0x7f78de1f16c0 oc_check_allowed type "createTimestamp"
+676447ca.27089b31 0x7f78de1f16c0 oc_check_allowed type "description"
+676447ca.2708a203 0x7f78de1f16c0 oc_check_allowed type "entryCSN"
+676447ca.2708a847 0x7f78de1f16c0 oc_check_allowed type "modifiersName"
+676447ca.2708aebb 0x7f78de1f16c0 oc_check_allowed type "modifyTimestamp"
+676447ca.2708cf27 0x7f78de1f16c0 => mdb_entry_encode(0x00000003): cn=remote_user,ou=users,dc=remote,dc=example,dc=com
+676447ca.2708d89b 0x7f78de1f16c0 <= mdb_entry_encode(0x00000003): cn=remote_user,ou=users,dc=remote,dc=example,dc=com
+676447ca.27c409ad 0x7f78de1f16c0 mdb_modify: updated id=00000003 dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447ca.27c49bcf 0x7f78de1f16c0 send_ldap_result: conn=1002 op=4 p=3
+676447ca.27c4ad96 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447ca.27c4c1fe 0x7f78de1f16c0 send_ldap_response: msgid=5 tag=103 err=0
+676447ca.27c4e326 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447ca.27c6dee1 0x7f78de1f16c0 conn=1002 op=4 RESULT tag=103 err=0 qtime=0.000025 etime=0.012617 text=
+676447ca.27c6fdfc 0x7f78de1f16c0 slap_graduate_commit_csn: removing 0x7f78d01031f0 20241219162026.654811Z#000000#000#000000
+676447ca.27d358ca 0x7f78de9f26c0 slap_listener_activate(7): 
+676447ca.27d4e46f 0x7f78de1f16c0 >>> slap_listener(ldap://localhost:9011/)
+676447ca.27d7bea9 0x7f78de1f16c0 conn=1003 fd=12 ACCEPT from IP=127.0.0.1:58218 (IP=127.0.0.1:9011)
+676447ca.27d8e0ff 0x7f78de1f16c0 connection_get(12)
+676447ca.27d8ff06 0x7f78de1f16c0 connection_get(12): got connid=1003
+676447ca.27d90e0d 0x7f78de1f16c0 connection_read(12): checking for input on id=1003
+676447ca.27d91d56 0x7f78de1f16c0 ber_get_next
+676447ca.27d9402b 0x7f78de1f16c0 ber_get_next: tag 0x30 len 56 contents:
+676447ca.27d9560d 0x7f78de1f16c0 op tag 0x60, time 1734625226
+676447ca.27d96958 0x7f78de1f16c0 ber_get_next
+676447ca.27da0381 0x7f78de1f16c0 conn=1003 op=0 do_bind
+676447ca.27da1e29 0x7f78de1f16c0 ber_scanf fmt ({imt) ber:
+676447ca.27da34ac 0x7f78de1f16c0 ber_scanf fmt (m}) ber:
+676447ca.27da75b9 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=manager,dc=remote,dc=example,dc=com>
+676447ca.27da920f 0x7f78de1f16c0 => ldap_bv2dn(cn=manager,dc=remote,dc=example,dc=com,0)
+676447ca.27dab04e 0x7f78de1f16c0 <= ldap_bv2dn(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447ca.27dadec7 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.27daf256 0x7f78de1f16c0 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447ca.27db0aed 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.27db195a 0x7f78de1f16c0 <= ldap_dn2bv(cn=manager,dc=remote,dc=example,dc=com)=0 
+676447ca.27db29f2 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=manager,dc=remote,dc=example,dc=com>, <cn=manager,dc=remote,dc=example,dc=com>
+676447ca.27db39c0 0x7f78de1f16c0 conn=1003 op=0 BIND dn="cn=manager,dc=remote,dc=example,dc=com" method=128
+676447ca.27db47c1 0x7f78de1f16c0 do_bind: version=3 dn="cn=manager,dc=remote,dc=example,dc=com" method=128
+676447ca.27db6262 0x7f78de1f16c0 ==> mdb_bind: dn: cn=manager,dc=remote,dc=example,dc=com
+676447ca.27db7f9d 0x7f78de1f16c0 conn=1003 op=0 BIND dn="cn=manager,dc=remote,dc=example,dc=com" mech=SIMPLE bind_ssf=0 ssf=0
+676447ca.27db8c3a 0x7f78de1f16c0 do_bind: v3 bind: "cn=manager,dc=remote,dc=example,dc=com" to "cn=manager,dc=remote,dc=example,dc=com"
+676447ca.27db9924 0x7f78de1f16c0 send_ldap_result: conn=1003 op=0 p=3
+676447ca.27dba665 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447ca.27dbb95d 0x7f78de1f16c0 send_ldap_response: msgid=1 tag=97 err=0
+676447ca.27dbd2ae 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 12
+676447ca.27dd2dba 0x7f78de1f16c0 conn=1003 op=0 RESULT tag=97 err=0 qtime=0.000042 etime=0.000250 text=
+676447ca.27e1e906 0x7f78de1f16c0 connection_get(12)
+676447ca.27e2067e 0x7f78de1f16c0 connection_get(12): got connid=1003
+676447ca.27e21c4b 0x7f78de1f16c0 connection_read(12): checking for input on id=1003
+676447ca.27e230d4 0x7f78de1f16c0 ber_get_next
+676447ca.27e2565d 0x7f78de1f16c0 ber_get_next: tag 0x30 len 88 contents:
+676447ca.27e26f49 0x7f78de1f16c0 op tag 0x63, time 1734625226
+676447ca.27e28be3 0x7f78de1f16c0 ber_get_next
+676447ca.27e33544 0x7f78de1f16c0 conn=1003 op=1 do_search
+676447ca.27e34bde 0x7f78de1f16c0 ber_scanf fmt ({miiiib) ber:
+676447ca.27e36392 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447ca.27e378b0 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com,0)
+676447ca.27e3a2af 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.27e3cf39 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.27e3e249 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.27e3faf9 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447ca.27e40a0b 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447ca.27e4195b 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>, <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447ca.27e42a4e 0x7f78de1f16c0 SRCH "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" 0 0    0 0 0
+676447ca.27e4381e 0x7f78de1f16c0 ber_scanf fmt (m) ber:
+676447ca.27e44e9f 0x7f78de1f16c0     filter: (objectClass=*)
+676447ca.27e45ac6 0x7f78de1f16c0 ber_scanf fmt ({M}}) ber:
+676447ca.27e469bc 0x7f78de1f16c0     attrs: 
+676447ca.27e47941 0x7f78de1f16c0 conn=1003 op=1 SRCH base="cn=remote_user,ou=users,dc=remote,dc=example,dc=com" scope=0 deref=0 filter="(objectClass=*)"
+676447ca.27e4966e 0x7f78de1f16c0 => mdb_search
+676447ca.27e4bc24 0x7f78de1f16c0 mdb_dn2entry("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447ca.27e4ca50 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447ca.27e4ed20 0x7f78de1f16c0 <= mdb_dn2id: got id=0x3
+676447ca.27e502af 0x7f78de1f16c0 => mdb_entry_decode:
+676447ca.27e514e0 0x7f78de1f16c0 <= mdb_entry_decode
+676447ca.27e5301d 0x7f78de1f16c0 base_candidates: base: "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" (0x00000003)
+676447ca.27e54d52 0x7f78de1f16c0 => send_search_entry: conn 1003 dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447ca.27e5919b 0x7f78de1f16c0 ber_flush2: 195 bytes to sd 12
+676447ca.27e67691 0x7f78de1f16c0 <= send_search_entry: conn 1003 exit.
+676447ca.27e69468 0x7f78de1f16c0 send_ldap_result: conn=1003 op=1 p=3
+676447ca.27e6a732 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447ca.27e6bca8 0x7f78de1f16c0 send_ldap_response: msgid=2 tag=101 err=0
+676447ca.27e6dabc 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 12
+676447ca.27e72e69 0x7f78de1f16c0 conn=1003 op=1 SEARCH RESULT tag=101 err=0 qtime=0.000049 etime=0.000309 nentries=1 text=
+676447cb.29aded46 0x7f78de1f16c0 connection_get(11)
+676447cb.29ae1835 0x7f78de1f16c0 connection_get(11): got connid=1002
+676447cb.29ae2244 0x7f78de1f16c0 connection_read(11): checking for input on id=1002
+676447cb.29ae2cb0 0x7f78de1f16c0 ber_get_next
+676447cb.29ae408e 0x7f78de1f16c0 ber_get_next: tag 0x30 len 88 contents:
+676447cb.29ae4d4f 0x7f78de1f16c0 op tag 0x63, time 1734625227
+676447cb.29ae5a2c 0x7f78de1f16c0 ber_get_next
+676447cb.29aebf15 0x7f78de1f16c0 conn=1002 op=5 do_search
+676447cb.29aecc24 0x7f78de1f16c0 ber_scanf fmt ({miiiib) ber:
+676447cb.29aeda4b 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447cb.29aee8a5 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com,0)
+676447cb.29af0159 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.29af279d 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.29af33b8 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.29af43c0 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.29af4c88 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.29af55a6 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>, <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447cb.29af5fc1 0x7f78de1f16c0 SRCH "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" 0 0    0 0 0
+676447cb.29af692f 0x7f78de1f16c0 ber_scanf fmt (m) ber:
+676447cb.29af750c 0x7f78de1f16c0     filter: (objectClass=*)
+676447cb.29af7c69 0x7f78de1f16c0 ber_scanf fmt ({M}}) ber:
+676447cb.29af84a8 0x7f78de1f16c0     attrs: 
+676447cb.29af8e0a 0x7f78de1f16c0 conn=1002 op=5 SRCH base="cn=remote_user,ou=users,dc=remote,dc=example,dc=com" scope=0 deref=0 filter="(objectClass=*)"
+676447cb.29afa63a 0x7f78de1f16c0 => mdb_search
+676447cb.29afc283 0x7f78de1f16c0 mdb_dn2entry("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447cb.29afcc68 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447cb.29afe2e0 0x7f78de1f16c0 <= mdb_dn2id: got id=0x3
+676447cb.29afef5c 0x7f78de1f16c0 => mdb_entry_decode:
+676447cb.29affac4 0x7f78de1f16c0 <= mdb_entry_decode
+676447cb.29b00c7c 0x7f78de1f16c0 base_candidates: base: "cn=remote_user,ou=users,dc=remote,dc=example,dc=com" (0x00000003)
+676447cb.29b02180 0x7f78de1f16c0 => send_search_entry: conn 1002 dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447cb.29b03aea 0x7f78de1f16c0 ber_flush2: 195 bytes to sd 11
+676447cb.29b0d924 0x7f78de1f16c0 <= send_search_entry: conn 1002 exit.
+676447cb.29b0e9ec 0x7f78de1f16c0 send_ldap_result: conn=1002 op=5 p=3
+676447cb.29b0f4c7 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447cb.29b101ba 0x7f78de1f16c0 send_ldap_response: msgid=6 tag=101 err=0
+676447cb.29b112dc 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447cb.29b1523c 0x7f78de1f16c0 conn=1002 op=5 SEARCH RESULT tag=101 err=0 qtime=0.000027 etime=0.000196 nentries=1 text=
+676447cb.29b7dad9 0x7f78de1f16c0 connection_get(12)
+676447cb.29b7ee38 0x7f78de1f16c0 connection_get(12): got connid=1003
+676447cb.29b7fb30 0x7f78de1f16c0 connection_read(12): checking for input on id=1003
+676447cb.29b80623 0x7f78de1f16c0 ber_get_next
+676447cb.29b81dbe 0x7f78de1f16c0 ber_get_next: tag 0x30 len 78 contents:
+676447cb.29b82cd8 0x7f78de1f16c0 op tag 0x6c, time 1734625227
+676447cb.29b83d1d 0x7f78de1f16c0 ber_get_next
+676447cb.29b89f49 0x7f78de1f16c0 conn=1003 op=2 do_modrdn
+676447cb.29b8c84a 0x7f78de1f16c0 ber_scanf fmt ({mmb) ber:
+676447cb.29b8d6b3 0x7f78de1f16c0 do_modrdn: dn (cn=remote_user,ou=users,dc=remote,dc=example,dc=com) newrdn (cn=remote_user1) newsuperior ()
+676447cb.29b8e202 0x7f78de1f16c0 ber_scanf fmt (}) ber:
+676447cb.29b8ef1b 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447cb.29b8fb58 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com,0)
+676447cb.29b91072 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.29b92499 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.29b92f62 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.29b93cae 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.29b944cb 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.29b94ddd 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>, <cn=remote_user,ou=users,dc=remote,dc=example,dc=com>
+676447cb.29b95574 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user1>
+676447cb.29b95cf2 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user1,0)
+676447cb.29b96618 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user1)=0 
+676447cb.29b96e68 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.29b976ab 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user1)=0 
+676447cb.29b97e5a 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.29b985dd 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user1)=0 
+676447cb.29b98cfc 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user1>, <cn=remote_user1>
+676447cb.29b996b4 0x7f78de1f16c0 conn=1003 op=2 MODRDN dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447cb.29b9ad5b 0x7f78de1f16c0 ==>mdb_modrdn(cn=remote_user,ou=users,dc=remote,dc=example,dc=com,cn=remote_user1,NULL)
+676447cb.29b9c830 0x7f78de1f16c0 slap_get_csn: conn=1003 op=2 generated new csn=20241219162027.700038Z#000000#000#000000 manage=1
+676447cb.29b9d1d1 0x7f78de1f16c0 slap_queue_csn: queueing 0x7f78d0000da0 20241219162027.700038Z#000000#000#000000
+676447cb.29b9e853 0x7f78de1f16c0 mdb_dn2entry("ou=users,dc=remote,dc=example,dc=com")
+676447cb.29b9f010 0x7f78de1f16c0 => mdb_dn2id("ou=users,dc=remote,dc=example,dc=com")
+676447cb.29b9ff36 0x7f78de1f16c0 <= mdb_dn2id: got id=0x2
+676447cb.29ba08ae 0x7f78de1f16c0 => mdb_entry_decode:
+676447cb.29ba10f9 0x7f78de1f16c0 <= mdb_entry_decode
+676447cb.29ba1bdc 0x7f78de1f16c0 mdb_modrdn: wr to children of entry ou=users,dc=remote,dc=example,dc=com OK
+676447cb.29ba2348 0x7f78de1f16c0 mdb_modrdn: parent dn=ou=users,dc=remote,dc=example,dc=com
+676447cb.29ba29de 0x7f78de1f16c0 mdb_dn2entry("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447cb.29ba3040 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user,ou=users,dc=remote,dc=example,dc=com")
+676447cb.29ba3aa2 0x7f78de1f16c0 <= mdb_dn2id: got id=0x3
+676447cb.29ba4276 0x7f78de1f16c0 => mdb_entry_decode:
+676447cb.29ba578f 0x7f78de1f16c0 <= mdb_entry_decode
+676447cb.29ba6095 0x7f78de1f16c0 mdb_modrdn: new ndn=cn=remote_user1,ou=users,dc=remote,dc=example,dc=com
+676447cb.29ba6764 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user1,ou=users,dc=remote,dc=example,dc=com")
+676447cb.29ba74fd 0x7f78de1f16c0 <= mdb_dn2id: get failed: MDB_NOTFOUND: No matching key/data pair found (-30798)
+676447cb.29ba7ccd 0x7f78de1f16c0 => mdb_dn2id_delete 0x3
+676447cb.29ba9697 0x7f78de1f16c0 <= mdb_dn2id_delete 0x3: 0
+676447cb.29ba9ea8 0x7f78de1f16c0 => mdb_dn2id_add 0x3: "cn=remote_user1,ou=users,dc=remote,dc=example,dc=com"
+676447cb.29bab18b 0x7f78de1f16c0 <= mdb_dn2id_add 0x3: 0
+676447cb.29babbc6 0x7f78de1f16c0 mdb_modify_internal: 0x00000003: cn=remote_user1,ou=users,dc=remote,dc=example,dc=com
+676447cb.29bad7e6 0x7f78de1f16c0 mdb_modify_internal: delete cn
+676447cb.29baea94 0x7f78de1f16c0 mdb_modify_internal: softadd cn
+676447cb.29baf7d4 0x7f78de1f16c0 mdb_modify_internal: replace entryCSN
+676447cb.29bb0314 0x7f78de1f16c0 mdb_modify_internal: replace modifiersName
+676447cb.29bb0ce3 0x7f78de1f16c0 mdb_modify_internal: replace modifyTimestamp
+676447cb.29bb2690 0x7f78de1f16c0 oc_check_required entry (cn=remote_user1,ou=users,dc=remote,dc=example,dc=com), objectClass "person"
+676447cb.29bb3c7c 0x7f78de1f16c0 oc_check_allowed type "objectClass"
+676447cb.29bb44c2 0x7f78de1f16c0 oc_check_allowed type "sn"
+676447cb.29bb4c69 0x7f78de1f16c0 oc_check_allowed type "userPassword"
+676447cb.29bb5431 0x7f78de1f16c0 oc_check_allowed type "structuralObjectClass"
+676447cb.29bb5b0c 0x7f78de1f16c0 oc_check_allowed type "entryUUID"
+676447cb.29bb61c0 0x7f78de1f16c0 oc_check_allowed type "creatorsName"
+676447cb.29bb68b3 0x7f78de1f16c0 oc_check_allowed type "createTimestamp"
+676447cb.29bb6f2f 0x7f78de1f16c0 oc_check_allowed type "description"
+676447cb.29bb7625 0x7f78de1f16c0 oc_check_allowed type "cn"
+676447cb.29bb7cc6 0x7f78de1f16c0 oc_check_allowed type "entryCSN"
+676447cb.29bb830f 0x7f78de1f16c0 oc_check_allowed type "modifiersName"
+676447cb.29bb8976 0x7f78de1f16c0 oc_check_allowed type "modifyTimestamp"
+676447cb.29bbba93 0x7f78de1f16c0 => mdb_entry_encode(0x00000003): cn=remote_user1,ou=users,dc=remote,dc=example,dc=com
+676447cb.29bbc4ed 0x7f78de1f16c0 <= mdb_entry_encode(0x00000003): cn=remote_user1,ou=users,dc=remote,dc=example,dc=com
+676447cb.2a74ef87 0x7f78de1f16c0 mdb_modrdn: rdn modified id=00000003 dn="cn=remote_user,ou=users,dc=remote,dc=example,dc=com"
+676447cb.2a75842b 0x7f78de1f16c0 send_ldap_result: conn=1003 op=2 p=3
+676447cb.2a759709 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447cb.2a75adfb 0x7f78de1f16c0 send_ldap_response: msgid=3 tag=109 err=0
+676447cb.2a75d1e2 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 12
+676447cb.2a77f08f 0x7f78de1f16c0 conn=1003 op=2 RESULT tag=109 err=0 qtime=0.000028 etime=0.012564 text=
+676447cb.2a781518 0x7f78de1f16c0 slap_graduate_commit_csn: removing 0x7f78d0000da0 20241219162027.700038Z#000000#000#000000
+676447cb.2a80e5aa 0x7f78de1f16c0 connection_get(11)
+676447cb.2a810ded 0x7f78de1f16c0 connection_get(11): got connid=1002
+676447cb.2a8124aa 0x7f78de1f16c0 connection_read(11): checking for input on id=1002
+676447cb.2a8139c4 0x7f78de1f16c0 ber_get_next
+676447cb.2a81625d 0x7f78de1f16c0 ber_get_next: tag 0x30 len 89 contents:
+676447cb.2a817acc 0x7f78de1f16c0 op tag 0x63, time 1734625227
+676447cb.2a8194b8 0x7f78de1f16c0 ber_get_next
+676447cb.2a82496f 0x7f78de1f16c0 conn=1002 op=6 do_search
+676447cb.2a82617e 0x7f78de1f16c0 ber_scanf fmt ({miiiib) ber:
+676447cb.2a827eef 0x7f78de1f16c0 >>> dnPrettyNormal: <cn=remote_user1,ou=users,dc=remote,dc=example,dc=com>
+676447cb.2a829825 0x7f78de1f16c0 => ldap_bv2dn(cn=remote_user1,ou=users,dc=remote,dc=example,dc=com,0)
+676447cb.2a82c879 0x7f78de1f16c0 <= ldap_bv2dn(cn=remote_user1,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.2a8305cb 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.2a831ce7 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user1,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.2a833926 0x7f78de1f16c0 => ldap_dn2bv(272)
+676447cb.2a834974 0x7f78de1f16c0 <= ldap_dn2bv(cn=remote_user1,ou=users,dc=remote,dc=example,dc=com)=0 
+676447cb.2a835be4 0x7f78de1f16c0 <<< dnPrettyNormal: <cn=remote_user1,ou=users,dc=remote,dc=example,dc=com>, <cn=remote_user1,ou=users,dc=remote,dc=example,dc=com>
+676447cb.2a836db2 0x7f78de1f16c0 SRCH "cn=remote_user1,ou=users,dc=remote,dc=example,dc=com" 0 0    0 0 0
+676447cb.2a837edd 0x7f78de1f16c0 ber_scanf fmt (m) ber:
+676447cb.2a839415 0x7f78de1f16c0     filter: (objectClass=*)
+676447cb.2a83a0d7 0x7f78de1f16c0 ber_scanf fmt ({M}}) ber:
+676447cb.2a83b10b 0x7f78de1f16c0     attrs: 
+676447cb.2a83c245 0x7f78de1f16c0 conn=1002 op=6 SRCH base="cn=remote_user1,ou=users,dc=remote,dc=example,dc=com" scope=0 deref=0 filter="(objectClass=*)"
+676447cb.2a83e70f 0x7f78de1f16c0 => mdb_search
+676447cb.2a8410ad 0x7f78de1f16c0 mdb_dn2entry("cn=remote_user1,ou=users,dc=remote,dc=example,dc=com")
+676447cb.2a8421db 0x7f78de1f16c0 => mdb_dn2id("cn=remote_user1,ou=users,dc=remote,dc=example,dc=com")
+676447cb.2a84468f 0x7f78de1f16c0 <= mdb_dn2id: got id=0x3
+676447cb.2a845bdf 0x7f78de1f16c0 => mdb_entry_decode:
+676447cb.2a846ed1 0x7f78de1f16c0 <= mdb_entry_decode
+676447cb.2a848d7f 0x7f78de1f16c0 base_candidates: base: "cn=remote_user1,ou=users,dc=remote,dc=example,dc=com" (0x00000003)
+676447cb.2a84dd4e 0x7f78de1f16c0 => send_search_entry: conn 1002 dn="cn=remote_user1,ou=users,dc=remote,dc=example,dc=com"
+676447cb.2a850bb6 0x7f78de1f16c0 ber_flush2: 197 bytes to sd 11
+676447cb.2a8619b7 0x7f78de1f16c0 <= send_search_entry: conn 1002 exit.
+676447cb.2a863930 0x7f78de1f16c0 send_ldap_result: conn=1002 op=6 p=3
+676447cb.2a864edf 0x7f78de1f16c0 send_ldap_result: err=0 matched="" text=""
+676447cb.2a8665c3 0x7f78de1f16c0 send_ldap_response: msgid=7 tag=101 err=0
+676447cb.2a86831c 0x7f78de1f16c0 ber_flush2: 14 bytes to sd 11
+676447cb.2a86e110 0x7f78de1f16c0 conn=1002 op=6 SEARCH RESULT tag=101 err=0 qtime=0.000050 etime=0.000352 nentries=1 text=
+676447cc.2b104d5c 0x7f78de9f26c0 daemon: shutdown requested and initiated.
+676447cc.2b11c4e0 0x7f78de9f26c0 connection_close: conn=1002 sd=11
+676447cc.2b12fcf3 0x7f78de9f26c0 conn=1002 fd=11 closed (slapd shutdown)
+676447cc.2b1324be 0x7f78de9f26c0 connection_close: conn=1003 sd=12
+676447cc.2b1398cf 0x7f78de9f26c0 conn=1003 fd=12 closed (slapd shutdown)
+676447cc.2b14c35d 0x7f78de9f26c0 slapd shutdown: waiting for 0 operations/tasks to finish
+676447cc.2b37fe81 0x7f78dfb92940 slapd shutdown: initiated
+676447cc.2c0b5611 0x7f78dfb92940 slapd destroy: freeing system resources.
+676447cc.2c1542ed 0x7f78dfb92940 slapd stopped.

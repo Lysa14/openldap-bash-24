@@ -1,0 +1,4 @@
+7d1e3c79b86de601c3a0457855ab854dffd15163f53c91edac54a7be2e9c931b build/config.guess
+19c12bb2ca19e68724c2854ed0512469518df19b0710cc2011a5ca540810979c contrib/ldapc++/config.guess
+b1016a1eb11cdf0903bbc533e42e8ac2cc4d54a80b0545f4f0af5a85198277e2 build/config.sub
+f7197ddfb309e86d5fbd7d3b440a5ababfbd4aac1e1f53b492e28e54db58b222 contrib/ldapc++/config.sub

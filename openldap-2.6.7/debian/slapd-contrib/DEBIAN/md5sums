@@ -1,0 +1,16 @@
+829393c56b1eca9ef11764193019ee4e  usr/lib/ldap/pw-apr1.la
+a862faa56f46d8302e928e8800c41710  usr/lib/ldap/pw-apr1.so.0.0.0
+2fabfab0ec77a2f2fbedd0d57b821a7a  usr/lib/ldap/pw-netscape.la
+986933bd2e56b8c16c6419e8668d625e  usr/lib/ldap/pw-netscape.so.0.0.0
+a3a2e53ddbabd2e2a014afb7a42f1edf  usr/lib/ldap/pw-pbkdf2.la
+d0d2cfe1433e997df28b768acf7d8e21  usr/lib/ldap/pw-pbkdf2.so.0.0.0
+abbff80254e06bce074873f19c678926  usr/lib/ldap/smbk5pwd.la
+85e37a709787a4d13841af6c97b3a43d  usr/lib/ldap/smbk5pwd.so.0.0.0
+bb3c198b7526ba4610da3a6ab3e77cf0  usr/share/doc/slapd-contrib/changelog.Debian.gz
+ce2362322412c200127b2678ef531af1  usr/share/doc/slapd-contrib/copyright
+c3a26496338312b4c8352f44abe8b7a0  usr/share/doc/slapd-contrib/examples/apr1-atol.pl
+04fc50317b1c8250f2b93118ed58490c  usr/share/doc/slapd-contrib/examples/apr1-ltoa.pl
+bddc3c6322db745ce6adab3772488588  usr/share/lintian/overrides/slapd-contrib
+8a836ed3450705e50df3d73c5b9d3221  usr/share/man/man5/slapd-pw-pbkdf2.5.gz
+77d9098964842f56bdc472865a05600f  usr/share/man/man5/slapd-pw-sha2.5.gz
+eb5eecc9c280d03f83b532a0d20296ee  usr/share/man/man5/slapo-smbk5pwd.5.gz

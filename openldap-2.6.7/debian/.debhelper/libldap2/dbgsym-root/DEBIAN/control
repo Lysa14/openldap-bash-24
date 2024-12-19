@@ -1,0 +1,15 @@
+Package: libldap2-dbgsym
+Package-Type: ddeb
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 578
+Depends: libldap2 (= 2.6.7+dfsg-1~exp1ubuntu8.1)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libldap2
+Build-Ids: 10e9fb30fb747342676bbe6b11d8369fb09256b1 1d8ed205ec597f7d4da490a29449ea38b70c46e3
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

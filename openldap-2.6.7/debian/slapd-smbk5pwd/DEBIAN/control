@@ -1,0 +1,15 @@
+Package: slapd-smbk5pwd
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 81
+Depends: slapd-contrib
+Breaks: slapd (<< 2.4.47+dfsg-2~)
+Section: oldlibs
+Priority: optional
+Homepage: https://www.openldap.org/
+Description: transitional package for slapd-contrib
+ This is a transitional package from slapd-smbk5pwd to slapd-contrib. It can be
+ safely removed.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

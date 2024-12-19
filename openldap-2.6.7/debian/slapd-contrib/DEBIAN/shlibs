@@ -1,0 +1,4 @@
+pw-apr1 0 slapd-contrib (>= 2.6.7+dfsg)
+pw-netscape 0 slapd-contrib (>= 2.6.7+dfsg)
+pw-pbkdf2 0 slapd-contrib (>= 2.6.7+dfsg)
+smbk5pwd 0 slapd-contrib (>= 2.6.7+dfsg)

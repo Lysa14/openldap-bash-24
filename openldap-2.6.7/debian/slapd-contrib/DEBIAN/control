@@ -1,0 +1,18 @@
+Package: slapd-contrib
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 183
+Depends: slapd (= 2.6.7+dfsg-1~exp1ubuntu8.1), libc6 (>= 2.38), libkadm5srv8t64-heimdal (>= 1.4.0+git20110226), libkrb5-26t64-heimdal (>= 1.4.0+git20110226), libldap2 (>= 2.6.2), libnettle8t64
+Breaks: slapd (<< 2.5.4+dfsg-1~), slapd-smbk5pwd (<< 2.4.47+dfsg-2~)
+Replaces: slapd-smbk5pwd (<< 2.4.47+dfsg-2~)
+Provides: slapd-smbk5pwd
+Section: net
+Priority: optional
+Homepage: https://www.openldap.org/
+Description: contributed plugins for OpenLDAP slapd
+ This package contains a number of slapd overlays and plugins contributed by
+ the OpenLDAP community. While distributed as part of OpenLDAP Software, they
+ are not necessarily supported by the OpenLDAP Project.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

@@ -1,0 +1,10 @@
+# Automatically added by dh_installinit/13.14.1ubuntu5
+if [ "$1" = "install" ] && [ -n "$2" ] && [ -e "/etc/init.d/slapd" ] ; then
+	chmod +x "/etc/init.d/slapd" >/dev/null || true
+fi
+# End automatically added section
+# Automatically added by dh_installinit/13.14.1ubuntu5
+if [ -z "${DPKG_ROOT:-}" ] && [ "$1" = upgrade ] && [ -x "/etc/init.d/slapd" ] ; then
+	invoke-rc.d --skip-systemd-native slapd stop || ignore_init_failure
+fi
+# End automatically added section

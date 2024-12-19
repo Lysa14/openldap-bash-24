@@ -1,0 +1,9 @@
+slapd
+slapd-contrib
+slapd-smbk5pwd
+ldap-utils
+libldap2
+libldap-common
+libldap-dev
+libldap2-dev
+slapi-dev

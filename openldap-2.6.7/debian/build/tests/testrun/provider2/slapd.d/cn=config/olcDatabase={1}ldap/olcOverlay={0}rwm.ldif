@@ -1,0 +1,14 @@
+# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 6f3d24e3
+dn: olcOverlay={0}rwm
+objectClass: olcOverlayConfig
+objectClass: olcRwmConfig
+olcOverlay: {0}rwm
+olcRwmRewrite: {0}rwm-suffixmassage "ou=users,dc=remote,dc=example,dc=com"
+structuralObjectClass: olcRwmConfig
+entryUUID: df306952-5270-103f-8962-17ef69645450
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.207795Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z

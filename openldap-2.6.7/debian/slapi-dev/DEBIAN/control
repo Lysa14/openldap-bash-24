@@ -1,0 +1,15 @@
+Package: slapi-dev
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 123
+Depends: slapd (= 2.6.7+dfsg-1~exp1ubuntu8.1)
+Section: libdevel
+Priority: optional
+Homepage: https://www.openldap.org/
+Description: development libraries for OpenLDAP SLAPI plugin interface
+ This package allows development of plugins for the OpenLDAP slapd server
+ using the SLAPI interface.  It includes the headers and libraries needed
+ to build such plugins.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

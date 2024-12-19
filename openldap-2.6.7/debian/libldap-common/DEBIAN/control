@@ -1,0 +1,15 @@
+Package: libldap-common
+Source: openldap
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 94
+Replaces: libldap-2.4-2 (<< 2.4.44+dfsg-1)
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.openldap.org/
+Description: OpenLDAP common files for libraries
+ These are common files for the run-time libraries for the OpenLDAP
+ (Lightweight Directory Access Protocol) servers and clients.
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>

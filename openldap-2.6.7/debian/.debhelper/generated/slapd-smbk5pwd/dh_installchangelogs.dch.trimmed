@@ -1,0 +1,1428 @@
+openldap (2.6.7+dfsg-1~exp1ubuntu8.1) noble; urgency=medium
+
+  * SRU: LP: #2083480: No-change rebuild to disable frame pointers on
+    ppc64el and s390x.
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Oct 2024 14:40:51 +0200
+
+openldap (2.6.7+dfsg-1~exp1ubuntu8) noble; urgency=medium
+
+  * Fix implicit declaration of kadm5_s_init_with_password_ctx.
+    (Closes: #1065633)
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 03 Apr 2024 20:47:41 +0200
+
+openldap (2.6.7+dfsg-1~exp1ubuntu7) noble; urgency=medium
+
+  * No-change rebuild for CVE-2024-3094
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Sun, 31 Mar 2024 06:41:33 +0000
+
+openldap (2.6.7+dfsg-1~exp1ubuntu6) noble; urgency=medium
+
+  * Revert change to ignore test failures.
+  * debian/patches/64-bit-time-t-compat.patch: handle sizeof(time_t) >
+    sizeof(long) in format strings.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 12 Mar 2024 07:32:43 +0000
+
+openldap (2.6.7+dfsg-1~exp1ubuntu5) noble; urgency=medium
+
+  * No-change rebuild against libperl5.38t64
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Sat, 09 Mar 2024 18:22:24 +0000
+
+openldap (2.6.7+dfsg-1~exp1ubuntu4) noble; urgency=medium
+
+  * Rebuild against libgnutls30t64.
+  * debian/rules: fix buildability under pkg.openldap.noslapd profile.
+  * debian/rules: drop override of dh_missing, --fail-missing is the default
+    with debhelper compat 13.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 06 Mar 2024 20:22:45 +0000
+
+openldap (2.6.7+dfsg-1~exp1ubuntu3) noble; urgency=medium
+
+  * Temporarily ignore failures from build-time tests to finish 
+    bootstrapping for time_t.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Sun, 03 Mar 2024 21:46:31 +0000
+
+openldap (2.6.7+dfsg-1~exp1ubuntu2) noble; urgency=medium
+
+  * No-change rebuild for perlapi5.38t64.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sat, 02 Mar 2024 17:03:45 +0100
+
+openldap (2.6.7+dfsg-1~exp1ubuntu1) noble; urgency=medium
+
+  * Merge with Debian unstable (LP: #2040405). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+    - d/t/smbk5pwd: Allow the openldap user to read the Heimdal master key in the
+      smbk5pwd DEP8 test (LP #2004560)
+      [ Partially incorporated by Debian. ]
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Tue, 06 Feb 2024 14:46:16 -0500
+
+openldap (2.6.7+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream version 2.6.7+dfsg
+  * d/p/contrib-makefiles: Refresh patch.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Thu, 01 Feb 2024 16:24:20 -0500
+
+openldap (2.6.6+dfsg-1~exp2) experimental; urgency=medium
+
+  * Update debconf translations:
+    - German, thanks to Helge Kreutzmann. (Closes: #1007728)
+    - Spanish, thanks to Camaleón. (Closes: #1008529)
+    - Dutch, thanks to Frans Spiesschaert. (Closes: #1010034)
+    - Turkish, thanks to Atila KOÇ. (Closes: #1029758)
+    - Romanian, thanks to Remus-Gabriel Chelu. (Closes: #1033177)
+  * Create an autopkgtest covering basic TLS functionality.
+    Thanks to John Scott.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Wed, 09 Aug 2023 10:10:54 -0700
+
+openldap (2.6.6+dfsg-1~exp1ubuntu2) noble; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 10 Jan 2024 14:12:11 +0100
+
+openldap (2.6.6+dfsg-1~exp1ubuntu1) mantic; urgency=medium
+
+  * Merge with Debian unstable (LP: #2028721). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+    - d/t/smbk5pwd: Allow the openldap user to read the Heimdal master key in the
+      smbk5pwd DEP8 test (LP #2004560)
+      [ Partially incorporated by Debian. ]
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Wed, 02 Aug 2023 19:53:17 -0400
+
+openldap (2.6.6+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream version 2.6.6+dfsg
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Mon, 31 Jul 2023 18:24:38 -0400
+
+openldap (2.6.5+dfsg-1~exp1ubuntu1) mantic; urgency=medium
+
+  * Merge with Debian unstable (LP: #2028721). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+    - d/t/smbk5pwd: Allow the openldap user to read the Heimdal master key in the
+      smbk5pwd DEP8 test (LP #2004560)
+      [ Partially incorporated by Debian. ]
+  * Drop changes:
+    - Build the passwd/sha2 contrib module with -fno-strict-aliasing to
+      avoid computing an incorrect SHA256 hash with some versions of the
+      compiler (LP: #2000817):
+      + d/t/{control,sha2-contrib}: test to verify the SHA256 hash
+        produced by passwd/sha2
+      + d/rules: set -fno-strict-aliasing only when building the
+        passwd/sha2 contrib module
+      [ Incorporated by Debian. ]
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Thu, 27 Jul 2023 13:18:18 -0400
+
+openldap (2.6.5+dfsg-1~exp1) experimental; urgency=medium
+
+  [ Sergio Durigan Junior ]
+  * New upstream version 2.6.5+dfsg
+  * d/control: Bump Standards-Version to 4.6.2; no changes needed.
+  * d/control: Bump debhelper-compat to 13.
+  * d/control: Drop lsb-base from slapd's Depends.
+
+  [ Ryan Tandy ]
+  * d/tests/smbk5pwd: Grant slapd access to /var/lib/heimdal-kdc. Fixes the
+    autopkgtest failure due to heimdal setting mode 700 on this directory.
+    (Closes: #1020442)
+  * d/source/lintian-overrides: Add wildcards to make overrides compatible
+    with both older and newer versions of lintian.
+  * d/slapd-contrib.lintian-overrides: Remove unused
+    custom-library-search-path override now that krb5-config no longer sets
+    -rpath.
+  * Fix sha2-contrib autopkgtest failure. Call slappasswd using its full path.
+    (Closes: #1030814)
+
+  [ Gioele Barabucci ]
+  * slapd.scripts-common: Avoid double-UTF8-encoding org name.
+    (Closes: #1016185)
+  * d/slapd.scripts-common: Remove outdated `migrate_to_slapd_d_style`
+  * d/slapd.postinst: Remove test for ancient version.
+  * slapd.scripts-common: Remove unused `normalize_ldif`
+  * d/slapd.scripts-common: Use sed instead of perl in `release_diagnostics`
+
+  [ Andreas Hasenack ]
+  * d/rules: Fix passwd/sha2 build.
+    Build the passwd/sha2 contrib module with -fno-strict-aliasing to avoid
+    computing an incorrect SHA256 hash with some versions of the compiler
+    (Closes: #1030716, LP: #2000817)
+  * d/t/sha2-contrib: add test for sha2 module.
+    DEP8 test to verify the SHA256 hash produced by passwd/sha2
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Mon, 24 Jul 2023 19:26:16 -0400
+
+openldap (2.6.4+dfsg-1~exp1ubuntu1) mantic; urgency=medium
+
+  * Merge with Debian unstable (LP: #2018093). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+    - Build the passwd/sha2 contrib module with -fno-strict-aliasing to
+      avoid computing an incorrect SHA256 hash with some versions of the
+      compiler (LP #2000817):
+      + d/t/{control,sha2-contrib}: test to verify the SHA256 hash
+        produced by passwd/sha2
+      + d/rules: set -fno-strict-aliasing only when building the
+        passwd/sha2 contrib module
+    - d/t/smbk5pwd: Allow the openldap user to read the Heimdal master key in the
+      smbk5pwd DEP8 test (LP #2004560)
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Wed, 21 Jun 2023 14:48:31 -0400
+
+openldap (2.6.4+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream version 2.6.4+dfsg.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Sat, 04 Mar 2023 16:35:10 -0500
+
+openldap (2.6.3+dfsg-1~exp1ubuntu2) lunar; urgency=medium
+
+  * Build the passwd/sha2 contrib module with -fno-strict-aliasing to
+    avoid computing an incorrect SHA256 hash with some versions of the
+    compiler (LP: #2000817):
+    - d/t/{control,sha2-contrib}: test to verify the SHA256 hash
+      produced by passwd/sha2
+    - d/rules: set -fno-strict-aliasing only when building the
+      passwd/sha2 contrib module
+  * d/t/smbk5pwd: Allow the openldap user to read the Heimdal master key in the
+    smbk5pwd DEP8 test (LP: #2004560)
+
+ -- Andreas Hasenack <andreas@canonical.com>  Fri, 03 Feb 2023 09:33:14 -0300
+
+openldap (2.6.3+dfsg-1~exp1ubuntu1) lunar; urgency=medium
+
+  * Merge with Debian unstable (LP: #1993426). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+  * Drop changes:
+    - Enable SASL/GSSAPI tests. (LP #1976508)
+      + d/control: Update B-D to include required dependencies needed to run
+        SASL/GSSAPI tests during build time, and mark them "!nocheck".
+      Thanks: Andreas Hasenack <andreas.hasenack@canonical.com>
+      [ Incorporated by Debian. ]
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Fri, 18 Nov 2022 16:07:45 -0500
+
+openldap (2.6.3+dfsg-1~exp1) experimental; urgency=medium
+
+  * d/rules: Remove get-orig-source, now unnecessary.
+  * Check PGP signature when running uscan.
+  * d/watch: Modernize watch file; use repacksuffix.
+  * d/copyright: Expand Files-Excluded to account for other schemas/ldifs.
+  * New upstream release.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Mon, 19 Sep 2022 14:07:32 -0400
+
+openldap (2.6.2+dfsg-1~exp2) experimental; urgency=medium
+
+  * Enable SASL/GSSAPI tests
+    - d/control: Update B-D to include required dependencies needed to run
+      SASL/GSSAPI tests during build time, and mark them "!nocheck".
+    Thanks to Andreas Hasenack <andreas.hasenack@canonical.com>
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Thu, 25 Aug 2022 15:16:24 -0400
+
+openldap (2.6.2+dfsg-1~exp1) experimental; urgency=medium
+
+  * d/gbp.conf: Prepare to import 2.6.x.
+  * New upstream version 2.6.2+dfsg
+  * d/patches/*.patch: Refresh patches.
+  * Adjust package to ship renamed libldap.
+    - d/clean: Adjust to remove d/libldap2.links.
+    - d/control: New binary package libldap2.  Remove binary package
+      libldap-2.5-0.  Adjust package relationships (Depends, Replaces) due
+      to new package.  Remove old Conflicts with old ldap-utils.
+    - d/libldap-2.5-0.install: Delete file.
+    - d/libldap-2.5-0.symbols: Likewise.
+    - d/libldap-2.5-0.README.Debian: Rename to...
+    - d/libldap2.README.Debian: ... this.
+    - d/libldap2.install: New file, based on d/libldap-2.5-0.install
+    - d/libldap2.symbols: New file, based on d/libldap-2.5-0.symbols.
+    - d/slapd.install: Install libslapi.so.2*.
+    - d/slapd.lintian-overrides: Remove
+      lacks-unversioned-link-to-shared-library override.  Adjust
+      package-name-doesnt-match-sonames to reflect libslapd2 name change.
+  * Remove ndb references, given the plugin has been removed upstream.
+    - d/configure.options: Remove "--disable-ndb".
+    - d/slapd.manpages: Don't install slapd-ndb.5.
+  * d/control: Add myself to Uploaders.
+  * d/README.source: New file with instructions on how to import a new
+    release.
+  * d/copyright: Write new copyright file from scratch.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Fri, 20 May 2022 17:41:04 -0400
+
+openldap (2.5.13+dfsg-1ubuntu2) lunar; urgency=medium
+
+  * Rebuild against new perlapi-5.36.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 04 Nov 2022 16:50:13 +0100
+
+openldap (2.5.13+dfsg-1ubuntu1) kinetic; urgency=medium
+
+  * Merge with Debian unstable (LP: #1983618). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+    - Enable SASL/GSSAPI tests. (LP #1976508)
+      + d/control: Update B-D to include required dependencies needed to run
+        SASL/GSSAPI tests during build time, and mark them "!nocheck".
+      Thanks: Andreas Hasenack <andreas.hasenack@canonical.com>
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Tue, 20 Sep 2022 15:30:47 -0400
+
+openldap (2.5.12+dfsg-2ubuntu2) kinetic; urgency=medium
+
+  * Enable SASL/GSSAPI tests. (LP: #1976508)
+    - d/control: Update B-D to include required dependencies needed to run
+      SASL/GSSAPI tests during build time, and mark them "!nocheck".
+    Thanks: Andreas Hasenack <andreas.hasenack@canonical.com>
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Thu, 25 Aug 2022 16:20:08 -0400
+
+openldap (2.5.12+dfsg-2ubuntu1) kinetic; urgency=medium
+
+  * Merge with Debian unstable (LP: #1971305). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Mon, 06 Jun 2022 15:34:48 -0400
+
+openldap (2.5.11+dfsg-1~exp1ubuntu3) jammy; urgency=medium
+
+  * No-change rebuild to update maintainer scripts, see LP: 1959054
+
+ -- Dave Jones <dave.jones@canonical.com>  Wed, 16 Feb 2022 17:15:26 +0000
+
+openldap (2.5.11+dfsg-1~exp1ubuntu2) jammy; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 07 Feb 2022 07:51:42 +0100
+
+openldap (2.5.11+dfsg-1~exp1ubuntu1) jammy; urgency=medium
+
+  * Merge with Debian unstable (LP: #1946883). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Tue, 25 Jan 2022 17:06:12 -0500
+
+openldap (2.5.11+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add openssl to Build-Depends to enable more checks in test067-tls.
+  * Update slapd-contrib's custom-library-search-path override to work with
+    current Lintian.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sun, 23 Jan 2022 17:16:05 -0800
+
+openldap (2.5.8+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update slapd-contrib's custom-library-search-path override to work with
+    Lintian 2.108.0.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Wed, 13 Oct 2021 18:42:55 -0700
+
+openldap (2.5.7+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Don't run autoreconf in contrib/ldapc++. We don't build it, and it is not
+    yet compatible with autoconf 2.71. (Closes: #993032)
+  * Stop disabling automake in debian/rules now that upstream removed the
+    AM_INIT_AUTOMAKE invocation.
+  * Drop custom config.{guess,sub} handling. dh_update_autotools_config does
+    the right thing for us.
+  * Update Standards-Version to 4.6.0; no changes required.
+  * debian/not-installed: Add the ldapvc.1 man page.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Mon, 30 Aug 2021 18:54:25 -0700
+
+openldap (2.5.6+dfsg-1~exp1ubuntu1) impish; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Tue, 17 Aug 2021 14:06:00 -0400
+
+openldap (2.5.6+dfsg-1~exp1) experimental; urgency=medium
+
+  [ Ryan Tandy ]
+  * New upstream release.
+  * Export the cn=config database to LDIF format before upgrading from 2.4.
+  * slapd.README.Debian:
+    - Remove text about the dropped evolution-ntlm patch.
+    - Add guidance for recovering from upgrade failures.
+  * Remove the debconf warning and README text about the unsafe ACL configured
+    by default in versions before jessie.
+  * Remove upgrade code for adding the pwdMaxRecordedFailure attribute to the
+    ppolicy schema. It's obsolete since the schema has been internalized.
+
+  [ Sergio Durigan Junior ]
+  * Implement the "escape hatch" mechanism.
+    - d/po/*.po: Update PO files given the new template note.
+    - d/po/templates.pot: Update file.
+    - d/slapd.templates: Add note warning user about a postinst failure,
+      its possible cause and what to do.
+    - d/slapd.postinst: Make certain upgrade functions return failure
+      instead of exiting, which allows the postinst script to gracefully
+      fail when applicable.  Also, when the general configuration upgrade
+      fails, display a critical warning to the user.  Implement
+      ignore_init_failure function.
+    - d/slapd.prerm: Implement ignore_init_failure function.
+    - d/slapd.scripts-common: Make certain functions return failure
+      instead of exiting.
+    - d/rules: Use dh_installinit's --error-handler to instruct it on how
+      to handle possible errors with the init script.
+    - d/slapd.NEWS: Add excerpt mentioning that the postinst script might
+      error out if it can't migrate the existing (old) database backend.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Mon, 16 Aug 2021 18:32:29 -0700
+
+openldap (2.5.5+dfsg-1~exp1ubuntu1) impish; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+  * Dropped changes:
+    - Enable GSSAPI support (first added in 2.4.18-0ubuntu2):
+      + d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+      + d/configure.options: Configure with --with-gssapi
+      + d/control: Added heimdal-dev as a build depend
+      + d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+      + d/libldap-2.4-2.symbols: add symbols for GSSAPI support
+      This should be dropped when the soname changes.
+      [ Dropped as planned after soname bump due to 2.5.5 update. ]
+    - Enable nss overlay:
+      + d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      + d/slapd.install: install nssov overlay
+      + d/slapd.manpages: install slapo-nssov(5) man page
+      + d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+        Debian bug #919136, we also have to patch the nssov makefile
+        accordingly and thus update this patch.
+      [ Dropped as planned after soname bump due to 2.5.5 update. ]
+    - Add support for CLDAP (UDP) support, back then required by
+      likewise-open (first enabled in 2.4.17-1ubuntu2):
+      + d/rules: Enable -DLDAP_CONNECTIONLESS
+      + d/libldap-2.4-2.symbols: add symbols for CLDAP (UDP)
+      This should be dropped when the soname changes.
+      [ Dropped as planned after soname bump due to 2.5.5 update. ]
+    - debian/patches/fix_test_timing.patch: fix FTBFS on riscv64 because
+      of test timing issue.
+      [ Dropped because the latest update improved the testcase and
+        there is no FTBFS on riscv64 anymore. ]
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Tue, 15 Jun 2021 17:20:34 -0400
+
+openldap (2.5.5+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+    - Drop patches applied upstream: ITS#9544, ITS#9548.
+  * Mark slapd-contrib as breaking the old version of slapd to reduce the
+    chance of upgrade failure due to slapd-contrib being unpacked first.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Fri, 11 Jun 2021 11:43:15 -0700
+
+openldap (2.5.4+dfsg-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+    - Changing olcAuthzRegexp dynamically is supported. (Closes: #761407)
+    - Support for LANMAN password hashes has been removed. (Closes: #988033)
+    - Added pkg-config files for liblber and libldap. (Closes: #670824)
+    - libldap_r has been merged into libldap. The Debian package will continue
+      to install a libldap_r.so symlink for backwards compatibility with
+      applications that still link with -lldap_r.
+    - The Berkeley DB backends, slapd-bdb(5) and slapd-hdb(5), have been
+      removed.
+    - The shell backend, slapd-shell(5), has been removed.
+    - New backend: slapd-asyncmeta(5).
+    - New core overlays: slapd-homedir(5), slapd-otp(5), and
+      slapd-remoteauth(5).
+    - The ppolicy schema has been merged into the slapo-ppolicy(5) module.
+    - The argon2 password module has been promoted from contrib to core.
+  * Add a superficial autopkgtest for smbk5pwd.
+  * Update Standards-Version to 4.5.1; no changes needed.
+  * Upgrade to debhelper compat level 12.
+    - Remove debian/compat, add Build-Depends: debhelper-compat.
+  * Run dh_missing --fail-missing during build.
+    - Add debian/not-installed.
+  * Drop debian/tmp/ prefix from paths in *.install and *.manpages.
+  * Override Lintian false positives:
+    * slapd: lacks-unversioned-link-to-shared-library. See #687022.
+    * libldap-2.4-2: shared-library-not-shipped.
+  * Follow renamed Lintian tags:
+    - dev-pkg-without-shlib-symlink => lacks-unversioned-link-to-shared-library
+    - binary-or-shlib-defines-rpath => custom-library-search-path
+  * Rename libldap2-dev to libldap-dev (Policy 8.4). Keep libldap2-dev as a
+    transitional package for now.
+    - Drop ancient Conflicts/Replaces: libopenldap-dev.
+  * Prune implied or unneeded directories from debian/*.dirs.
+    - Stop installing empty /var/lib/slapd directory. (Closes: #714174)
+  * Stop disabling test060-mt-hot on ppc64el. The underlying kernel bug
+    (#866122) is fixed in all relevant suites by now.
+  * Drop evolution-ntlm patch. (Closes: #457374)
+  * Drop patches applied or superseded upstream.
+  * Update or refresh remaining patches as needed.
+  * debian/configure.options:
+    - Refresh with new `./configure --help' output.
+    - Drop directory options set automatically by debhelper: --prefix,
+      --sysconfdir, --localstatedir, and --mandir.
+    - Enable the perl and sql backends explicitly. They are deprecated and
+      --enable-backends= no longer includes them.
+    - Disable the experimental wiredtiger backend.
+    - Disable the autoca overlay. It does not support GnuTLS yet.
+    - Enable the argon2 password hashing module.
+    - Disable the new load balancer daemon (lloadd) for now.
+    - Disable systemd service notification support for now.
+  * debian/rules:
+    - Enable all current and future hardening flags.
+    - Use the new STRIP_OPTS variable to disable stripping.
+    - Drop -Wno-format-extra-args from DEB_CFLAGS_MAINT_APPEND.
+      The Debug macro has been changed upstream to use variadic args.
+    - Override OPT variable to empty for contrib modules.
+  * debian/schema: Sync with upstream.
+    - core.{schema,ldif}: Update description of deltaCRL.
+    - cosine.schema, pmi.schema: spelling fixes.
+    - namedobject.schema: Added.
+    - ppolicy.schema: Removed upstream, dropped.
+  * Add Build-Depends: pkg-config, required for autoreconf.
+  * Add upstream patch to fix SLAPI compilation. (ITS#9544)
+  * Move the argon2 password module from slapd-contrib to slapd.
+    - Add upstream patch to fix argon2 installation.
+  * Transition libldap-2.4-2 to libldap-2.5-0.
+    - Install the real libldap instead of a symlink to libldap_r.
+    - Symlink libldap_r.{a,so} to libldap for backwards compatibility.
+    - Drop the shlibs file, no longer needed.
+  * Remove references to removed BDB backends.
+    - Drop Build-Depends: libdb5.3-dev.
+    - Drop arch-specific configure options to disable those backends on Hurd.
+    - Delete example DB_CONFIG file and README.DB_CONFIG.
+    - Remove information about Berkeley DB from slapd README.
+  * Install new slapmodify(8) tool as a hard link to slapd(8).
+  * Install new man pages: slapo-deref(5), slapo-pw-pbkdf2(5), and
+    slapo-pw-sha2(5).
+    - Drop debian/slapo-pw-pbkdf2.5, included upstream.
+  * Add unpackaged files to debian/not-installed:
+    - ldapvc(1): undocumented tool supporting the vc overlay (contrib)
+    - lloadd(8) and lloadd.conf(5) man pages
+    - slapd-wt(5) and slapo-autoca(5) man pages
+  * Delete obsolete ppolicy.schema and ppolicy.ldif conffiles on upgrade.
+  * Dump and reload slapd-mdb(5) databases on upgrade from 2.4.
+    - Call dh_installinit with --no-restart-after-upgrade to ensure slapd is
+      stopped before dumping the old database.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sun, 30 May 2021 08:41:25 -0700
+
+openldap (2.4.57+dfsg-3) unstable; urgency=medium
+
+  * Link smbk5pwd with -lkrb5. (Closes: #988565)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sat, 15 May 2021 16:03:34 -0700
+
+openldap (2.4.57+dfsg-2ubuntu1) hirsute; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support (first added in 2.4.18-0ubuntu2):
+      + d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+      + d/configure.options: Configure with --with-gssapi
+      + d/control: Added heimdal-dev as a build depend
+      + d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+      + d/libldap-2.4-2.symbols: add symbols for GSSAPI support
+      This should be dropped when the soname changes.
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      + d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      + d/slapd.install: install nssov overlay
+      + d/slapd.manpages: install slapo-nssov(5) man page
+      + d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+        Debian bug #919136, we also have to patch the nssov makefile
+        accordingly and thus update this patch.
+    - d/{rules,slapd.py}: Add apport hook.
+    - Add support for CLDAP (UDP) support, back then required by
+      likewise-open (first enabled in 2.4.17-1ubuntu2):
+      + d/rules: Enable -DLDAP_CONNECTIONLESS
+      + d/libldap-2.4-2.symbols: add symbols for CLDAP (UDP)
+      This should be dropped when the soname changes.
+    - debian/patches/fix_test_timing.patch: fix FTBFS on riscv64 because
+      of test timing issue.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 10:15:38 -0500
+
+openldap (2.4.57+dfsg-2) unstable; urgency=medium
+
+  * Fix slapd assertion failure in Certificate List Exact Assertion validation
+    (ITS#9454) (CVE-2021-27212)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sun, 14 Feb 2021 09:26:41 -0800
+
+openldap (2.4.57+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fixed slapd crashes in Certificate Exact Assertion processing
+      (ITS#9404, ITS#9424) (CVE-2020-36221)
+    - Fixed slapd assertion failures in saslAuthzTo validation
+      (ITS#9406, ITS#9407) (CVE-2020-36222)
+    - Fixed slapd crash in Values Return Filter control handling
+      (ITS#9408) (CVE-2020-36223)
+    - Fixed slapd crashes in saslAuthzTo processing
+      (ITS#9409, ITS#9412, ITS#9413)
+      (CVE-2020-36224, CVE-2020-36225, CVE-2020-36226)
+    - Fixed slapd assertion failure in X.509 DN parsing
+      (ITS#9423) (CVE-2020-36230)
+    - Fixed slapd crash in X.509 DN parsing (ITS#9425) (CVE-2020-36229)
+    - Fixed slapd crash in Certificate List Exact Assertion processing
+      (ITS#9427) (CVE-2020-36228)
+    - Fixed slapd infinite loop with Cancel operation
+      (ITS#9428) (CVE-2020-36227)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sat, 23 Jan 2021 08:57:07 -0800
+
+openldap (2.4.56+dfsg-1ubuntu2) hirsute; urgency=medium
+
+  * debian/apparmor-profile: add AppArmor rule for locking replay cache.
+    In Hirsute, a change (presumably in src:krb5) has caused slapd to be
+    denied by AppArmor for locking /var/tmp/krb5_*.rcache2. This is
+    acceptable, so add it to the AppArmor profile. This fixes the dep8
+    test in src:krb5 that uses slapd for testing.
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Tue, 26 Jan 2021 13:02:40 +0000
+
+openldap (2.4.56+dfsg-1ubuntu1) hirsute; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support (first added in 2.4.18-0ubuntu2):
+      + d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+      + d/configure.options: Configure with --with-gssapi
+      + d/control: Added heimdal-dev as a build depend
+      + d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+      + d/libldap-2.4-2.symbols: add symbols for GSSAPI support
+      This should be dropped when the soname changes.
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      + d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      + d/slapd.install: install nssov overlay
+      + d/slapd.manpages: install slapo-nssov(5) man page
+      + d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+        Debian bug #919136, we also have to patch the nssov makefile
+        accordingly and thus update this patch.
+    - d/{rules,slapd.py}: Add apport hook.
+    - Add support for CLDAP (UDP) support, back then required by
+      likewise-open (first enabled in 2.4.17-1ubuntu2):
+      + d/rules: Enable -DLDAP_CONNECTIONLESS
+      + d/libldap-2.4-2.symbols: add symbols for CLDAP (UDP)
+      This should be dropped when the soname changes.
+    - debian/patches/fix_test_timing.patch: fix FTBFS on riscv64 because
+      of test timing issue.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+  * d/apparmor-profile: use abstractions/ssl_keys instead of manual rules,
+    allows letsencrypt to work. Thanks to Paul McEnery (LP: #1909748)
+
+ -- Paride Legovini <paride.legovini@canonical.com>  Mon, 04 Jan 2021 16:18:57 +0100
+
+openldap (2.4.56+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fixed slapd abort due to assertion failure in Certificate List syntax
+      validation (ITS#9383) (CVE-2020-25709)
+    - Fixed slapd abort due to assertion failure in CSN normalization with
+      invalid input (ITS#9384) (CVE-2020-25710)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Wed, 11 Nov 2020 09:13:56 -0800
+
+openldap (2.4.55+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fixed slapd normalization handling with modrdn
+      (ITS#9370) (CVE-2020-25692)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Tue, 27 Oct 2020 21:07:29 -0700
+
+openldap (2.4.54+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Change upstream Homepage and get-orig-source URLs to HTTPS.
+  * Create debian/gbp.conf.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sun, 18 Oct 2020 16:03:46 +0000
+
+openldap (2.4.53+dfsg-1ubuntu5) hirsute; urgency=medium
+
+  * SECURITY UPDATE: assertion failure in Certificate List syntax
+    validation
+    - debian/patches/CVE-2020-25709.patch: properly handle error in
+      servers/slapd/schema_init.c.
+    - CVE-2020-25709
+  * SECURITY UPDATE: assertion failure in CSN normalization with invalid
+    input
+    - debian/patches/CVE-2020-25710.patch: properly handle error in
+      servers/slapd/schema_init.c.
+    - CVE-2020-25710
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 17 Nov 2020 09:41:47 -0500
+
+openldap (2.4.53+dfsg-1ubuntu4) hirsute; urgency=medium
+
+  * SECURITY UPDATE: DoS via NULL pointer dereference
+    - debian/patches/CVE-2020-25692.patch: skip normalization if there's no
+      equality rule in servers/slapd/modrdn.c.
+    - CVE-2020-25692
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 09 Nov 2020 14:02:02 -0500
+
+openldap (2.4.53+dfsg-1ubuntu3) hirsute; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 09 Nov 2020 12:53:38 +0100
+
+openldap (2.4.53+dfsg-1ubuntu2) hirsute; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 09 Nov 2020 10:51:32 +0100
+
+openldap (2.4.53+dfsg-1ubuntu1) groovy; urgency=medium
+
+  * Merge with Debian unstable (LP: #1894838). Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support (first added in 2.4.18-0ubuntu2):
+      + d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+      + d/configure.options: Configure with --with-gssapi
+      + d/control: Added heimdal-dev as a build depend
+      + d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+      + d/libldap-2.4-2.symbols: add symbols for GSSAPI support
+      This should be dropped when the soname changes.
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      + d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      + d/slapd.install: install nssov overlay
+      + d/slapd.manpages: install slapo-nssov(5) man page
+      + d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+        Debian bug #919136, we also have to patch the nssov makefile
+        accordingly and thus update this patch.
+    - d/{rules,slapd.py}: Add apport hook.
+    - Add support for CLDAP (UDP) support, back then required by
+      likewise-open (first enabled in 2.4.17-1ubuntu2):
+      + d/rules: Enable -DLDAP_CONNECTIONLESS
+      + d/libldap-2.4-2.symbols: add symbols for CLDAP (UDP)
+      This should be dropped when the soname changes.
+    - debian/patches/fix_test_timing.patch: fix FTBFS on riscv64 because
+      of test timing issue.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+
+ -- Andreas Hasenack <andreas@canonical.com>  Tue, 08 Sep 2020 09:36:58 -0300
+
+openldap (2.4.53+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Mon, 07 Sep 2020 09:47:28 -0700
+
+openldap (2.4.51+dfsg-1ubuntu1) groovy; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support (first added in 2.4.18-0ubuntu2):
+      + d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+      + d/configure.options: Configure with --with-gssapi
+      + d/control: Added heimdal-dev as a build depend
+      + d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+      + d/libldap-2.4-2.symbols: add symbols for GSSAPI support
+      This should be dropped when the soname changes.
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      + d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      + d/slapd.install: install nssov overlay
+      + d/slapd.manpages: install slapo-nssov(5) man page
+      + d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+        Debian bug #919136, we also have to patch the nssov makefile
+        accordingly and thus update this patch.
+    - d/{rules,slapd.py}: Add apport hook.
+    - Add support for CLDAP (UDP) support, back then required by
+      likewise-open (first enabled in 2.4.17-1ubuntu2):
+      + d/rules: Enable -DLDAP_CONNECTIONLESS
+      + d/libldap-2.4-2.symbols: add symbols for CLDAP (UDP)
+      This should be dropped when the soname changes.
+    - debian/patches/fix_test_timing.patch: fix FTBFS on riscv64 because
+      of test timing issue.
+    - d/rules: better regexp to match the Maintainer tag in d/control,
+      needed in the Ubuntu case because of XSBC-Original-Maintainer
+      (Closes #960448, LP #1875697)
+  * Dropped:
+    - d/{slapd.default,slapd.README.Debian}: use the new configuration style.
+      [In 2.4.51+dfsg-1]
+    - d/slapd.scripts-common:
+      + add slapcat_opts to local variables.
+      + Fix backup directory naming for multiple reconfiguration.
+      [In 2.4.51+dfsg-1]
+    - debian/patches/set-maintainer-name: our d/rules change needs to
+      be kept, but this patch is in 2.4.51+dfsg-1.
+
+ -- Andreas Hasenack <andreas@canonical.com>  Wed, 26 Aug 2020 11:03:24 -0300
+
+openldap (2.4.51+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Add ldap_parse_password_expiring_control to libldap-2.4-2.symbols.
+  * Merge some changes from Ubuntu:
+    - slapd.default, slapd.README.Debian: update to refer to slapd.d instead
+      of slapd.conf.
+    - debian/slapd.scripts-common: dump_databases: make slapcat_opts a local
+      variable.
+  * Drop paragraph about patch gnutls-altname-nulterminated (#465197) from
+    slapd.README.Debian. The patch referred to was dropped in 2.4.7-6.
+  * debian/patches/set-maintainer-name: Extract maintainer address dynamically
+    from debian/control. (Closes: #960448)
+  * Fix Torsten's email address in a historic debian/changelog entry to
+    resolve a Lintian error (bogus-mail-host-in-debian-changelog).
+  * Rename debian/source.lintian-overrides to debian/source/lintian-overrides.
+    Fixes a Lintian pedantic tag (old-source-override-location).
+  * Override Lintian pedantic tag maintainer-manual-page for
+    slapo-pw-pbkdf2.5, which will be included upstream in a future release.
+  * Remove the trailing whitespaces from debian/changelog, debian/control, and
+    debian/rules. Fixes a Lintian pedantic tag (trailing-whitespace).
+  * Convert debian/po/de.po to UTF-8. Fixes a Lintian warning
+    (national-encoding).
+  * Relax libldap's dependency on libldap-common to Recommends.
+    This is intended to mitigate the impact of bug #915948 in the case where
+    the arch:all build is delayed for so long that the old libldap-common
+    disappears. Previously, a delayed arch:all build could become
+    BD-Uninstallable if new amd64 binaries were published before the arch:all
+    build starts, due to the transitive build-dependency on libldap.
+    Although libldap works fine without libldap-common, in normal
+    installations it is still recommended to install libldap-common.
+  * Append a timestamp to the backup directory created by dpkg-reconfigure.
+    (Closes: #599585, #960449)
+  * Remove the redundant cn=admin,<suffix> entry from the default DIT for new
+    installs. For new installs going forward, the root credentials will be
+    stored in olcRootDN/olcRootPW only. (Closes: #821331)
+  * Change slapd's Suggests: ldap-utils to Recommends. While any LDAP client
+    suffices, ldap-utils contains the standard tools recommended by upstream
+    for basic administration and management.
+  * Relax Recommends: libsasl2-modules to Suggests on slapd and ldap-utils.
+    Many deployments do not use SASL at all, and therefore SASL mechanisms are
+    not needed "in all but unusual installations".
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sun, 23 Aug 2020 11:09:57 -0700
+
+openldap (2.4.50+dfsg-1ubuntu3) groovy; urgency=medium
+
+  * No change rebuild against new libnettle8 and libhogweed6 ABI.
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Mon, 29 Jun 2020 22:31:30 +0100
+
+openldap (2.4.50+dfsg-1ubuntu2) groovy; urgency=medium
+
+  * d/apparmor-profile: Update apparmor profile to grant access to
+    the saslauthd socket, so that SASL authentication works. (LP: #1557157)
+
+ -- Sergio Durigan Junior <sergio.durigan@canonical.com>  Fri, 12 Jun 2020 18:20:42 -0400
+
+openldap (2.4.50+dfsg-1ubuntu1) groovy; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      + d/apparmor-profile: add AppArmor profile
+      + d/rules: use dh_apparmor
+      + d/control: Build-Depends on dh-apparmor
+      + d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support (first added in 2.4.18-0ubuntu2):
+      + d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+      + d/configure.options: Configure with --with-gssapi
+      + d/control: Added heimdal-dev as a build depend
+      + d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+      + d/libldap-2.4-2.symbols: add symbols for GSSAPI support
+      This should be dropped when the soname changes.
+    - Enable ufw support:
+      + d/control: suggest ufw.
+      + d/rules: install ufw profile.
+      + d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      + d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      + d/slapd.install:
+        - install nssov overlay
+      + d/slapd.manpages:
+        - install slapo-nssov(5) man page
+      + d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+        Debian bug #919136, we also have to patch the nssov makefile
+        accordingly and thus update this patch.
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/slapd.scripts-common:
+      + add slapcat_opts to local variables.
+      + Fix backup directory naming for multiple reconfiguration.
+    - d/{slapd.default,slapd.README.Debian}: use the new configuration style.
+    - Add support for CLDAP (UDP) support, back then required by
+      likewise-open (first enabled in 2.4.17-1ubuntu2):
+      + d/rules: Enable -DLDAP_CONNECTIONLESS
+      + d/libldap-2.4-2.symbols: add symbols for CLDAP (UDP)
+      This should be dropped when the soname changes.
+    - debian/patches/fix_test_timing.patch: fix FTBFS on riscv64 because
+      of test timing issue.
+  * Dropped:
+    - d/slapd.init.ldif: don't set olcRootDN since it's not defined in
+      either the default DIT nor via an Authn mapping.
+      [Not worth keeping a delta for, as having olcRootDN doesn't hurt]
+    - Show distribution in version:
+      - d/control: added lsb-release
+      - d/patches/fix-ldap-distribution.patch: show distribution in version
+      [Debian now shows the full package version]
+    - SECURITY UPDATE: denial of service via nested search filters
+      + debian/patches/CVE-2020-12243.patch: limit depth of nested
+        filters in servers/slapd/filter.c.
+      [Fixed upstream]
+  * Added:
+    - d/rules, debian/patches/set-maintainer-name: Extract maintainer
+      address dynamically from debian/control. Thanks to Ryan Tandy
+      <ryan@nardis.ca> (Closes: #960448, LP: #1875697)
+
+ -- Andreas Hasenack <andreas@canonical.com>  Mon, 01 Jun 2020 09:19:58 -0300
+
+openldap (2.4.50+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fixed slapd to limit depth of nested filters
+      (ITS#9202) (CVE-2020-12243)
+    - Drop patches included upstream: argon2.patch, ITS#9171, ITS#8650.
+  * Update Spanish debconf translation.
+    Thanks to Camaleón. (Closes: #958869)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Tue, 28 Apr 2020 10:18:12 -0700
+
+openldap (2.4.49+dfsg-4) unstable; urgency=medium
+
+  * Annotate libsodium-dev dependency with <!pkg.openldap.noslapd>.
+    Thanks to Helmut Grohne. (Closes: #955993)
+  * Add the man page for the Argon2 password module.
+    Thanks to Peter Marschall. (Closes: #955977)
+  * Build the Argon2 password module with libargon2-dev instead of
+    libsodium-dev. Rationale:
+    - libargon2 contains the specific functionality needed; libsodium is a
+      larger library and contains many features not used here
+    - libsodium does not support configuring the p= (parallelism) parameter
+  * Import upstream patch to properly retry gnutls_handshake() after it
+    returns GNUTLS_E_AGAIN. (ITS#8650) (Closes: #861838)
+  * Update the Argon2 password module to upstream commit feb6f21d2e.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Tue, 14 Apr 2020 21:33:16 -0700
+
+openldap (2.4.49+dfsg-3) unstable; urgency=medium
+
+  * Drop patch no-AM_INIT_AUTOMAKE. Instead, configure dh_autoreconf to skip
+    automake by setting AUTOMAKE=/bin/true. (Closes: #864637)
+  * debian/patches/debian-version: Show Debian version, instead of upstream
+    version, in version strings.
+  * Add ${perl:Depends} to slapd Depends to silence a dpkg-gencontrol warning.
+    This is practically a no-op since slapd explicitly Depends on perl because
+    of the maintainer scripts.
+  * Import the Argon2 password module from upstream git and install it in
+    slapd-contrib. New Build-Depends: libsodium-dev. (Closes: #920283)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Sat, 04 Apr 2020 10:43:56 -0700
+
+openldap (2.4.49+dfsg-2ubuntu2) groovy; urgency=medium
+
+  * SECURITY UPDATE: denial of service via nested search filters
+    - debian/patches/CVE-2020-12243.patch: limit depth of nested filters in
+      servers/slapd/filter.c.
+    - debian/patches/fix_test_timing.patch: fix FTBFS on riscv64 because of
+      test timing issue.
+    - CVE-2020-12243
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 01 May 2020 13:09:12 -0400
+
+openldap (2.4.49+dfsg-2ubuntu1) focal; urgency=medium
+
+  * Merge with Debian unstable (LP: #1866303). Remaining changes:
+    - Enable AppArmor support:
+      - d/apparmor-profile: add AppArmor profile
+      - d/rules: use dh_apparmor
+      - d/control: Build-Depends on dh-apparmor
+      - d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support:
+      - d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+        [Dropped the ldap_gssapi_bind_s() hunk as that is already
+      - d/configure.options: Configure with --with-gssapi
+      - d/control: Added heimdal-dev as a build depend
+      - d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+    - Enable ufw support:
+      - d/control: suggest ufw.
+      - d/rules: install ufw profile.
+      - d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      - d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      - d/slapd.install:
+        - install nssov overlay
+      - d/slapd.manpages:
+        - install slapo-nssov(5) man page
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/slapd.init.ldif: don't set olcRootDN since it's not defined in
+      either the default DIT nor via an Authn mapping.
+    - d/slapd.scripts-common:
+      - add slapcat_opts to local variables.
+      - Fix backup directory naming for multiple reconfiguration.
+    - d/{slapd.default,slapd.README.Debian}: use the new configuration style.
+    - d/rules: Enable -DLDAP_CONNECTIONLESS to build CLDAP (UDP) support
+      in the openldap library, as required by Likewise-Open
+    - Show distribution in version:
+      - d/control: added lsb-release
+      - d/patches/fix-ldap-distribution.patch: show distribution in version
+    - d/libldap-2.4-2.symbols: Add symbols not present in Debian.
+      - CLDAP (UDP) was added in 2.4.17-1ubuntu2
+      - GSSAPI support was enabled in 2.4.18-0ubuntu2
+    - d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+      Debian bug #919136, we also have to patch the nssov makefile
+      accordingly and thus update this patch.
+
+ -- Andreas Hasenack <andreas@canonical.com>  Fri, 06 Mar 2020 11:39:12 -0300
+
+openldap (2.4.49+dfsg-2) unstable; urgency=medium
+
+  * slapd.README.Debian: Document the initial setup performed by slapd's
+    maintainer scripts in more detail. Thanks to Karl O. Pinc.
+    (Closes: #952501)
+  * Import upstream patch to fix slapd crashing in certain configurations when
+    a client attempts a login to a locked account.
+    (ITS#9171) (Closes: #953150)
+
+ -- Ryan Tandy <ryan@nardis.ca>  Thu, 05 Mar 2020 12:59:46 -0800
+
+openldap (2.4.49+dfsg-1ubuntu1) focal; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      - d/apparmor-profile: add AppArmor profile
+      - d/rules: use dh_apparmor
+      - d/control: Build-Depends on dh-apparmor
+      - d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support:
+      - d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+        [Dropped the ldap_gssapi_bind_s() hunk as that is already
+      - d/configure.options: Configure with --with-gssapi
+      - d/control: Added heimdal-dev as a build depend
+      - d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+    - Enable ufw support:
+      - d/control: suggest ufw.
+      - d/rules: install ufw profile.
+      - d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      - d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      - d/slapd.install:
+        - install nssov overlay
+      - d/slapd.manpages:
+        - install slapo-nssov(5) man page
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/slapd.init.ldif: don't set olcRootDN since it's not defined in
+      either the default DIT nor via an Authn mapping.
+    - d/slapd.scripts-common:
+      - add slapcat_opts to local variables.
+      - Fix backup directory naming for multiple reconfiguration.
+    - d/{slapd.default,slapd.README.Debian}: use the new configuration style.
+    - d/rules: Enable -DLDAP_CONNECTIONLESS to build CLDAP (UDP) support
+      in the openldap library, as required by Likewise-Open
+    - Show distribution in version:
+      - d/control: added lsb-release
+      - d/patches/fix-ldap-distribution.patch: show distribution in version
+    - d/libldap-2.4-2.symbols: Add symbols not present in Debian.
+      - CLDAP (UDP) was added in 2.4.17-1ubuntu2
+      - GSSAPI support was enabled in 2.4.18-0ubuntu2
+    - d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+      Debian bug #919136, we also have to patch the nssov makefile
+      accordingly and thus update this patch.
+  * Dropped:
+    - d/control: slapd can depend on perl:any since it only uses perl for
+      some maintainer and helper scripts.
+      [In 2.4.49+dfsg-1]
+
+ -- Andreas Hasenack <andreas@canonical.com>  Mon, 10 Feb 2020 12:13:47 -0300
+
+openldap (2.4.49+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Drop patch no-gnutls_global_set_mutex, applied upstream.
+  * When validating the DNS domain chosen for slapd's default suffix, set
+    LC_COLLATE explicitly for grep to ensure character ranges behave as
+    expected. Thanks to Fredrik Roubert. (Closes: #940908)
+  * Backport proposed upstream patch to emit detailed messages about errors in
+    the TLS configuration. (ITS#9086) (Closes: #837341)
+  * slapd.scripts-common: Delete unused copy_example_DB_CONFIG function.
+  * Remove debconf support for choosing a database backend. Always use the
+    LMDB backend for new installs, as recommended by upstream.
+  * Remove the empty olcBackend section from the default configuration.
+  * Remove the unused slapd.conf template from /usr/share/slapd. Continue
+    shipping it as an example in /usr/share/doc/slapd.
+  * Fix a typo in index-files-created-as-root patch.
+    Thanks to Quanah Gibson-Mount.
+  * Annotate slapd's Depends on perl with :any. Fixes installation of
+    foreign-arch slapd. Thanks to Andreas Hasenack.
+  * Rename 'stage1' build profile to 'pkg.openldap.noslapd'.
+    Thanks to Helmut Grohne. (Closes: #949722)
+  * Drop Build-Conflicts: libicu-dev as upstream's configure no longer tests
+    for or links with libicu.
+  * Note ITS#9126 recommendation in slapd.NEWS.
+  * Update Standards-Version to 4.5.0; no changes required.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Thu, 06 Feb 2020 10:08:12 -0800
+
+openldap (2.4.48+dfsg-1ubuntu4) focal; urgency=medium
+
+  * d/control: slapd can depend on perl:any since it only uses perl for
+    some maintainer and helper scripts. The perl backend links against
+    the correct architecture perl libraries already. Can be dropped
+    after https://salsa.debian.org/openldap-team/openldap/commit/794c736
+    is in a Debian upload.
+
+ -- Andreas Hasenack <andreas@canonical.com>  Mon, 06 Jan 2020 16:46:11 -0300
+
+openldap (2.4.48+dfsg-1ubuntu3) focal; urgency=medium
+
+  * No-change rebuild against libnettle7
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 31 Oct 2019 22:13:44 +0000
+
+openldap (2.4.48+dfsg-1ubuntu2) focal; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Fri, 18 Oct 2019 19:37:23 +0000
+
+openldap (2.4.48+dfsg-1ubuntu1) eoan; urgency=medium
+
+  * Merge with Debian unstable. Remaining changes:
+    - Enable AppArmor support:
+      - d/apparmor-profile: add AppArmor profile
+      - d/rules: use dh_apparmor
+      - d/control: Build-Depends on dh-apparmor
+      - d/slapd.README.Debian: add note about AppArmor
+    - Enable GSSAPI support:
+      - d/patches/gssapi.diff, thanks to Jerry Carter (Likewise):
+        - Add --with-gssapi support
+        - Make guess_service_principal() more robust when determining
+          principal
+      - d/configure.options: Configure with --with-gssapi
+      - d/control: Added heimdal-dev as a build depend
+      - d/rules:
+        - Explicitly add -I/usr/include/heimdal to CFLAGS.
+        - Explicitly add -I/usr/lib/<multiarch>/heimdal to LDFLAGS.
+    - Enable ufw support:
+      - d/control: suggest ufw.
+      - d/rules: install ufw profile.
+      - d/slapd.ufw.profile: add ufw profile.
+    - Enable nss overlay:
+      - d/rules:
+        - add nssov to CONTRIB_MODULES
+        - add sysconfdir to CONTRIB_MAKEVARS
+      - d/slapd.install:
+        - install nssov overlay
+      - d/slapd.manpages:
+        - install slapo-nssov(5) man page
+    - d/{rules,slapd.py}: Add apport hook.
+    - d/slapd.init.ldif: don't set olcRootDN since it's not defined in
+      either the default DIT nor via an Authn mapping.
+    - d/slapd.scripts-common:
+      - add slapcat_opts to local variables.
+      - Fix backup directory naming for multiple reconfiguration.
+    - d/{slapd.default,slapd.README.Debian}: use the new configuration style.
+    - d/rules: Enable -DLDAP_CONNECTIONLESS to build CLDAP (UDP) support
+      in the openldap library, as required by Likewise-Open
+    - Show distribution in version:
+      - d/control: added lsb-release
+      - d/patches/fix-ldap-distribution.patch: show distribution in version
+    - d/libldap-2.4-2.symbols: Add symbols not present in Debian.
+      - CLDAP (UDP) was added in 2.4.17-1ubuntu2
+      - GSSAPI support was enabled in 2.4.18-0ubuntu2
+    - d/p/contrib-makefiles: given the change in 2.4.47+dfsg-3 regarding
+      Debian bug #919136, we also have to patch the nssov makefile
+      accordingly and thus update this patch.
+  * Dropped:
+    - Fix sysv-generator unit file by customizing parameters (LP #1821343)
+      + d/slapd-remain-after-exit.conf: Override RemainAfterExit to allow
+        correct systemctl status for slapd daemon.
+      + d/slapd.install: place override file in correct location.
+      [Included in 2.4.48+dfsg-1]
+    - SECURITY UPDATE: rootDN proxyauthz not restricted to its own databases
+      + debian/patches/CVE-2019-13057-1.patch: add restriction to
+        servers/slapd/saslauthz.c.
+      + debian/patches/CVE-2019-13057-2.patch: add tests to
+        tests/data/idassert.out, tests/data/slapd-idassert.conf,
+        tests/data/test-idassert1.ldif, tests/scripts/test028-idassert.
+      + debian/patches/CVE-2019-13057-3.patch: fix typo in
+        tests/scripts/test028-idassert.
+      + debian/patches/CVE-2019-13057-4.patch: fix typo in
+        tests/scripts/test028-idassert.
+      + CVE-2019-13057
+      [Fixed upstream]
+    - SECURITY UPDATE: SASL SSF not initialized per connection
+      + debian/patches/CVE-2019-13565.patch: zero out sasl_ssf in
+        connection_init in servers/slapd/connection.c.
+      + CVE-2019-13565
+      [Fixed upstream]
+
+ -- Andreas Hasenack <andreas@canonical.com>  Wed, 31 Jul 2019 18:01:14 -0300
+
+openldap (2.4.48+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - fixed slapd to restrict rootDN proxyauthz to its own databases
+      (CVE-2019-13057) (ITS#9038) (Closes: #932997)
+    - fixed slapd to enforce sasl_ssf ACL statement on every connection
+      (CVE-2019-13565) (ITS#9052) (Closes: #932998)
+    - added new openldap.h header with OpenLDAP specific libldap interfaces
+      (ITS#8671)
+    - updated lastbind overlay to support forwarding authTimestamp updates
+      (ITS#7721) (Closes: #880656)
+  * Update Standards-Version to 4.4.0.
+  * Add a systemd drop-in to set RemainAfterExit=no on the slapd service, so
+    that systemd marks the service as dead after it crashes or is killed.
+    Thanks to Heitor Alves de Siqueira. (Closes: #926657, LP: #1821343)
+  * Use more entropy for generating a random admin password, if none was set
+    during initial configuration. Thanks to Judicael Courant.
+    (Closes: #932270)
+  * Replace debian/rules calls to dpkg-architecture and dpkg-parsechangelog
+    with variables provided by dpkg-dev includes.
+  * Declare R³: no.
+  * Create a simple autopkgtest that tests installing slapd and connecting to
+    it with an ldap tool.
+  * Install the new openldap.h header in libldap2-dev.
+
+ -- Ryan Tandy <ryan@nardis.ca>  Thu, 25 Jul 2019 08:32:00 -0700
+
+openldap (2.4.47+dfsg-3ubuntu3) eoan; urgency=medium
+
+  * SECURITY UPDATE: rootDN proxyauthz not restricted to its own databases
+    - debian/patches/CVE-2019-13057-1.patch: add restriction to
+      servers/slapd/saslauthz.c.
+    - debian/patches/CVE-2019-13057-2.patch: add tests to
+      tests/data/idassert.out, tests/data/slapd-idassert.conf,
+      tests/data/test-idassert1.ldif, tests/scripts/test028-idassert.
+    - debian/patches/CVE-2019-13057-3.patch: fix typo in
+      tests/scripts/test028-idassert.
+    - debian/patches/CVE-2019-13057-4.patch: fix typo in
+      tests/scripts/test028-idassert.
+    - CVE-2019-13057
+  * SECURITY UPDATE: SASL SSF not initialized per connection
+    - debian/patches/CVE-2019-13565.patch: zero out sasl_ssf in
+      connection_init in servers/slapd/connection.c.
+    - CVE-2019-13565
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 26 Jul 2019 13:21:00 -0400
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog slapd-smbk5pwd`.

@@ -1,0 +1,20 @@
+# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 8717b5cd
+dn: olcDatabase={1}ldap
+objectClass: olcDatabaseConfig
+objectClass: olcLDAPConfig
+olcDatabase: {1}ldap
+olcSuffix: ou=remote,ou=users,dc=example,dc=com
+olcSubordinate: TRUE
+olcRootDN: cn=Manager,dc=example,dc=com
+olcDbURI: ldap://localhost:9011/
+olcDbIDAssertBind: bindmethod=simple binddn="cn=Manager,dc=remote,dc=example,d
+ c=com" credentials=secret mode=none
+olcDbIDAssertAuthzFrom: {0}dn.exact:cn=Manager,dc=example,dc=com
+structuralObjectClass: olcLDAPConfig
+entryUUID: df306272-5270-103f-8961-17ef69645450
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.207618Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z

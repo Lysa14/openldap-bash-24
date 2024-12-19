@@ -1,0 +1,20 @@
+# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 03be79c7
+dn: cn=module{0}
+objectClass: olcModuleList
+cn: module{0}
+olcModulePath: /home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/tests/.
+ ./servers/slapd/overlays
+olcModuleLoad: {0}/home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/test
+ s/../servers/slapd/back-mdb/back_mdb.la
+olcModuleLoad: {1}/home/lysa/openldap-bash-24/openldap-2.6.7/debian/build/test
+ s/../servers/slapd/back-ldap/back_ldap.la
+olcModuleLoad: {2}rwm.la
+olcModuleLoad: {3}syncprov.la
+structuralObjectClass: olcModuleList
+entryUUID: df2cb79e-5270-103f-8ff2-ed2fdc0f958f
+creatorsName: cn=config
+createTimestamp: 20241219162014Z
+entryCSN: 20241219162014.183586Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20241219162014Z

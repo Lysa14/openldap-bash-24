@@ -1,0 +1,79 @@
+Format: 1.8
+Date: Wed, 02 Oct 2024 14:40:51 +0200
+Source: openldap
+Binary: ldap-utils libldap-common libldap-dev libldap2 libldap2-dev slapd slapd-contrib slapd-smbk5pwd slapi-dev
+Built-For-Profiles: noudeb
+Architecture: source amd64 all
+Version: 2.6.7+dfsg-1~exp1ubuntu8.1
+Distribution: noble
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Matthias Klose <doko@ubuntu.com>
+Description:
+ ldap-utils - OpenLDAP utilities
+ libldap-common - OpenLDAP common files for libraries
+ libldap-dev - OpenLDAP development libraries
+ libldap2   - OpenLDAP libraries
+ libldap2-dev - transitional package for libldap-dev
+ slapd      - OpenLDAP server (slapd)
+ slapd-contrib - contributed plugins for OpenLDAP slapd
+ slapd-smbk5pwd - transitional package for slapd-contrib
+ slapi-dev  - development libraries for OpenLDAP SLAPI plugin interface
+Launchpad-Bugs-Fixed: 2083480
+Changes:
+ openldap (2.6.7+dfsg-1~exp1ubuntu8.1) noble; urgency=medium
+ .
+   * SRU: LP: #2083480: No-change rebuild to disable frame pointers on
+     ppc64el and s390x.
+Checksums-Sha1:
+ eb21cd1db7d58dbceda46d76ef91b3b4f4c30744 2605 openldap_2.6.7+dfsg-1~exp1ubuntu8.1.dsc
+ e50a5a9158be06ace150c0651ea8a9c7152622a5 186656 openldap_2.6.7+dfsg-1~exp1ubuntu8.1.debian.tar.xz
+ fcfbc3e50bf1256a5ee8a1875501fb5543b06c88 479428 ldap-utils-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 1581f042444893abeb7e564108bd39ba5f04cafc 165502 ldap-utils_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ d89fdfccf4ad034c3f2e0e3dfa20bece80b81851 31512 libldap-common_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ bf67b459000f34a8ae3a02b962da5d35f0657bdb 319888 libldap-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 03d716e384e48e96df022b20854e61e811164f26 455960 libldap2-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 651989176e373f99d5bd2cafeaab135c3c8cecf9 24490 libldap2-dev_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ afdb750cd6541ceb5b78178ae0298f941a4b64b9 195662 libldap2_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 44d4c700a90f7fa6a75f4f27325521b4e549d54e 14479 openldap_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.buildinfo
+ 10034ddbd0f24599c3d85a5542a80b076fd96043 51652 slapd-contrib-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ fe098d0f0fa7b164d91ec5e64c98c1b88d6169cf 44194 slapd-contrib_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ afcf4cebf06db5d086b27eb54f05a0b4bdbd50eb 3611570 slapd-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ df88815464026204e8d360f2baf650f4f901edeb 24522 slapd-smbk5pwd_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ 14385baa183850ee726be07219e6f081ad01913b 1566452 slapd_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 12386be631e7ae126833f261cafe74401f315aea 32222 slapi-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+Checksums-Sha256:
+ 4f59a4fc074b9e3b9a2051bdd19039f0f001a8d7abc38af807e7982b1c529b36 2605 openldap_2.6.7+dfsg-1~exp1ubuntu8.1.dsc
+ a0a3c8b28cae38ff0e791707922e368840dec708e5a652f3a82ee3f37f9f9705 186656 openldap_2.6.7+dfsg-1~exp1ubuntu8.1.debian.tar.xz
+ 3ed00c5c1adfadabd0f530ffa59c7502946811de2a276e525ad38350aa79fa14 479428 ldap-utils-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 2c6069f6fd6bb69fe5e76e3f00681e6e5af8807e538fd87047f72d2132e2daac 165502 ldap-utils_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 65130c3d0a08eac9a22ecdfc313bc5ed261378d9223c292d1a13179bc167f151 31512 libldap-common_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ ac4aa928e744ea329722de3d999321c08b14cdfaeffe4492c96359d84fe716d0 319888 libldap-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ a48e3b833d010471056e0fe203cd616474ceeae72b30a0cfa7da7255d703157b 455960 libldap2-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 40b1b6c27fe43d25533ad79e35349c5f5239bd99467a59400b66eb83982942e9 24490 libldap2-dev_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ ba7986073c9eac25733ac0283160952118d34f0659c213cf6c51c13cdf06382f 195662 libldap2_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 4fe729215e69f14bad06db6f9545dd655e8d5822b63325701aa5b9b47970106d 14479 openldap_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.buildinfo
+ 0095553c9b65a6e40d26b8ca9d8eb76bbbac64ec09ed2ee2464e9b08cae6af59 51652 slapd-contrib-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ cb38f43b2d893e237173e6818fc9536963e2a9ac0632f967f260f14b12a84ba6 44194 slapd-contrib_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ a7017dc135bf640e087ae0e2e80b87d52cc1ac60d7c3df9c6719b1fa0c346318 3611570 slapd-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ e4370a9d7666be7229121502884b01223a3a050a8a06ba936867c0e3d97f88f0 24522 slapd-smbk5pwd_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ a80ec97115d1077cdca57b03ee70cf71a6a9a2c19ed4915dfcdc04a402c22cfd 1566452 slapd_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 2b2a4b04e6352d8c23b106b013379d482c81e362697ced9ce9e82b5b05e7d45a 32222 slapi-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+Files:
+ 533454b97750f40c84744b385424372d 2605 net optional openldap_2.6.7+dfsg-1~exp1ubuntu8.1.dsc
+ 1b7773da4130a4cee47781a6702a85d7 186656 net optional openldap_2.6.7+dfsg-1~exp1ubuntu8.1.debian.tar.xz
+ 8352667c80df235d003719772974afd5 479428 debug optional ldap-utils-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 9481d47674c6070cf98385365a644a83 165502 net optional ldap-utils_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 25fbe5f6d27d554d28c4537777a4fa2b 31512 libs optional libldap-common_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ 2a9dbf91b9f522d03f23f3e37f08cc1a 319888 libdevel optional libldap-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ e56e4f731a723fecb6ae6f181af2317c 455960 debug optional libldap2-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 0f659e389eca7e8b341ad5084b3c2eb7 24490 oldlibs optional libldap2-dev_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ 7b47c342bce531695275040154b04b36 195662 libs optional libldap2_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 4c012e1ffe099e51678f9944eca114be 14479 net optional openldap_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.buildinfo
+ c3d83b48b5da83f2735e37798c9084a1 51652 debug optional slapd-contrib-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 717e07d14f49dd9d3badb3e1b1ea2509 44194 net optional slapd-contrib_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ fe14f8b630b823b858b46a558016654b 3611570 debug optional slapd-dbgsym_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.ddeb
+ 3970ec4981b41c1705a90769603e23d6 24522 oldlibs optional slapd-smbk5pwd_2.6.7+dfsg-1~exp1ubuntu8.1_all.deb
+ 85889447c6b413a6696a3eb308bf9192 1566452 net optional slapd_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+ 09d2a98ad3e5c8b750b3810daf1c5229 32222 libdevel optional slapi-dev_2.6.7+dfsg-1~exp1ubuntu8.1_amd64.deb
+Original-Maintainer: Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
